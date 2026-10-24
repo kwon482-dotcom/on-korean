@@ -147,7 +147,7 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
                       ),
                       const SizedBox(height: 12),
 
-                      // 1. 현재 에너지 현황 카드 (여백 컴팩트화)
+                      // 1. 현재 에너지 현황 카드 (여백 컴팩트화 및 오버플로우 방어)
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 11),
                         decoration: BoxDecoration(
@@ -166,60 +166,71 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
                           ),
                         ),
                         child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Row(
-                              children: [
-                                Icon(
-                                  isPro ? Icons.workspace_premium : Icons.bolt,
-                                  color: isPro ? Colors.amber : Colors.amber.shade700,
-                                  size: 28,
-                                ),
-                                const SizedBox(width: 10),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      isPro
-                                          ? LocaleService.tr('pro_active_title')
-                                          : LocaleService.tr('pro_energy_title'),
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w600,
-                                        color: isPro
-                                            ? Colors.white70
-                                            : (isDark ? const Color(0xFFA5B4FC) : Colors.indigo.shade900),
-                                      ),
-                                    ),
-                                    Text(
-                                      isPro
-                                          ? LocaleService.tr('pro_unlimited_status')
-                                          : LocaleService.tr('pro_energy_count', [energy]),
-                                      style: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold,
-                                        color: isPro
-                                            ? Colors.white
-                                            : (isDark ? Colors.white : Colors.indigo.shade900),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
+                            Container(
+                              padding: const EdgeInsets.all(7),
+                              decoration: BoxDecoration(
+                                color: (isPro ? Colors.amber : Colors.amber.shade700).withValues(alpha: 0.15),
+                                shape: BoxShape.circle,
+                              ),
+                              child: Icon(
+                                isPro ? Icons.workspace_premium : Icons.bolt,
+                                color: isPro ? Colors.amber : Colors.amber.shade700,
+                                size: 24,
+                              ),
                             ),
-                            if (!isPro)
-                              ElevatedButton.icon(
+                            const SizedBox(width: 10),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Text(
+                                    isPro
+                                        ? LocaleService.tr('pro_active_title')
+                                        : LocaleService.tr('pro_energy_title'),
+                                    style: TextStyle(
+                                      fontSize: 11.5,
+                                      fontWeight: FontWeight.w600,
+                                      color: isPro
+                                          ? Colors.white70
+                                          : (isDark ? const Color(0xFFA5B4FC) : Colors.indigo.shade900),
+                                    ),
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
+                                  const SizedBox(height: 1),
+                                  Text(
+                                    isPro
+                                        ? LocaleService.tr('pro_unlimited_status')
+                                        : LocaleService.tr('pro_energy_count', [energy]),
+                                    style: TextStyle(
+                                      fontSize: 19,
+                                      fontWeight: FontWeight.bold,
+                                      color: isPro
+                                          ? Colors.white
+                                          : (isDark ? Colors.white : Colors.indigo.shade900),
+                                    ),
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            if (!isPro) ...[
+                              const SizedBox(width: 8),
+                              ElevatedButton(
                                 onPressed: _isLoadingAd ? null : _watchAdForReward,
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: Colors.amber.shade700,
                                   foregroundColor: Colors.white,
                                   elevation: 0,
-                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                 ),
-                                icon: _isLoadingAd
+                                child: _isLoadingAd
                                     ? const SizedBox(
                                         width: 14,
                                         height: 14,
@@ -228,14 +239,22 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
                                           color: Colors.white,
                                         ),
                                       )
-                                    : const Icon(Icons.play_circle_fill, size: 16),
-                                label: Text(
-                                  _isLoadingAd
-                                      ? LocaleService.tr('ad_loading')
-                                      : LocaleService.tr('ad_reward_btn'),
-                                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
-                                ),
+                                    : Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          const Icon(Icons.play_circle_fill, size: 15),
+                                          const SizedBox(width: 4),
+                                          Text(
+                                            LocaleService.tr('ad_reward_btn'),
+                                            style: const TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 11.5,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
                               ),
+                            ],
                           ],
                         ),
                       ),
@@ -326,7 +345,7 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
                                 onTap: () => setState(() => _isLifetime = true),
                                 borderRadius: BorderRadius.circular(8),
                                 child: Container(
-                                  padding: const EdgeInsets.symmetric(vertical: 6),
+                                  padding: const EdgeInsets.symmetric(vertical: 7),
                                   decoration: BoxDecoration(
                                     color: _isLifetime ? Colors.indigo : Colors.transparent,
                                     borderRadius: BorderRadius.circular(8),
@@ -338,12 +357,14 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
                                   child: Text(
                                     LocaleService.tr('pro_lifetime_btn'),
                                     style: TextStyle(
-                                      fontSize: 12,
+                                      fontSize: 11.5,
                                       fontWeight: FontWeight.bold,
                                       color: _isLifetime
                                           ? Colors.white
                                           : (isDark ? const Color(0xFF94A3B8) : Colors.grey.shade700),
                                     ),
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
                                   ),
                                 ),
                               ),
@@ -354,7 +375,7 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
                                 onTap: () => setState(() => _isLifetime = false),
                                 borderRadius: BorderRadius.circular(8),
                                 child: Container(
-                                  padding: const EdgeInsets.symmetric(vertical: 6),
+                                  padding: const EdgeInsets.symmetric(vertical: 7),
                                   decoration: BoxDecoration(
                                     color: !_isLifetime ? Colors.indigo : Colors.transparent,
                                     borderRadius: BorderRadius.circular(8),
@@ -365,15 +386,20 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
                                   alignment: Alignment.center,
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      Text(
-                                        LocaleService.tr('pro_monthly'),
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          fontWeight: FontWeight.bold,
-                                          color: !_isLifetime
-                                              ? Colors.white
-                                              : (isDark ? const Color(0xFF94A3B8) : Colors.grey.shade700),
+                                      Flexible(
+                                        child: Text(
+                                          LocaleService.tr('pro_monthly'),
+                                          style: TextStyle(
+                                            fontSize: 11.5,
+                                            fontWeight: FontWeight.bold,
+                                            color: !_isLifetime
+                                                ? Colors.white
+                                                : (isDark ? const Color(0xFF94A3B8) : Colors.grey.shade700),
+                                          ),
+                                          maxLines: 1,
+                                          overflow: TextOverflow.ellipsis,
                                         ),
                                       ),
                                       const SizedBox(width: 4),
@@ -388,7 +414,7 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
                                         child: Text(
                                           LocaleService.tr('pro_monthly_trial'),
                                           style: TextStyle(
-                                            fontSize: 9,
+                                            fontSize: 8.5,
                                             fontWeight: FontWeight.bold,
                                             color: !_isLifetime
                                                 ? Colors.brown.shade900
@@ -509,7 +535,7 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
     required bool isDark,
   }) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 9),
+      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
       decoration: BoxDecoration(
         color: cardColor,
         borderRadius: BorderRadius.circular(12),
@@ -521,55 +547,66 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                title,
-                style: TextStyle(
-                  fontSize: 12.5,
-                  fontWeight: FontWeight.bold,
-                  color: isHighlight
-                      ? (isDark ? const Color(0xFFA5B4FC) : Colors.indigo.shade900)
-                      : (isDark ? Colors.white : Colors.black87),
+              Flexible(
+                child: Text(
+                  title,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                    color: isHighlight
+                        ? (isDark ? const Color(0xFFA5B4FC) : Colors.indigo.shade900)
+                        : (isDark ? Colors.white : Colors.black87),
+                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                 ),
               ),
-              if (badge != null)
+              if (badge != null) ...[
+                const SizedBox(width: 2),
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
                   decoration: BoxDecoration(
                     color: badgeColor ?? Colors.indigo,
-                    borderRadius: BorderRadius.circular(4),
+                    borderRadius: BorderRadius.circular(3.5),
                   ),
                   child: Text(
                     badge,
                     style: const TextStyle(
-                      fontSize: 8.5,
+                      fontSize: 8,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
+              ],
             ],
           ),
-          const SizedBox(height: 4),
-          Text(
-            subtitle,
-            style: TextStyle(
-              fontSize: 10,
-              color: isDark ? const Color(0xFF94A3B8) : Colors.grey.shade700,
-              height: 1.2,
+          const SizedBox(height: 5),
+          SizedBox(
+            height: 25,
+            child: Text(
+              subtitle,
+              style: TextStyle(
+                fontSize: 9.5,
+                color: isDark ? const Color(0xFF94A3B8) : Colors.grey.shade700,
+                height: 1.25,
+              ),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
             ),
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
           ),
           const SizedBox(height: 4),
           Text(
             _isLifetime ? LocaleService.tr('pro_lifetime') : LocaleService.tr('pro_monthly'),
             style: TextStyle(
-              fontSize: 10,
+              fontSize: 9.5,
               fontWeight: FontWeight.w600,
               color: isHighlight
                   ? (isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700)
                   : (isDark ? const Color(0xFF64748B) : Colors.grey.shade600),
             ),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
           ),
           const SizedBox(height: 8),
           SizedBox(
@@ -581,20 +618,22 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
                       backgroundColor: Colors.indigo,
                       foregroundColor: Colors.white,
                       elevation: 0,
-                      padding: const EdgeInsets.symmetric(vertical: 5),
+                      padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 2),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(7),
                       ),
                     ),
                     child: Text(
                       _isLifetime ? LocaleService.tr('btn_get_lifetime') : LocaleService.tr('btn_try_trial'),
-                      style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontSize: 10.5, fontWeight: FontWeight.bold),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                     ),
                   )
                 : OutlinedButton(
                     onPressed: onTap,
                     style: OutlinedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 5),
+                      padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 2),
                       side: BorderSide(
                         color: isDark ? const Color(0xFF475569) : Colors.grey.shade400,
                       ),
@@ -605,7 +644,9 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
                     ),
                     child: Text(
                       _isLifetime ? LocaleService.tr('btn_get_lifetime') : LocaleService.tr('btn_try_trial'),
-                      style: const TextStyle(fontSize: 11),
+                      style: const TextStyle(fontSize: 10.5),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ),
           ),
