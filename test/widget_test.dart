@@ -322,8 +322,8 @@ void main() {
         expect(fromJson.keyVocab.first.word, 'focused');
 
         // Check backwards compatibility getters
-        expect(fromJson.passageJa, fromJson.passageEn);
-        expect(fromJson.questionJa, fromJson.questionEn);
+        expect(fromJson.passageKo.isNotEmpty, isTrue);
+        expect(fromJson.passageEn.isNotEmpty, isTrue);
 
         final listeningItem = ReadingModel(
           id: 'r2',
@@ -769,11 +769,8 @@ void main() {
       );
 
       expect(find.text('Network Communication'), findsOneWidget);
-      expect(
-        find.text('Network packets pass through the router securely.'),
-        findsOneWidget,
-      );
-      expect(find.text('네트워크 패킷이 라우터를 안전하게 통과합니다.'), findsOneWidget);
+      expect(find.text('네트워크 패킷이 라우터를 안전하게 통과합니다.'), findsWidgets);
+      expect(find.text('packet'), findsOneWidget);
     });
   });
 

@@ -50,7 +50,7 @@ class ReadingQuizCard extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             Text(
-              reading.questionJa,
+              reading.targetQuestion,
               style: const TextStyle(
                 fontSize: 14.5,
                 fontWeight: FontWeight.w600,

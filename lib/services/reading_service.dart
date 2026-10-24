@@ -217,107 +217,109 @@ class ReadingService {
     final detailTopic = chosen['detail']!;
 
     final isEn = LocaleService.currentLocale.value.languageCode == 'en';
-    final modeLabel = type == 'listening' ? '청해(듣기 평가)' : '단문 독해';
+    final modeLabel = type == 'listening' ? '듣기(청해 평가)' : '단문 독해';
     final formatHint = type == 'listening'
-        ? '''1. [청해 모드 필수 지침]:
-- 듣기 평가에 최적화된 생생한 2인 대화문(예: 두 사람의 일상 대화, 점원과 손님, 직장 동료, 친구) 또는 공공장소/매장 안내 방송 형식의 3~5문장으로 작성할 것.
-- 2인 대화문일 경우 반드시 발화자 기호(예: 男：..., 女：... 또는 客：..., 店員：...)를 문장 앞에 붙여 자연스러운 구어체로 작성할 것.
-- 질문(questionJa)은 실제 JLPT 청해 기출처럼 음성을 듣고 정답을 고르는 질문(예: 「男の人はこのあと何をしますか。」, 「二人はどこで会うことにしましたか。」, 「女の人は何について話していますか。」 등)으로 출제할 것.'''
+        ? '''1. [듣기 모드 필수 지침]:
+- 듣기 평가에 최적화된 생생한 2인 대화문(예: 두 사람의 일상 대화, 점원과 손님, 직장 동료, 친구) 또는 공공장소/안내 방송 형식의 3~5문장으로 작성할 것.
+- 2인 대화문일 경우 반드시 발화자 기호(예: 민수：..., 지수：... 또는 손님：..., 직원：...)를 문장 앞에 붙여 자연스러운 구어체 한국어로 작성할 것.
+- 질문(questionKo)은 실제 TOPIK 듣기 기출처럼 음성을 듣고 정답을 고르는 질문(예: 「남자는 이어서 무엇을 하겠습니까?」, 「두 사람은 어디에서 만나기로 했습니까?」, 「여자는 무엇에 대해 이야기하고 있습니까?」 등)으로 출제할 것.'''
         : '''1. [단문 독해 필수 지침]:
 - 지문 길이는 3~5문장의 부담 없는 단문으로 작성할 것 (1분 내에 가볍게 읽을 수 있는 분량).
-- 질문(questionJa)은 지문의 핵심 내용이나 글쓴이의 의도를 묻는 문제로 출제할 것.''';
+- 질문(questionKo)은 지문의 핵심 내용이나 글쓴이의 중심 생각을 묻는 문제(TOPIK 형식)로 출제할 것.''';
 
     final String prompt;
     if (isEn) {
       final enFormatHint = type == 'listening'
           ? '''1. [Listening Mode Requirements]:
-- Write 3-5 sentences of vivid 2-person dialogue (e.g., daily conversation, shop clerk and customer, coworkers, friends) or a public/store announcement optimized for listening comprehension.
-- For 2-person dialogues, prefix each sentence with speaker indicators (e.g., 男：..., 女：... or 客：..., 店員：...) using natural colloquial Japanese.
-- The question (questionJa) must be an authentic JLPT listening style question testing audio comprehension (e.g., 「男の人はこのあと何をしますか。」, 「二人はどこで会うことにしましたか。」, 「女の人は何について話していますか。」).'''
+- Write 3-5 sentences of vivid 2-person dialogue (e.g., daily conversation, clerk and customer, coworkers, friends) or a public announcement in natural Korean.
+- For 2-person dialogues, prefix each sentence with speaker names (e.g., Minsoo: ..., Jisoo: ... or Customer: ..., Clerk: ...).
+- The question (questionKo) must test audio comprehension (e.g., "What will the man do next?", "Where did the two decide to meet?").'''
           : '''1. [Reading Mode Requirements]:
-- Passage length must be 3-5 concise sentences (easy to read within 1 minute).
-- The question (questionJa) must test comprehension of the key point or author's intent.''';
+- Passage length must be 3-5 concise sentences in natural standard Korean (easy to read within 1 minute).
+- The question (questionKo) must test comprehension of the central topic or author's intent.''';
 
       prompt =
           '''
-You are a professional Japanese language educator and JLPT exam designer.
-Create 1 "1-Minute Japanese Short ${type == 'listening' ? 'Listening' : 'Reading'} Card" tailored to JLPT $level difficulty.
+You are a professional Korean language educator and TOPIK (Test of Proficiency in Korean) exam designer.
+Create 1 "1-Minute Korean Short ${type == 'listening' ? 'Listening' : 'Reading'} Card" tailored to level: $level.
 
 [Theme & Topic]:
 • Category: $categoryName
 • Scenario & Topic: $detailTopic
-(※ Focus on creating a fresh, authentic everyday scenario based on the topic above)
 
 [Passage Requirements]:
 $enFormatHint
-2. Use vocabulary and grammar appropriate for JLPT $level.
-3. Write accurate and natural standard Japanese sentences without typos.
+2. Use vocabulary and grammar appropriate for level: $level.
+3. Write accurate and natural standard Korean sentences.
 4. Include 1 multiple-choice quiz question with 4 options to test comprehension.
-5. Select 3-4 key vocabulary words with furigana reading and English meaning.
+5. Select 3-4 key vocabulary words with romanized pronunciation and English meaning.
 
 [Language Rules - STRICT]:
-• "title", "passageJa", "questionJa", "options" (all 4 options) MUST be 100% pure Japanese (日本語).
-• "passageKo", "explanation", and the "meaning" of "keyVocab" MUST be written in English.
+• "title", "passageKo", "questionKo", "options" (all 4 options) MUST be 100% natural Korean (한국어).
+• "passageEn", "explanation", and the "meaning" of "keyVocab" MUST be written in English.
+• "passageJa" must be a smooth Japanese translation of the passage.
 
 Respond strictly in pure JSON format without markdown code blocks:
 {
-  "title": "日本語のタイトル (strictly in Japanese)",
+  "title": "Korean Title (한국어 제목)",
   "theme": "$categoryName",
-  "passageJa": "日本語の本文 (3〜5 sentences in Japanese)",
-  "passageKo": "Smooth and accurate English translation of the passage",
-  "questionJa": "日本語の質問 (JLPT exam style question in Japanese)",
+  "passageKo": "Korean passage (3-5 sentences in natural Korean)",
+  "passageEn": "Accurate English translation of the passage",
+  "passageJa": "Accurate Japanese translation of the passage",
+  "questionKo": "Question in Korean (TOPIK style)",
   "options": [
-    "Option 1 in Japanese",
-    "Option 2 in Japanese",
-    "Option 3 in Japanese",
-    "Option 4 in Japanese"
+    "Option 1 in Korean",
+    "Option 2 in Korean",
+    "Option 3 in Korean",
+    "Option 4 in Korean"
   ],
   "correctIndex": 0,
   "explanation": "Answer explanation and rationale in English (1-2 sentences)",
   "keyVocab": [
-    {"word": "単語", "reading": "たんご", "meaning": "English meaning of the word"}
+    {"word": "단어", "reading": "[dan-eo]", "meaning": "English meaning of the word"}
   ]
 }
 ''';
     } else {
       prompt =
           '''
-너는 일본어 교육 전문 튜터이자 JLPT 시험 출제위원이야.
-JLPT $level 난이도에 맞춘 "1분 숏폼 일본어 $modeLabel 카드"를 1개 작성해줘.
+너는 한국어 교육 전문 튜터이자 TOPIK(한국어능력시험) 출제위원이야.
+한국어 학습 $level 난이도에 맞춘 "1분 숏폼 한국어 $modeLabel 카드"를 1개 작성해줘.
 
 [이번 주제와 소재]:
 • 대분류: $categoryName
 • 핵심 상황 및 소재: $detailTopic
-(※ 특정 소재나 편의점에 편중되지 않도록, 반드시 위 '핵심 상황 및 소재'를 중심으로 참신하고 생생한 이야기를 다룰 것)
 
 [지문 요구사항]:
 $formatHint
-2. JLPT $level 수준에 어울리는 어휘와 문법을 사용할 것.
-3. 오탈자 없는 정확하고 자연스러운 표준 일본어 문장으로 작성할 것.
+2. $level 수준에 어울리는 어휘와 문법을 사용할 것.
+3. 오탈자 없는 정확하고 자연스러운 표준 한국어 문장으로 작성할 것.
 4. 내용을 잘 이해했는지 확인할 수 있는 4지선다형 퀴즈 1문항을 함께 출제할 것.
-5. 지문 속에서 공부하기 좋은 핵심 단어 3~4개를 선정하여 독음(후리가나)과 한국어 뜻을 정리해줄 것.
+5. 지문 속에서 공부하기 좋은 핵심 단어 3~4개를 선정하여 로마자 발음과 뜻을 정리해줄 것.
 
 [언어 규정 - 절대 엄수]:
-• "title", "passageJa", "questionJa", "options"(4개 선택지 모두)는 반드시 100% 순수 일본어(日本語)로만 작성해야 합니다. 한국어가 한 글자도 들어가선 안 됩니다!
-• 오직 "passageKo", "explanation", "keyVocab"의 "meaning"만 한국어로 작성하십시오.
+• "title", "passageKo", "questionKo", "options"(4개 선택지 모두)는 반드시 100% 순수 한국어로만 작성해야 합니다.
+• "passageEn"은 매끄러운 영어 번역, "passageJa"는 매끄러운 일본어 번역으로 작성할 것.
+• "explanation"은 학습자의 이해를 돕는 친절한 해설로 작성할 것.
 
 반드시 마크다운 코드블록 없이, 아래의 순수한 JSON 형식으로만 응답해줘:
 {
-  "title": "日本語のタイトル (반드시 순수 일본어로 작성)",
+  "title": "한국어 제목",
   "theme": "$categoryName",
-  "passageJa": "日本語의 본문 (3〜5文의 일본어 본문/대화문)",
-  "passageKo": "지문 전체의 매끄러운 한국어 번역",
-  "questionJa": "日本語의 질문 (JLPT 시험 스타일의 일본어 질문)",
+  "passageKo": "한국어 본문 (3〜5문장의 한국어 본문/대화문)",
+  "passageEn": "지문 전체의 매끄러운 영어 번역",
+  "passageJa": "지문 전체의 매끄러운 일본어 번역",
+  "questionKo": "한국어 질문 (TOPIK 시험 스타일의 한국어 질문)",
   "options": [
-    "日本語의 선택지 1",
-    "日本語의 선택지 2",
-    "日本語의 선택지 3",
-    "日本語의 선택지 4"
+    "한국어 선택지 1",
+    "한국어 선택지 2",
+    "한국어 선택지 3",
+    "한국어 선택지 4"
   ],
   "correctIndex": 0,
-  "explanation": "정답 해설 및 이유 (한국어 1~2줄)",
+  "explanation": "정답 해설 및 이유 (1~2줄)",
   "keyVocab": [
-    {"word": "単語", "reading": "たんご", "meaning": "단어 한국어 뜻"}
+    {"word": "단어", "reading": "[dan-eo]", "meaning": "단어 뜻"}
   ]
 }
 ''';
@@ -368,12 +370,14 @@ $formatHint
                   );
 
                   final title = parsed['title']?.toString().trim() ?? '';
-                  final passageJa =
-                      parsed['passageJa']?.toString().trim() ?? '';
-                  final passageKo =
-                      parsed['passageKo']?.toString().trim() ?? '';
-                  final questionJa =
-                      parsed['questionJa']?.toString().trim() ?? '';
+                  final rawKo = parsed['passageKo']?.toString().trim() ?? parsed['passage']?.toString().trim() ?? '';
+                  final rawEn = parsed['passageEn']?.toString().trim() ?? '';
+                  final rawJa = parsed['passageJa']?.toString().trim() ?? '';
+                  final passageKo = rawKo.isNotEmpty ? rawKo : (rawJa.isNotEmpty ? rawJa : rawEn);
+                  final passageEn = rawEn.isNotEmpty ? rawEn : (rawJa.isNotEmpty ? rawJa : passageKo);
+                  final passageJa = rawJa.isNotEmpty ? rawJa : passageEn;
+
+                  final questionKo = (parsed['questionKo'] ?? parsed['questionJa'] ?? parsed['question'] ?? '').toString().trim();
                   final optionsRaw = parsed['options'] as List<dynamic>? ?? [];
                   final options = optionsRaw
                       .map((e) => e.toString().trim())
@@ -390,16 +394,15 @@ $formatHint
                       )
                       .toList();
 
-                  // 💡 혹시라도 AI가 한글 제목을 뱉었을 경우 일본어 제목으로 안전 보정
+                  // 한국어 안전 제목 보정
                   String safeTitle = title;
-                  if (safeTitle.isEmpty ||
-                      RegExp(r'[가-힣]').hasMatch(safeTitle)) {
+                  if (safeTitle.isEmpty) {
                     safeTitle = type == 'listening'
-                        ? '日本語リスニング練習'
-                        : '日本語ショート読解';
+                        ? '한국어 듣기 연습'
+                        : '한국어 1분 단문 독해';
                   }
 
-                  if (passageJa.isNotEmpty && passageKo.isNotEmpty) {
+                  if (passageKo.isNotEmpty) {
                     final newReading = ReadingModel(
                       id: 'reading_${DateTime.now().millisecondsSinceEpoch}',
                       level: level,
@@ -409,9 +412,12 @@ $formatHint
                           ? parsed['theme'].toString().trim()
                           : categoryName,
                       title: safeTitle,
-                      passageJa: passageJa,
                       passageKo: passageKo,
-                      questionJa: questionJa,
+                      passageEn: passageEn,
+                      passageJa: passageJa,
+                      questionKo: questionKo,
+                      questionEn: questionKo,
+                      questionJa: questionKo,
                       options: options,
                       correctIndex: correctIndex.clamp(
                         0,

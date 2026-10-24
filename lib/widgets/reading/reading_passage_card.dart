@@ -335,7 +335,7 @@ class ReadingPassageCard extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           ElevatedButton.icon(
-            onPressed: () => TtsService.speak(reading.passageJa, rate: playbackRate),
+            onPressed: () => TtsService.speak(reading.targetPassage, rate: playbackRate),
             style: ElevatedButton.styleFrom(
               backgroundColor: isDark ? const Color(0xFF6366F1) : Colors.deepPurple,
               foregroundColor: Colors.white,
@@ -411,7 +411,7 @@ class ReadingPassageCard extends StatelessWidget {
                 ),
               ),
               child: Text(
-                reading.passageJa,
+                reading.targetPassage,
                 style: TextStyle(
                   fontSize: passageFontSize,
                   height: 1.8,
@@ -432,7 +432,7 @@ class ReadingPassageCard extends StatelessWidget {
                   prominent: false,
                 ),
                 TextButton.icon(
-                  onPressed: () => TtsService.speak(reading.passageJa, rate: playbackRate),
+                  onPressed: () => TtsService.speak(reading.targetPassage, rate: playbackRate),
                   icon: const Icon(Icons.volume_up, size: 18),
                   label: Text(
                     isListeningMode
