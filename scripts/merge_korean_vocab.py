@@ -10,6 +10,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 project_dir = os.path.dirname(script_dir)
 sys.path.insert(0, script_dir)
 
+# Phase 1 Data
 from data_basics import BASICS_WORDS
 from data_basics_2 import BASICS_WORDS_2
 from data_topik1 import TOPIK1_WORDS
@@ -26,26 +27,55 @@ from data_business import BUSINESS_WORDS
 from data_business_2 import BUSINESS_WORDS_2
 from data_final_touch import FINAL_TOUCH_WORDS
 
+# Phase 2 Data
+from data_p2_basics_1 import P2_BASICS_WORDS_1
+from data_p2_basics_2 import P2_BASICS_WORDS_2
+from data_p2_topik1_1 import P2_TOPIK1_WORDS_1
+from data_p2_topik1_2 import P2_TOPIK1_WORDS_2
+from data_p2_topik2_1 import P2_TOPIK2_WORDS_1
+from data_p2_topik2_2 import P2_TOPIK2_WORDS_2
+from data_p2_kdrama_1 import P2_KDRAMA_WORDS_1
+from data_p2_kdrama_2 import P2_KDRAMA_WORDS_2
+from data_p2_business_1 import P2_BUSINESS_WORDS_1
+from data_p2_business_2 import P2_BUSINESS_WORDS_2
+
+# Phase 2 Final Touch (to reach exactly 1,000 words)
+from data_p2_final_touch import (
+    FINAL_TOUCH_P2_BASICS,
+    FINAL_TOUCH_P2_TOPIK1,
+    FINAL_TOUCH_P2_TOPIK2,
+    FINAL_TOUCH_P2_KDRAMA,
+    FINAL_TOUCH_P2_BUSINESS,
+)
+
 def main():
-    existing_file = os.path.join(project_dir, "assets", "data", "korean_words.json")
     seen_words = set()
     result = []
 
-    # Read base starter words
-    if os.path.exists(existing_file):
-        with open(existing_file, "r", encoding="utf-8") as f:
-            existing_words = json.load(f)
-            for w in existing_words:
-                result.append(w)
-                seen_words.add(w["word"].strip())
-
+    # 1. Base Starter Words (from raw starter if needed or direct from categories)
     categories_map = [
-        ("한글 기초 & 생존 회화", BASICS_WORDS + BASICS_WORDS_2 + FINAL_TOUCH_WORDS[:10]),
-        ("TOPIK I 초급 필수 어휘", TOPIK1_WORDS + TOPIK1_WORDS_2 + TOPIK1_WORDS_3 + FINAL_TOUCH_WORDS[10:18]),
-        ("TOPIK II 중급 핵심 어휘", TOPIK2_WORDS + TOPIK2_WORDS_2 + TOPIK2_WORDS_3 + FINAL_TOUCH_WORDS[18:]),
-        ("K-드라마 & 실전 리얼 회화", KDRAMA_WORDS + KDRAMA_WORDS_2 + KDRAMA_WORDS_3 + KDRAMA_WORDS_4),
-        ("비즈니스 & 시사 고급 한국어", BUSINESS_WORDS + BUSINESS_WORDS_2),
+        ("한글 기초 & 생존 회화",
+         BASICS_WORDS + BASICS_WORDS_2 + FINAL_TOUCH_WORDS[:10] + P2_BASICS_WORDS_1 + P2_BASICS_WORDS_2 + FINAL_TOUCH_P2_BASICS),
+        ("TOPIK I 초급 필수 어휘",
+         TOPIK1_WORDS + TOPIK1_WORDS_2 + TOPIK1_WORDS_3 + FINAL_TOUCH_WORDS[10:18] + P2_TOPIK1_WORDS_1 + P2_TOPIK1_WORDS_2 + FINAL_TOUCH_P2_TOPIK1),
+        ("TOPIK II 중급 핵심 어휘",
+         TOPIK2_WORDS + TOPIK2_WORDS_2 + TOPIK2_WORDS_3 + FINAL_TOUCH_WORDS[18:] + P2_TOPIK2_WORDS_1 + P2_TOPIK2_WORDS_2 + FINAL_TOUCH_P2_TOPIK2),
+        ("K-드라마 & 실전 리얼 회화",
+         KDRAMA_WORDS + KDRAMA_WORDS_2 + KDRAMA_WORDS_3 + KDRAMA_WORDS_4 + P2_KDRAMA_WORDS_1 + P2_KDRAMA_WORDS_2 + FINAL_TOUCH_P2_KDRAMA),
+        ("비즈니스 & 시사 고급 한국어",
+         BUSINESS_WORDS + BUSINESS_WORDS_2 + P2_BUSINESS_WORDS_1 + P2_BUSINESS_WORDS_2 + FINAL_TOUCH_P2_BUSINESS),
     ]
+
+    # Also keep the 46 original starter words first
+    orig_starter_file = os.path.join(project_dir, "assets", "data", "korean_words.json")
+    if os.path.exists(orig_starter_file):
+        with open(orig_starter_file, "r", encoding="utf-8") as f:
+            prev_all = json.load(f)
+            for item in prev_all[:46]:
+                w_str = item["word"].strip()
+                if w_str not in seen_words:
+                    seen_words.add(w_str)
+                    result.append(item)
 
     added_count = 0
     for cat_name, word_list in categories_map:
@@ -73,7 +103,7 @@ def main():
             result.append(entry)
             added_count += 1
 
-    # Re-index all IDs k0001 to kNNNN sequentially
+    # Re-index all IDs sequentially k0001 to kNNNN
     for i, item in enumerate(result, 1):
         item["id"] = f"k{i:04d}"
 
