@@ -3,20 +3,12 @@ allprojects {
         google()
         mavenCentral()
     }
-    tasks.configureEach {
-        doFirst {
-            try {
-                fileTree(project.layout.buildDirectory) {
-                    include("**/desktop.ini")
-                    include("**/Thumbs.db")
-                }.forEach {
-                    it.setWritable(true)
-                    it.delete()
-                }
-            } catch (_: Exception) {}
-        }
+    tasks.withType<org.gradle.api.tasks.bundling.AbstractArchiveTask>().configureEach {
+        exclude("**/desktop.ini")
+        exclude("**/Thumbs.db")
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }
-    tasks.withType<Copy> {
+    tasks.withType<Copy>().configureEach {
         exclude("**/desktop.ini")
         exclude("**/Thumbs.db")
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE

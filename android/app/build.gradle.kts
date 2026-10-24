@@ -28,7 +28,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-
     androidResources {
         ignoreAssetsPattern = "!*.ini:!desktop.ini:!Thumbs.db:!.git:!.svn:!.hg:!.*"
     }
@@ -44,7 +43,7 @@ android {
     signingConfigs {
         create("release") {
             keyAlias = keystoreProperties.getProperty("keyAlias")
-            keyPassword = keystoreProperties.getProperty("keyPassword") // 💡 오타 수정 완료
+            keyPassword = keystoreProperties.getProperty("keyPassword")
             storePassword = keystoreProperties.getProperty("storePassword")
             storeFile = keystoreProperties.getProperty("storeFile")?.let { file(it) }
         }
@@ -61,8 +60,12 @@ android {
     buildTypes {
         release {
             signingConfig = signingConfigs.getByName("release")
-            isMinifyEnabled = false
-            isShrinkResources = false
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
 }
