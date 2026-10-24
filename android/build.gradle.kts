@@ -3,6 +3,19 @@ allprojects {
         google()
         mavenCentral()
     }
+    tasks.configureEach {
+        doFirst {
+            try {
+                fileTree(project.layout.buildDirectory) {
+                    include("**/desktop.ini")
+                    include("**/Thumbs.db")
+                }.forEach {
+                    it.setWritable(true)
+                    it.delete()
+                }
+            } catch (_: Exception) {}
+        }
+    }
     tasks.withType<Copy> {
         exclude("**/desktop.ini")
         exclude("**/Thumbs.db")

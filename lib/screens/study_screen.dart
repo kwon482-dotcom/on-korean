@@ -106,30 +106,32 @@ class _StudyScreenState extends State<StudyScreen>
 
       if (mounted) {
         setState(() {
-          final ja = result['ja']?.trim() ?? '';
+          final ko = result['ko']?.trim() ?? '';
           final translation =
-              (result['en'] ?? result['trans'] ?? result['ko'])?.trim() ?? '';
+              (result['en'] ?? result['trans'] ?? result['ja'])?.trim() ?? '';
           final lang = LocaleService.currentLocale.value.languageCode;
 
-          if (ja.isNotEmpty &&
-              !ja.contains('失敗しました') &&
-              AiService.isValidJapaneseSentence(ja, translation)) {
-            word.exampleJa = ja;
-            if (lang == 'en') {
-              word.exampleEn = translation;
+          if (ko.isNotEmpty &&
+              !ko.contains('실패했습니다') &&
+              AiService.isValidKoreanSentence(ko, translation)) {
+            word.exampleKo = ko;
+            if (lang == 'ja') {
+              word.exampleJa = translation;
             } else {
-              word.exampleKo = translation;
+              word.exampleEn = translation;
             }
             _aiError = null;
             // 💡 생성 성공 시 로컬 영구 캐시 보관 및 에너지 1 소진
-            WordService.cacheAiExample(word.id, ja, translation, langCode: lang);
+            WordService.cacheAiExample(word.id, ko, translation, langCode: lang);
             EnergyService.consume(1);
           } else {
             _aiError = translation.isNotEmpty
                 ? translation
-                : (lang == 'en'
-                    ? 'Failed to generate AI example.'
-                    : 'AI 예문 생성에 실패했습니다.');
+                : (lang == 'ja'
+                    ? 'AI例文の生成に失敗しました。'
+                    : (lang == 'ko'
+                        ? 'AI 예문 생성에 실패했습니다.'
+                        : 'Failed to generate AI example.'));
           }
         });
       }
@@ -650,7 +652,7 @@ class _StudyScreenState extends State<StudyScreen>
                       AnimatedSize(
                         duration: const Duration(milliseconds: 300),
                         curve: Curves.easeInOut,
-                        child: (word.exampleJa.isNotEmpty && AiService.isValidJapaneseSentence(word.exampleJa))
+                        child: (word.targetExample.isNotEmpty && AiService.isValidKoreanSentence(word.targetExample))
                             ? Container(
                                 width: double.infinity,
                                 padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
@@ -730,7 +732,7 @@ class _StudyScreenState extends State<StudyScreen>
                                                 color: isDark ? const Color(0xFF818CF8) : Colors.indigo,
                                               ),
                                               tooltip: LocaleService.tr('listen_example'),
-                                              onPressed: () => TtsService.speak(word.exampleJa),
+                                              onPressed: () => TtsService.speak(word.targetExample),
                                             ),
                                           ],
                                         ),
@@ -738,7 +740,7 @@ class _StudyScreenState extends State<StudyScreen>
                                     ),
                                     const SizedBox(height: 8),
                                     Text(
-                                      word.exampleJa,
+                                      word.targetExample,
                                       style: TextStyle(
                                         fontSize: 14,
                                         fontWeight: FontWeight.w600,

@@ -28,6 +28,11 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+
+    androidResources {
+        ignoreAssetsPattern = "!*.ini:!desktop.ini:!Thumbs.db:!.git:!.svn:!.hg:!.*"
+    }
+
     defaultConfig {
         applicationId = "com.kwon.onkorean"
         minSdk = flutter.minSdkVersion

@@ -20,7 +20,7 @@ class RemoteConfigService {
         RemoteConfigSettings(
           fetchTimeout: const Duration(seconds: 10),
           minimumFetchInterval:
-              kDebugMode ? Duration.zero : const Duration(hours: 1),
+              const Duration(seconds: 10),
         ),
       );
 
@@ -59,9 +59,13 @@ class RemoteConfigService {
             return keys;
           }
         }
+        // 키가 아직 캐시에 없으면 즉시 백그라운드 fetchAndActivate 시도
+        FirebaseRemoteConfig.instance.fetchAndActivate().catchError((_) => false);
       } catch (e) {
         debugPrint('[RemoteConfig] 키 파싱 에러: $e');
       }
+    } else {
+      init();
     }
     return _defaultApiKey.isNotEmpty ? [_defaultApiKey] : [];
   }

@@ -3,7 +3,7 @@ import math
 import shutil
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
-PROJECT_ROOT = r'c:\src\on-vocab'
+PROJECT_ROOT = r'c:\src\on-korean'
 IMGS_DIR = os.path.join(PROJECT_ROOT, 'imgs')
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, 'store_assets')
 ONBOARDING_DIR = os.path.join(PROJECT_ROOT, 'assets', 'onboarding')
@@ -21,23 +21,24 @@ def clean_screenshot(img_path, screen_type='card'):
     """
     Loads screenshot and cleanly removes ad banners:
     - 'home' / 'stats': shifts the bottom navigation bar (y: 2515..2811) up to y=2327 to cover the ad banner,
-      and extends the bottom bar background color (238, 237, 243) down to the bottom (2811).
-    - 'ailab': the ad is at the very bottom (y: 2620..2811). Fills it with the page background color (249, 250, 252).
-    - 'card': no ad banner present.
+      and extends the bottom bar background color down to the bottom (2811).
+    - 'ailab' / 'card': the ad is at the very bottom (y: 2620..2811). Fills it with the page background color.
     """
     im = Image.open(img_path).convert('RGBA')
     w, h = im.size
     
     if screen_type in ('home', 'stats'):
         # Ad is y: 2327..2514. Bottom bar is y: 2515..2811 (height 296)
+        nav_bg = im.getpixel((50, 2750))
         bottom_bar = im.crop((0, 2515, w, h))
         im.paste(bottom_bar, (0, 2327))
         draw = ImageDraw.Draw(im)
-        draw.rectangle([(0, 2327 + bottom_bar.height), (w, h)], fill=(238, 237, 243, 255))
-    elif screen_type == 'ailab':
+        draw.rectangle([(0, 2327 + bottom_bar.height), (w, h)], fill=nav_bg)
+    elif screen_type in ('ailab', 'card'):
         # Ad is y: 2620..2811
+        page_bg = im.getpixel((50, 2550))
         draw = ImageDraw.Draw(im)
-        draw.rectangle([(0, 2620), (w, h)], fill=(249, 250, 252, 255))
+        draw.rectangle([(0, 2620), (w, h)], fill=page_bg)
         
     return im
 
@@ -98,253 +99,235 @@ def create_phone_mockup(screenshot, target_w=710, corner_radius=46, bezel=13, sh
     
     # Subtle inner border for glass effect
     draw = ImageDraw.Draw(frame)
-    draw.rounded_rectangle([(bezel, bezel), (bezel + screen_w, bezel + screen_h)], radius=int(corner_radius * 0.8), outline=(50, 50, 62, 130), width=1)
+    draw.rounded_rectangle([(bezel, bezel), (bezel + screen_w, bezel + screen_h)], radius=int(corner_radius * 0.8), outline=(255, 255, 255, 30), width=1)
     
-    # Punch-hole camera (centered at top)
-    cam_r = max(4, int(target_w * 0.013))
+    # Camera punch-hole
+    cam_r = 7
     cam_x = frame_w // 2
-    cam_y = bezel + int(target_w * 0.033)
-    draw.ellipse([(cam_x - cam_r, cam_y - cam_r), (cam_x + cam_r, cam_y + cam_r)], fill=(4, 4, 5, 255), outline=(32, 32, 38, 180), width=1)
-    draw.ellipse([(cam_x - 2, cam_y - 2), (cam_x - 1, cam_y - 1)], fill=(50, 70, 110, 200))
+    cam_y = bezel + 22
+    draw.ellipse([(cam_x - cam_r, cam_y - cam_r), (cam_x + cam_r, cam_y + cam_r)], fill=(12, 12, 16, 255), outline=(35, 35, 45, 255), width=1)
+    draw.ellipse([(cam_x - 2, cam_y - 2), (cam_x + 2, cam_y + 2)], fill=(20, 25, 45, 200)) # camera lens tint
     
-    # Shadow
-    shadow_margin = shadow_blur + 25
-    total_w = frame_w + shadow_margin * 2
-    total_h = frame_h + shadow_margin * 2
+    # Generate shadow
+    shadow_margin = shadow_blur * 2
+    shadow_w = frame_w + shadow_margin * 2
+    shadow_h = frame_h + shadow_margin * 2
     
-    shadow_img = Image.new('RGBA', (total_w, total_h), (0, 0, 0, 0))
-    s_draw = ImageDraw.Draw(shadow_img)
-    s_draw.rounded_rectangle(
-        [(shadow_margin + 2, shadow_margin + 16), (shadow_margin + frame_w - 2, shadow_margin + frame_h + 16)],
+    shadow_layer = Image.new('RGBA', (shadow_w, shadow_h), (0, 0, 0, 0))
+    shadow_draw = ImageDraw.Draw(shadow_layer)
+    shadow_draw.rounded_rectangle(
+        [(shadow_margin, shadow_margin + 12), (shadow_margin + frame_w, shadow_margin + frame_h + 12)],
         radius=corner_radius,
         fill=(0, 0, 0, shadow_opacity)
     )
-    shadow_img = shadow_img.filter(ImageFilter.GaussianBlur(shadow_blur))
-    shadow_img.paste(frame, (shadow_margin, shadow_margin), frame)
+    shadow_layer = shadow_layer.filter(ImageFilter.GaussianBlur(shadow_blur))
     
-    return shadow_img, shadow_margin
+    # Composite frame over shadow
+    mockup = shadow_layer
+    mockup.paste(frame, (shadow_margin, shadow_margin), frame)
+    return mockup, shadow_margin
 
-def render_background_gradient(w, h, top_color, bot_color, glow_color=None, glow_center=None, glow_radius=400):
-    """Renders a smooth vertical gradient with optional radial ambient glow."""
-    base = Image.new('RGB', (w, h))
-    for y in range(h):
-        t = y / (h - 1)
-        r = int(top_color[0] * (1 - t) + bot_color[0] * t)
-        g = int(top_color[1] * (1 - t) + bot_color[1] * t)
-        b = int(top_color[2] * (1 - t) + bot_color[2] * t)
-        ImageDraw.Draw(base).line([(0, y), (w, y)], fill=(r, g, b))
+def generate_store_screenshot(
+    screenshot_path,
+    badge_text,
+    title_text,
+    subtitle_text,
+    font_bold_path,
+    font_reg_path,
+    screen_type,
+    output_path,
+    canvas_w=1080,
+    canvas_h=1920
+):
+    """
+    Composes a 1080x1920 Google Play store screenshot with:
+    - Premium deep indigo-slate vertical gradient background
+    - Pill badge with glowing accent border
+    - Clear bold typographic hierarchy
+    - Centered modern phone mockup
+    """
+    canvas = Image.new('RGBA', (canvas_w, canvas_h), (0, 0, 0, 255))
+    draw = ImageDraw.Draw(canvas)
+    
+    # Background gradient: Deep slate (16, 24, 40) -> Rich navy (11, 15, 29)
+    for y in range(canvas_h):
+        t = y / float(canvas_h)
+        r = int(16 * (1 - t) + 9 * t)
+        g = int(24 * (1 - t) + 13 * t)
+        b = int(40 * (1 - t) + 24 * t)
+        draw.line([(0, y), (canvas_w, y)], fill=(r, g, b, 255))
         
-    if glow_color and glow_center:
-        glow = Image.new('RGBA', (w, h), (0, 0, 0, 0))
-        g_draw = ImageDraw.Draw(glow)
-        cx, cy = glow_center
-        steps = 40
-        for i in range(steps, 0, -1):
-            rad = int(glow_radius * (i / steps))
-            alpha = int(glow_color[3] * (1 - (i / steps)**1.4))
-            g_draw.ellipse(
-                [(cx - rad, cy - rad), (cx + rad, cy + rad)],
-                fill=(glow_color[0], glow_color[1], glow_color[2], alpha)
-            )
-        glow = glow.filter(ImageFilter.GaussianBlur(45))
-        base.paste(glow, (0, 0), glow)
-        
-    return base
-
-def draw_centered_text(draw, y, text, font, fill, canvas_w=1080):
-    """Draws horizontally centered text and returns bounding box bottom."""
-    bbox = font.getbbox(text)
-    w = bbox[2] - bbox[0]
-    x = (canvas_w - w) // 2
-    draw.text((x, y), text, font=font, fill=fill)
-    return y + (bbox[3] - bbox[1])
-
-def generate_store_screenshot(screenshot_path, tag, title, subtitle, font_bold_path, font_reg_path, screen_type, output_path):
-    """Generates a 1080x1920 Google Play Store screenshot with phone mockup."""
-    W, H = 1080, 1920
+    # Top subtle radial glow
+    glow = Image.new('RGBA', (canvas_w, 600), (0, 0, 0, 0))
+    glow_draw = ImageDraw.Draw(glow)
+    glow_draw.ellipse([(-200, -300), (canvas_w + 200, 500)], fill=(79, 70, 229, 38))
+    glow = glow.filter(ImageFilter.GaussianBlur(90))
+    canvas.paste(glow, (0, 0), glow)
     
-    # Premium deep slate & indigo glow background
-    bg = render_background_gradient(
-        W, H,
-        top_color=(15, 23, 42),
-        bot_color=(10, 15, 28),
-        glow_color=(79, 70, 229, 65),
-        glow_center=(540, 360),
-        glow_radius=480
+    draw = ImageDraw.Draw(canvas)
+    
+    # Fonts
+    badge_font = ImageFont.truetype(font_bold_path, 28)
+    title_font = ImageFont.truetype(font_bold_path, 54)
+    sub_font = ImageFont.truetype(font_reg_path, 32)
+    
+    # 1. Pill Badge
+    bbox = badge_font.getbbox(badge_text)
+    bw = bbox[2] - bbox[0]
+    bh = bbox[3] - bbox[1]
+    
+    pad_x = 24
+    pad_y = 12
+    badge_w = bw + pad_x * 2
+    badge_h = bh + pad_y * 2
+    badge_x = (canvas_w - badge_w) // 2
+    badge_y = 125
+    
+    draw.rounded_rectangle(
+        [(badge_x, badge_y), (badge_x + badge_w, badge_y + badge_h)],
+        radius=badge_h // 2,
+        fill=(30, 41, 59, 230),
+        outline=(99, 102, 241, 200),
+        width=2
     )
+    draw.text((badge_x + pad_x, badge_y + pad_y - 2), badge_text, font=badge_font, fill=(199, 210, 254, 255))
     
-    draw = ImageDraw.Draw(bg)
-    font_tag = ImageFont.truetype(font_bold_path, 25)
-    font_title = ImageFont.truetype(font_bold_path, 48)
-    font_sub = ImageFont.truetype(font_reg_path, 25)
+    # 2. Main Title (White)
+    t_bbox = title_font.getbbox(title_text)
+    tw = t_bbox[2] - t_bbox[0]
+    draw.text(((canvas_w - tw) // 2, badge_y + badge_h + 28), title_text, font=title_font, fill=(255, 255, 255, 255))
     
-    # 1. Tag Pill
-    tag_bbox = font_tag.getbbox(tag)
-    tag_w = tag_bbox[2] - tag_bbox[0] + 36
-    tag_h = 42
-    tag_x = (W - tag_w) // 2
-    tag_y = 96
+    # 3. Subtitle (Subtle Slate/Silver)
+    s_bbox = sub_font.getbbox(subtitle_text)
+    sw = s_bbox[2] - s_bbox[0]
+    draw.text(((canvas_w - sw) // 2, badge_y + badge_h + 104), subtitle_text, font=sub_font, fill=(156, 163, 175, 255))
     
-    pill_img = Image.new('RGBA', (W, H), (0, 0, 0, 0))
-    p_draw = ImageDraw.Draw(pill_img)
-    p_draw.rounded_rectangle(
-        [(tag_x, tag_y), (tag_x + tag_w, tag_y + tag_h)],
-        radius=21,
-        fill=(79, 70, 229, 45),
-        outline=(99, 102, 241, 180),
-        width=1
-    )
-    bg.paste(pill_img, (0, 0), pill_img)
+    # 4. Clean and assemble phone mockup
+    raw_ss = clean_screenshot(screenshot_path, screen_type)
+    mockup, shadow_margin = create_phone_mockup(raw_ss, target_w=730, corner_radius=48, bezel=14)
     
-    draw = ImageDraw.Draw(bg)
-    text_x = tag_x + 18
-    text_y = tag_y + 7
-    draw.text((text_x, text_y), tag, font=font_tag, fill=(199, 210, 254))
+    # Center phone mockup horizontally, anchor starting at y=450
+    mockup_x = (canvas_w - mockup.width) // 2
+    mockup_y = 425
+    canvas.paste(mockup, (mockup_x, mockup_y), mockup)
     
-    # 2. Main Title
-    title_y = tag_y + tag_h + 30
-    draw_centered_text(draw, title_y, title, font_title, (255, 255, 255))
-    
-    # 3. Subtitle
-    sub_y = title_y + 74
-    draw_centered_text(draw, sub_y, subtitle, font_sub, (203, 213, 225))
-    
-    # 4. Phone Mockup
-    clean_ss = clean_screenshot(screenshot_path, screen_type=screen_type)
-    phone_img, s_margin = create_phone_mockup(clean_ss, target_w=710, corner_radius=46, bezel=13, shadow_blur=35, shadow_opacity=180)
-    
-    phone_w, phone_h = phone_img.size
-    paste_x = (W - phone_w) // 2
-    paste_y = 430 - s_margin
-    
-    bg.paste(phone_img, (paste_x, paste_y), phone_img)
-    bg.save(output_path, 'PNG', optimize=True)
+    # Save optimized PNG
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    canvas.convert('RGB').save(output_path, 'PNG', optimize=True)
     print(f'Screenshot saved: {output_path}')
 
-def generate_feature_graphic(screen1_path, screen2_path, app_name, slogan, bullets, badge_text, font_bold_path, font_reg_path, output_path):
+def generate_feature_graphic(
+    screenshot_1_path,
+    screenshot_2_path,
+    app_name,
+    slogan,
+    bullets,
+    badge_text,
+    font_bold_path,
+    font_reg_path,
+    output_path,
+    canvas_w=1024,
+    canvas_h=500
+):
     """
-    Generates a 1024x500 Google Play Store Feature Graphic with 2 phone mockups,
-    app icon, app name, slogan, and key feature bullets.
+    Renders Google Play 1024x500 Feature Graphic with:
+    - Left side: High-contrast title, rating/badge, value propositions with checkmarks
+    - Right side: 2 stylish angled phone mockups
+    - Sleek dark background with ambient glow
     """
-    W, H = 1024, 500
+    canvas = Image.new('RGBA', (canvas_w, canvas_h), (0, 0, 0, 255))
+    draw = ImageDraw.Draw(canvas)
     
-    # Background: Premium deep dark theme with indigo & coral warmth
-    bg = render_background_gradient(
-        W, H,
-        top_color=(15, 23, 42),
-        bot_color=(10, 15, 28),
-        glow_color=(99, 102, 241, 65),
-        glow_center=(780, 250),
-        glow_radius=420
-    )
+    # Gradient background: rich deep slate -> indigo dark
+    for x in range(canvas_w):
+        t = x / float(canvas_w)
+        r = int(15 * (1 - t) + 11 * t)
+        g = int(23 * (1 - t) + 15 * t)
+        b = int(42 * (1 - t) + 32 * t)
+        draw.line([(x, 0), (x, canvas_h)], fill=(r, g, b, 255))
+        
+    # Ambient corner light
+    light = Image.new('RGBA', (600, 500), (0, 0, 0, 0))
+    light_draw = ImageDraw.Draw(light)
+    light_draw.ellipse([(-150, -100), (500, 400)], fill=(79, 70, 229, 45))
+    light = light.filter(ImageFilter.GaussianBlur(100))
+    canvas.paste(light, (0, 0), light)
     
-    # Secondary coral glow on right
-    coral_glow = Image.new('RGBA', (W, H), (0, 0, 0, 0))
-    cg_draw = ImageDraw.Draw(coral_glow)
-    cg_draw.ellipse([(700, 150), (1020, 480)], fill=(255, 112, 67, 30))
-    coral_glow = coral_glow.filter(ImageFilter.GaussianBlur(60))
-    bg.paste(coral_glow, (0, 0), coral_glow)
+    draw = ImageDraw.Draw(canvas)
     
-    # Left glow for icon/title
-    left_glow = Image.new('RGBA', (W, H), (0, 0, 0, 0))
-    lg_draw = ImageDraw.Draw(left_glow)
-    lg_draw.ellipse([(40, 40), (400, 400)], fill=(79, 70, 229, 25))
-    left_glow = left_glow.filter(ImageFilter.GaussianBlur(55))
-    bg.paste(left_glow, (0, 0), left_glow)
+    # 1. Left Hero Branding
+    brand_x = 58
     
-    # Left Content: App Icon + Typography
-    # 1. App Icon
+    # App Icon (if exists)
+    curr_y = 52
     if os.path.exists(ICON_PATH):
-        raw_icon = Image.open(ICON_PATH).convert('RGBA')
-        icon_size = 72
-        icon_img = raw_icon.resize((icon_size, icon_size), Image.Resampling.LANCZOS)
-        icon_mask = create_rounded_mask((icon_size, icon_size), radius=18)
+        try:
+            icon_img = Image.open(ICON_PATH).convert('RGBA').resize((76, 76), Image.Resampling.LANCZOS)
+            icon_mask = create_rounded_mask((76, 76), radius=18)
+            canvas.paste(icon_img, (brand_x, curr_y), icon_mask)
+            
+            # App Name beside icon
+            app_font = ImageFont.truetype(font_bold_path, 38)
+            draw.text((brand_x + 94, curr_y + 4), app_name, font=app_font, fill=(255, 255, 255, 255))
+            
+            # Badge pill below app name
+            pill_font = ImageFont.truetype(font_bold_path, 16)
+            pill_bbox = pill_font.getbbox(badge_text)
+            pw = pill_bbox[2] - pill_bbox[0] + 32
+            ph = pill_bbox[3] - pill_bbox[1] + 10
+            
+            draw.rounded_rectangle(
+                [(brand_x + 94, curr_y + 46), (brand_x + 94 + pw, curr_y + 46 + ph)],
+                radius=ph // 2,
+                fill=(30, 41, 59, 230),
+                outline=(99, 102, 241, 200),
+                width=1
+            )
+            # Star icon inside pill
+            draw_star(draw, brand_x + 106, curr_y + 46 + ph // 2, 5, fill=(251, 191, 36, 255))
+            draw.text((brand_x + 118, curr_y + 47), badge_text, font=pill_font, fill=(224, 231, 255, 255))
+            
+            curr_y += 102
+        except Exception as e:
+            print(f"Error loading icon for feature graphic: {e}")
+            curr_y += 20
+            
+    # Slogan Title
+    slogan_font = ImageFont.truetype(font_bold_path, 25)
+    draw.text((brand_x, curr_y), slogan, font=slogan_font, fill=(248, 250, 252, 255))
+    curr_y += 48
+    
+    # Horizontal divider line
+    draw.line([(brand_x, curr_y), (brand_x + 440, curr_y)], fill=(51, 65, 85, 255), width=1)
+    curr_y += 24
+    
+    # Value proposition bullets
+    bullet_font = ImageFont.truetype(font_reg_path, 18)
+    for b_text in bullets:
+        # Checkmark pill
+        chk_r = 10
+        chk_cx = brand_x + chk_r
+        chk_cy = curr_y + 11
+        draw.ellipse([(chk_cx - chk_r, chk_cy - chk_r), (chk_cx + chk_r, chk_cy + chk_r)], fill=(49, 46, 129, 255), outline=(99, 102, 241, 255))
+        draw_vector_checkmark(draw, chk_cx, chk_cy, color=(165, 180, 252, 255), stroke_w=2)
         
-        # Icon shadow
-        icon_bg = Image.new('RGBA', (icon_size + 12, icon_size + 12), (0, 0, 0, 0))
-        ib_draw = ImageDraw.Draw(icon_bg)
-        ib_draw.rounded_rectangle([(4, 4), (icon_size + 8, icon_size + 8)], radius=19, fill=(0, 0, 0, 150))
-        icon_bg = icon_bg.filter(ImageFilter.GaussianBlur(6))
+        draw.text((brand_x + 30, curr_y), b_text, font=bullet_font, fill=(203, 213, 225, 255))
+        curr_y += 34
         
-        icon_plate = Image.new('RGBA', (icon_size, icon_size), (0, 0, 0, 0))
-        icon_plate.paste(icon_img, (0, 0), icon_mask)
-        ip_draw = ImageDraw.Draw(icon_plate)
-        ip_draw.rounded_rectangle([(0, 0), (icon_size - 1, icon_size - 1)], radius=18, outline=(99, 102, 241, 190), width=1)
-        
-        bg.paste(icon_bg, (50, 46), icon_bg)
-        bg.paste(icon_plate, (54, 50), icon_plate)
-        
-    # Fonts
-    font_name = ImageFont.truetype(font_bold_path, 34)
-    font_slogan = ImageFont.truetype(font_bold_path, 20)
-    font_bullet = ImageFont.truetype(font_reg_path, 17)
-    font_badge = ImageFont.truetype(font_bold_path, 13)
+    # 2. Right Side: 2 Sleek Floating Phone Mockups
+    ss2 = clean_screenshot(screenshot_2_path, 'card')
+    phone2, _ = create_phone_mockup(ss2, target_w=230, corner_radius=22, bezel=6, shadow_blur=20, shadow_opacity=190)
+    phone2_rot = phone2.rotate(8, resample=Image.Resampling.BICUBIC, expand=True)
+    canvas.paste(phone2_rot, (735, 45), phone2_rot)
     
-    draw = ImageDraw.Draw(bg)
+    ss1 = clean_screenshot(screenshot_1_path, 'home')
+    phone1, _ = create_phone_mockup(ss1, target_w=248, corner_radius=24, bezel=7, shadow_blur=28, shadow_opacity=220)
+    phone1_rot = phone1.rotate(-6, resample=Image.Resampling.BICUBIC, expand=True)
+    canvas.paste(phone1_rot, (530, 25), phone1_rot)
     
-    # App Name (Next to Icon)
-    name_x = 142
-    name_y = 66
-    draw.text((name_x, name_y), app_name, font=font_name, fill=(255, 255, 255))
-    
-    # Slogan / Tagline
-    slogan_x = 54
-    slogan_y = 144
-    draw.text((slogan_x, slogan_y), slogan, font=font_slogan, fill=(255, 140, 100))
-    
-    # Decorative line
-    draw.line([(54, 184), (480, 184)], fill=(50, 52, 65, 255), width=1)
-    
-    # Feature Bullet Points with Vector Checkmarks
-    bullet_y = 206
-    for b in bullets:
-        # Checkbox background
-        box_x = 54
-        box_y = bullet_y
-        draw.rounded_rectangle([(box_x, box_y), (box_x + 22, box_y + 22)], radius=5, fill=(79, 70, 229, 45), outline=(99, 102, 241, 190), width=1)
-        
-        # Crisp Vector Checkmark
-        draw_vector_checkmark(draw, cx=box_x + 11, cy=box_y + 11, color=(165, 180, 252), stroke_w=2)
-        
-        # Bullet Text
-        draw.text((box_x + 34, box_y + 1), b, font=font_bullet, fill=(226, 232, 240))
-        bullet_y += 44
-        
-    # Bottom Rating Badge Pill (Vector Star + Text)
-    badge_x = 54
-    badge_y = 368
-    badge_bbox = font_badge.getbbox(badge_text)
-    badge_text_w = badge_bbox[2] - badge_bbox[0]
-    badge_w = badge_text_w + 58
-    badge_h = 38
-    draw.rounded_rectangle([(badge_x, badge_y), (badge_x + badge_w, badge_y + badge_h)], radius=8, fill=(30, 35, 55, 220), outline=(79, 70, 229, 180), width=1)
-    
-    # Vector Gold Star
-    draw_star(draw, cx=badge_x + 22, cy=badge_y + 19, r=8, fill=(255, 190, 60))
-    # Badge Text
-    draw.text((badge_x + 38, badge_y + 11), badge_text, font=font_badge, fill=(255, 210, 120))
-    
-    # Right Side: 2 Phone Mockups floating smoothly
-    # Back Phone (Screen 1 - Home screen, target_w = 185)
-    clean_ss1 = clean_screenshot(screen1_path, screen_type='home')
-    phone1, m1 = create_phone_mockup(clean_ss1, target_w=185, corner_radius=25, bezel=8, shadow_blur=22, shadow_opacity=150)
-    
-    # Front Phone (Screen 2 - Flashcard screen, target_w = 200)
-    clean_ss2 = clean_screenshot(screen2_path, screen_type='card')
-    phone2, m2 = create_phone_mockup(clean_ss2, target_w=200, corner_radius=27, bezel=9, shadow_blur=28, shadow_opacity=190)
-    
-    # Paste Back phone
-    p1_x = 545 - m1
-    p1_y = 52 - m1
-    bg.paste(phone1, (p1_x, p1_y), phone1)
-    
-    # Paste Front phone (overlapping)
-    p2_x = 725 - m2
-    p2_y = 42 - m2
-    bg.paste(phone2, (p2_x, p2_y), phone2)
-    
-    # Save as 24-bit PNG
-    bg.save(output_path, 'PNG', optimize=True)
+    # Save optimized PNG
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    canvas.convert('RGB').save(output_path, 'PNG', optimize=True)
     print(f'Feature graphic saved: {output_path}')
 
 def main():
@@ -357,23 +340,23 @@ def main():
     # ----------------------------------------------------
     ko_ss = [
         (
-            'Screenshot_20261015_185440_OnVocab.jpg',
+            'Screenshot_20261024_142509_OnKorean.jpg',
             '매일 10단어 SRS',
-            '작심삼일을 넘어 매일 완성하는 단어 습관',
-            '하루 10단어로 부담 없이 채우는 실전 일본어 어휘력',
+            '작심삼일을 넘어 매일 완성하는 한국어 습관',
+            '하루 10단어로 부담 없이 채우는 실전 한국어 어휘력',
             'home',
             'screenshot_1_home.png'
         ),
         (
-            'Screenshot_20261015_185447_OnVocab.jpg',
+            'Screenshot_20261024_142517_OnKorean.jpg',
             '스마트 플래시카드',
-            '후리가나 & 원어민 발음으로 생생한 암기',
-            '탭하여 뜻 확인, AI 실전문장과 음성으로 확실하게',
+            '원어민 발음 & AI 실전 예문으로 생생한 암기',
+            '탭하여 뜻 확인, AI 문맥 예문과 한국어 음성으로 확실하게',
             'card',
             'screenshot_2_card.png'
         ),
         (
-            'Screenshot_20261015_185502_OnVocab.jpg',
+            'Screenshot_20261024_142527_OnKorean.jpg',
             'AI 실전 랩',
             'AI가 만드는 1분 단문 독해 & 청해 퀴즈',
             '외운 단어를 문맥 속에서 바로 읽고 듣는 실전 훈련',
@@ -381,7 +364,7 @@ def main():
             'screenshot_3_ailab.png'
         ),
         (
-            'Screenshot_20261015_185507_OnVocab.jpg',
+            'Screenshot_20261024_142533_OnKorean.jpg',
             '오답노트 & 학습통계',
             '틀린 단어 완벽 복습 & 7일 성장 그래프',
             '카테고리별 달성률과 연속 학습 스트릭으로 동기부여',
@@ -399,16 +382,16 @@ def main():
         shutil.copy2(out_p, os.path.join(ONBOARDING_DIR, 'ko', out_name))
         
     generate_feature_graphic(
-        os.path.join(IMGS_DIR, 'Screenshot_20261015_185440_OnVocab.jpg'),
-        os.path.join(IMGS_DIR, 'Screenshot_20261015_185447_OnVocab.jpg'),
-        app_name="작심삼일본어",
-        slogan="매일 10단어로 끝내는 일본어 단어 완벽 마스터",
+        os.path.join(IMGS_DIR, 'Screenshot_20261024_142509_OnKorean.jpg'),
+        os.path.join(IMGS_DIR, 'Screenshot_20261024_142517_OnKorean.jpg'),
+        app_name="작심삼일 한국어",
+        slogan="매일 10단어로 끝내는 한국어 단어 완벽 마스터",
         bullets=[
             "망각 곡선 기반 매일 10단어 SRS 암기 시스템",
-            "실전 AI 1분 JLPT 단문 독해 & 청해 퀴즈",
-            "JLPT 급수별 · 비즈니스 · 여행 테마별 맞춤 학습"
+            "실전 AI 1분 한국어 단문 독해 & 청해 퀴즈",
+            "한글 기초부터 TOPIK I·II, K-드라마 실전 회화까지"
         ],
-        badge_text="4.9  •  작심삼일 일본어",
+        badge_text="4.9  •  작심삼일 한국어",
         font_bold_path=FONT_KO_BOLD,
         font_reg_path=FONT_KO_REG,
         output_path=os.path.join(OUTPUT_DIR, 'ko', 'feature_graphic_1024x500.png')
@@ -423,31 +406,31 @@ def main():
     # ----------------------------------------------------
     ja_ss = [
         (
-            'Screenshot_20261015_185514_OnVocab.jpg',
+            'Screenshot_20261024_142428_OnKorean.jpg',
             '毎日10単語 SRS',
-            '三日坊主を卒業！続く単語学習ルーティン',
+            '三日坊主を卒業！続くハングル学習ルーティン',
             '無理のない分量で確実に身につく間隔反復暗記',
             'home',
             'screenshot_1_home.png'
         ),
         (
-            'Screenshot_20261015_185518_OnVocab.jpg',
+            'Screenshot_20261024_142437_OnKorean.jpg',
             '実践フラッシュカード',
-            'ふりがな・ネイティブ音声でスマートに記憶',
-            'タップで意味確認、AI実例文とリスニングで定着',
+            'ネイティブ音声＆AI実例文でスマートに記憶',
+            'タップで意味確認、AI例文とリスニングで定着',
             'card',
             'screenshot_2_card.png'
         ),
         (
-            'Screenshot_20261015_185523_OnVocab.jpg',
+            'Screenshot_20261024_142452_OnKorean.jpg',
             'AI実践ラボ',
             'AIがリアルタイム生成する1分読解＆聴解',
-            '学んだ単語を文脈で理解！JLPT形式の即答クイズ',
+            '学んだ単語を文脈で理解！TOPIK形式の即答クイズ',
             'ailab',
             'screenshot_3_ailab.png'
         ),
         (
-            'Screenshot_20261015_185527_OnVocab.jpg',
+            'Screenshot_20261024_142459_OnKorean.jpg',
             '学習統計＆復習ノート',
             '直近7日間の学習推移と弱点克服ノート',
             '暗記達成率と連続学習ストリークでモチベーションUP',
@@ -465,16 +448,16 @@ def main():
         shutil.copy2(out_p, os.path.join(ONBOARDING_DIR, 'ja', out_name))
         
     generate_feature_graphic(
-        os.path.join(IMGS_DIR, 'Screenshot_20261015_185514_OnVocab.jpg'),
-        os.path.join(IMGS_DIR, 'Screenshot_20261015_185518_OnVocab.jpg'),
-        app_name="三日坊主日本語",
-        slogan="毎日10単語！忘却曲線ベースの語彙定着システム",
+        os.path.join(IMGS_DIR, 'Screenshot_20261024_142428_OnKorean.jpg'),
+        os.path.join(IMGS_DIR, 'Screenshot_20261024_142437_OnKorean.jpg'),
+        app_name="三日坊主韓国語",
+        slogan="毎日10単語！忘却曲線ベースのハングル単語定着システム",
         bullets=[
             "忘却曲線を科学したSRS間隔反復学習システム",
-            "AIが生成する1分JLPT短文読解＆聴解クイズ",
-            "JLPTレベル別・テーマ別（ビジネス・旅行・IT）収録"
+            "AIが生成する1分韓国語短文読解＆聴解クイズ",
+            "ハングル基礎・TOPIK I·II・K-POP＆ドラマ日常会話収録"
         ],
-        badge_text="4.9  •  三日坊主日本語",
+        badge_text="4.9  •  三日坊主韓国語",
         font_bold_path=FONT_JA_BOLD,
         font_reg_path=FONT_JA_REG,
         output_path=os.path.join(OUTPUT_DIR, 'ja', 'feature_graphic_1024x500.png')
@@ -489,7 +472,7 @@ def main():
     # ----------------------------------------------------
     en_ss = [
         (
-            'Screenshot_20261015_185533_OnVocab.jpg',
+            'Screenshot_20261024_142246_OnKorean.jpg',
             'DAILY 10 WORDS SRS',
             'Build Lasting Habits Beyond Day 3',
             'Effortless daily vocabulary memorization with smart repetition',
@@ -497,23 +480,23 @@ def main():
             'screenshot_1_home.png'
         ),
         (
-            'Screenshot_20261015_185537_OnVocab.jpg',
+            'Screenshot_20261024_142406_OnKorean.jpg',
             'SMART FLASHCARDS',
-            'Furigana, Audio & AI Context Sentences',
+            'Native Audio & AI Context Sentences',
             'Tap to reveal meanings and listen with native pronunciation',
             'card',
             'screenshot_2_card.png'
         ),
         (
-            'Screenshot_20261015_185546_OnVocab.jpg',
+            'Screenshot_20261024_142302_OnKorean.jpg',
             'AI PRACTICE LAB',
             '1-Min AI Reading & Listening Challenges',
-            'Contextual comprehension quizzes tailored to your JLPT level',
+            'Contextual comprehension quizzes tailored to your TOPIK level',
             'ailab',
             'screenshot_3_ailab.png'
         ),
         (
-            'Screenshot_20261015_185605_OnVocab.jpg',
+            'Screenshot_20261024_142414_OnKorean.jpg',
             'ANALYTICS & REVIEW',
             'Mastery Analytics & Smart Review Queue',
             'Track 7-day study trends and turn weak spots into strengths',
@@ -531,16 +514,16 @@ def main():
         shutil.copy2(out_p, os.path.join(ONBOARDING_DIR, 'en', out_name))
         
     generate_feature_graphic(
-        os.path.join(IMGS_DIR, 'Screenshot_20261015_185533_OnVocab.jpg'),
-        os.path.join(IMGS_DIR, 'Screenshot_20261015_185537_OnVocab.jpg'),
-        app_name="OnVocab",
-        slogan="Master Japanese Vocabulary with Daily 10 Words",
+        os.path.join(IMGS_DIR, 'Screenshot_20261024_142246_OnKorean.jpg'),
+        os.path.join(IMGS_DIR, 'Screenshot_20261024_142406_OnKorean.jpg'),
+        app_name="OnKorean",
+        slogan="Master Korean Vocabulary with Daily 10 Words",
         bullets=[
             "Science-backed Spaced Repetition (SRS) flashcards",
-            "AI-generated 1-minute JLPT reading & listening quizzes",
-            "JLPT N5-N1 levels and practical themes (Business, Travel, IT)"
+            "AI-generated 1-minute reading & listening quizzes",
+            "Hangul Basics, TOPIK I·II, K-Drama & Real-Life Phrases"
         ],
-        badge_text="4.9  •  AI JAPANESE VOCAB",
+        badge_text="4.9  •  AI KOREAN VOCAB",
         font_bold_path=FONT_EN_BOLD,
         font_reg_path=FONT_EN_REG,
         output_path=os.path.join(OUTPUT_DIR, 'en', 'feature_graphic_1024x500.png')

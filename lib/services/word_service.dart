@@ -105,15 +105,15 @@ class WordService {
             if (cachedMap.containsKey(word.id)) {
               final item = cachedMap[word.id];
               if (item is Map) {
-                final ja = item['ja']?.toString() ?? '';
                 final ko = item['ko']?.toString() ?? '';
+                final ja = item['ja']?.toString() ?? '';
                 final en = item['en']?.toString() ?? '';
-                if (ja.isNotEmpty && AiService.isValidJapaneseSentence(ja, ko.isNotEmpty ? ko : en)) {
-                  word.exampleJa = ja;
+                if (ko.isNotEmpty && AiService.isValidKoreanSentence(ko, en.isNotEmpty ? en : ja)) {
                   word.exampleKo = ko;
+                  word.exampleJa = ja;
                   word.exampleEn = en;
                 } else {
-                  // 한글이 섞이거나 잘못 캐시된 과거 예문 즉시 자동 파기
+                  // 잘못 캐시된 과거 예문 즉시 자동 파기
                   cachedMap.remove(word.id);
                   hasDirty = true;
                 }
@@ -585,7 +585,7 @@ class WordService {
   /// 💡 AI 생성 예문 로컬 영구 캐싱 (동일 단어 재학습 시 API 호출 및 에너지 낭비 방지)
   static Future<void> cacheAiExample(
     String wordId,
-    String ja,
+    String ko,
     String translation, {
     String? langCode,
     String? jaTranslation,
@@ -594,12 +594,14 @@ class WordService {
     // 1. 메모리 상의 단어 모델 즉시 갱신
     for (var word in _allWords) {
       if (word.id == wordId) {
-        word.exampleJa = jaTranslation ?? ja;
-        word.exampleKo = ja;
-        if (code == 'en') {
+        word.exampleKo = ko;
+        if (code == 'ja') {
+          word.exampleJa = translation;
+        } else if (code == 'en') {
           word.exampleEn = translation;
-        } else {
-          word.exampleKo = translation;
+        }
+        if (jaTranslation != null && jaTranslation.isNotEmpty) {
+          word.exampleJa = jaTranslation;
         }
         break;
       }
@@ -618,11 +620,14 @@ class WordService {
       final existing = (cachedMap[wordId] is Map)
           ? Map<String, dynamic>.from(cachedMap[wordId])
           : <String, dynamic>{};
-      existing['ja'] = jaTranslation ?? ja;
-      if (code == 'en') {
-        existing['en'] = translation;
+      existing['ko'] = ko;
+      if (code == 'ja') {
+        existing['ja'] = translation;
       } else {
-        existing['ko'] = translation;
+        existing['en'] = translation;
+      }
+      if (jaTranslation != null && jaTranslation.isNotEmpty) {
+        existing['ja'] = jaTranslation;
       }
       cachedMap[wordId] = existing;
       await prefs.setString(_prefCachedAiExamplesKey, jsonEncode(cachedMap));
