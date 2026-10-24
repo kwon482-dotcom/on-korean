@@ -20,6 +20,9 @@ class ReadingVocabSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final langCode = LocaleService.currentLocale.value.languageCode;
+    final flag = langCode == 'ja' ? '🇯🇵' : (langCode == 'en' ? '🇺🇸' : '🇰🇷');
+    final localizedText = reading.getLocalizedTranslation(langCode);
 
     return Card(
       elevation: 1,
@@ -38,7 +41,7 @@ class ReadingVocabSection extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              '🇯🇵 ↔️ ${LocaleService.tr('reading_trans_title')}',
+              '$flag ↔️ ${LocaleService.tr('reading_trans_title')}',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 13,
@@ -58,7 +61,7 @@ class ReadingVocabSection extends StatelessWidget {
               border: isDark ? Border.all(color: const Color(0xFF334155)) : null,
             ),
             child: Text(
-              reading.passageKo,
+              localizedText,
               style: TextStyle(
                 fontSize: 13.5,
                 height: 1.6,

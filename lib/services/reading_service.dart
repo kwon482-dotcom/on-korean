@@ -216,7 +216,9 @@ class ReadingService {
         : chosen['category']!;
     final detailTopic = chosen['detail']!;
 
-    final isEn = LocaleService.currentLocale.value.languageCode == 'en';
+    final langCode = LocaleService.currentLocale.value.languageCode;
+    final isEn = langCode == 'en';
+    final isJa = langCode == 'ja';
     final modeLabel = type == 'listening' ? '듣기(청해 평가)' : '단문 독해';
     final formatHint = type == 'listening'
         ? '''1. [듣기 모드 필수 지침]:
@@ -228,7 +230,60 @@ class ReadingService {
 - 질문(questionKo)은 지문의 핵심 내용이나 글쓴이의 중심 생각을 묻는 문제(TOPIK 형식)로 출제할 것.''';
 
     final String prompt;
-    if (isEn) {
+    if (isJa) {
+      final jaFormatHint = type == 'listening'
+          ? '''1. 【リスニングモード必須要件】:
+- リスニング評価に最適な生き生きとした2人の韓国語日常会話（例：日常会話、店員と客、同僚、友達）またはアナウンス放送形式（3〜5文）。
+- 2人会話の場合は必ず話者名（例：민수：..., 지수：... または 손님：..., 직원：...）を先頭に付けること。
+- 質問(questionKo)はTOPIK形式のリスニング設問（例：「남자는 이어서 무엇을 하겠습니까?」など）にすること。'''
+          : '''1. 【短文読解モード必須要件】:
+- 1分でサクッと読める3〜5文の自然な標準韓国語短文。
+- 質問(questionKo)はTOPIK形式の内容一致または主題把握設問にすること。''';
+
+      prompt =
+          '''
+あなたは韓国語教育の最高専門家であり、TOPIK（韓国語能力試験）の出題委員です。
+日本の韓国語学習者（難易度: $level）向けに、「1分ショート韓国語 ${type == 'listening' ? '聴解(リスニング)' : '読解'}カード」を1つ作成してください。
+
+【テーマとシチュエーション】:
+• カテゴリ: $categoryName
+• 状況・素材: $detailTopic
+
+【作成条件】:
+$jaFormatHint
+2. $level レベルにぴったりの自然な韓国語語彙と文法を使用すること。
+3. 理解度をチェックする4択クイズ1問を出題すること。
+4. 本文中の重要韓国語語彙3〜4個を厳選し、発音（ローマ字）と【日本語の意味】をまとめること。
+
+【★言語ルール - 最重要厳守★】:
+• "title", "passageKo", "questionKo", "options"(4つの選択肢すべて)は必ず100%自然な【韓国語(ハングル)】で作成すること。
+• "passageJa"は本文全体の自然で正確な【日本語対訳】。
+• "passageEn"は本文全体の自然な英語訳。
+• "explanation"(正解と解説)は、必ず【日本語】で親切・論理的に作成すること！（韓国語不可）
+• "keyVocab"の"meaning"は、必ず【日本語の意味】で記述すること！（韓国語不可、例: "word": "다방", "reading": "[da-bang]", "meaning": "伝統的な喫茶店"）
+
+マークダウン記法(```json等)は一切含めず、純粋なJSONオブジェクトのみで返答してください:
+{
+  "title": "韓国語タイトル (ハングル)",
+  "theme": "$categoryName",
+  "passageKo": "韓国語本文 (3〜5文の自然なハングル本文または対話文)",
+  "passageJa": "本文全体の自然な日本語訳",
+  "passageEn": "本文全体の英語訳",
+  "questionKo": "韓国語の設問 (ハングル)",
+  "options": [
+    "選択肢1 (ハングル)",
+    "選択肢2 (ハングル)",
+    "選択肢3 (ハングル)",
+    "選択肢4 (ハングル)"
+  ],
+  "correctIndex": 0,
+  "explanation": "日本語による正解とわかりやすい解説 (1〜2文)",
+  "keyVocab": [
+    {"word": "単語(ハングル)", "reading": "[ローマ字発音]", "meaning": "単語の日本語の意味"}
+  ]
+}
+''';
+    } else if (isEn) {
       final enFormatHint = type == 'listening'
           ? '''1. [Listening Mode Requirements]:
 - Write 3-5 sentences of vivid 2-person dialogue (e.g., daily conversation, clerk and customer, coworkers, friends) or a public announcement in natural Korean.

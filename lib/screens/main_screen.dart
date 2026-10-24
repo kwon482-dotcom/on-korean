@@ -139,9 +139,9 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
             data: NavigationBarThemeData(
               labelTextStyle: WidgetStateProperty.resolveWith((states) {
                 if (states.contains(WidgetState.selected)) {
-                  return const TextStyle(fontSize: 11.2, fontWeight: FontWeight.bold);
+                  return const TextStyle(fontSize: 10.8, fontWeight: FontWeight.bold, overflow: TextOverflow.ellipsis);
                 }
-                return const TextStyle(fontSize: 11.2, fontWeight: FontWeight.w500);
+                return const TextStyle(fontSize: 10.8, fontWeight: FontWeight.w500, overflow: TextOverflow.ellipsis);
               }),
             ),
             child: NavigationBar(
