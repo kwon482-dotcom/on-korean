@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "502847163216",
+    "project_id": "on-korean",
+    "storage_bucket": "on-korean.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502847163216:android:c61173807ab70a46bbfa55",
+        "android_client_info": {
+          "package_name": "com.kwon.onkorean"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfGnJfn_a3lERkTg1j0vAmOlOOmph59YA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

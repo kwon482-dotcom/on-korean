@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="widget_card_bg">#FFFFFF</color>
+    <color name="widget_card_stroke">#E0E7FF</color>
+    <color name="widget_text_primary">#1E1B4B</color>
+    <color name="widget_text_secondary">#475569</color>
+    <color name="widget_primary">#4338CA</color>
+    <color name="widget_badge_bg">#EEF2FF</color>
+    <color name="widget_badge_text">#3730A3</color>
+    <color name="widget_furigana">#6366F1</color>
+</resources>
