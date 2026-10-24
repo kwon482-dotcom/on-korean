@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+"""K-드라마 & 실전 리얼 회화 파트 2 (K-Drama & K-Culture Part 2)"""
+
+KDRAMA_WORDS_2 = [
+    ("오빠", "[op-pa]", "Oppa / Older brother (used by females)", "オッパ / お兄さん", "여성이 손위 오빠나 친근한 손위 남성을 부르는 호칭", "명사", "드라마 여주인공이 다정하게 '오빠'라고 불렀어요.", "The female lead in the drama affectionately called him 'Oppa'.", "ドラマの女性主人公が優しく「オッパ」と呼びました。"),
+    ("언니", "[eon-ni]", "Unnie / Older sister (used by females)", "オンニ / お姉さん", "여성이 친언니나 친한 손위 여성을 부르는 호칭", "명사", "친한 언니가 맛있는 삼겹살을 사줬어요.", "A close unnie bought me delicious Samgyeopsal.", "親しいオンニ（お姉さん）が美味しいサムギョプサルを奢ってくれました。"),
+    ("형", "[hyeong]", "Hyung / Older brother (used by males)", "ヒョン / 兄貴", "남성이 친형이나 친근한 손위 남성을 부르는 호칭", "명사", "군대에서 만난 좋은 형들과 아직도 연락해요.", "I still keep in touch with the great hyungs met in the military.", "軍隊で出会った良いヒョンたちと今でも連絡を取り合っています。"),
+    ("누나", "[nu-na]", "Noona / Older sister (used by males)", "ヌナ / お姉さん", "남성이 친누나나 친한 손위 여성을 부르는 호칭", "명사", "밥 잘 사주는 예쁜 누나 드라마가 참 따뜻했어요.", "The drama 'Something in the Rain (Pretty Noona)' was so warm.", "「よくおごってくれる綺麗なお姉さん」のドラマが本当に温かかったです。"),
+    ("막내", "[mang-nae]", "Maknae / Youngest member", "マンネ / 末っ子", "형제나 그룹에서 나이가 가장 어린 사람", "명사", "아이돌 그룹의 귀여운 막내 멤버가 애교를 부려요.", "The cute maknae member of the idol group shows off Aegyo.", "アイドルグループの可愛いマンネ（末っ子）メンバーが愛嬌を振りまきます。"),
+    ("애교", "[ae-gyo]", "Aegyo / Cute display", "愛嬌 (あいきょう)", "귀엽고 사랑스럽게 굴어 상대의 마음을 녹이는 태도", "명사", "팬사인회에서 팬들을 위해 깜찍한 애교를 보여줬어요.", "At the fansign, they showed adorable aegyo for fans.", "ファンサイン会でファンのために愛らしい愛嬌を見せてくれました。"),
+    ("케미", "[ke-mi]", "Chemistry", "ケミ / 相性", "'Chemistry'에서 유래하여 둘 사이의 환상적인 어울림을 뜻함", "명사", "로맨스 코미디 주연 배우 둘의 케미가 환상적이에요.", "The chemistry between the two romantic comedy leads is fantastic.", "ラブコメの主演俳優二人のケミ（相性）が幻想的です。"),
+    ("팬싸", "[paen-ssa]", "Fansign event", "サイン会 / ペンサ", "'팬사인회'의 줄임말로 아이돌과 직접 대화하고 사인받는 행사", "명사", "앨범을 여러 장 사서 드디어 주말 팬싸에 당첨됐어요!", "I bought multiple albums and finally won entry to the weekend fansign!", "アルバムを何枚も買って、ついに週末のサイン会に当選しました！"),
+    ("포카", "[po-ka]", "Photocard", "フォトカード / ポカ", "'포토카드'의 줄임말로 앨범에 랜덤으로 들어있는 멤버 사진 카드", "명사", "원하던 최애 멤버 포카가 나와서 기뻐서 소리 질렀어요.", "I got the photocard of my ultimate bias, so I shouted with joy.", "欲しかった推しメンバーのポカが出て、嬉しくて叫びました。"),
+    ("입덕", "[ip-deok]", "Becoming a fan / Entering fandom", "沼落ち / 入オタ", "'입문 + 덕후'의 합성어로 어떤 아이돌이나 작품의 열렬한 팬이 됨", "명사", "신곡 무대 직캠 영상을 보고 단번에 입덕해 버렸어요.", "Watching the fancam of the new song stage, I fell into the fandom at once.", "新曲ステージのチッケム（ファンカム）動画を見て一気に沼落ちしてしまいました。"),
+    ("탈덕", "[tal-deok]", "Leaving the fandom", "オタ卒 / 担降り", "'탈출 + 덕후'의 합성어로 팬 활동을 그만두고 떠남", "명사", "한번 입덕하면 절대 출구 없는 매력이라 탈덕할 수 없어요.", "Once you become a fan, the charm has no exit, so you can never leave.", "一度沼落ちしたら絶対に出口のない魅力なので、オタ卒できません。"),
+    ("역주행", "[yeok-ju-haeng]", "Chart climbing (delayed hit)", "逆走 (チャート逆走)", "발매된 지 오래된 노래가 뒤늦게 입소문을 타고 차트 상위권에 오름", "명사", "SNS 쇼츠 영상 덕분에 옛날 노래가 음원 차트에서 역주행 중이에요.", "Thanks to SNS shorts, the old song is climbing the music charts.", "SNSのショート動画のおかげで昔の歌が音楽チャートで逆走中です。"),
+    ("인생샷", "[in-saeng-syat]", "Photo of a lifetime", "人生ショット (最高の一枚)", "살면서 찍은 사진 중 가장 예쁘고 완벽하게 잘 나온 사진", "명사", "북촌 한옥마을에서 한복 입고 인생샷을 건졌어요.", "I got the photo of a lifetime wearing Hanbok in Bukchon Hanok Village.", "北村韓屋村で韓服を着て人生最高の一枚が撮れました。"),
+    ("불소", "[bul-so]", "Fiery communication / Active interaction", "熱心なコミュニケーション", "'불타는 소통'의 줄임말로 라이브 방송에서 팬들과 열정적으로 소통함", "명사", "아이돌 멤버가 위버스 라이브에서 두 시간 동안 불소를 해줬어요.", "The idol member actively communicated with fans for two hours on live.", "アイドルメンバーがWeverseライブで2時間の間、熱心にコミュニケーションしてくれました。"),
+    ("사이다", "[sa-i-da]", "Refreshing resolution / Satisfying justice", "サイダー (すっきり爽快な展開)", "답답했던 악역이 벌을 받고 속이 뻥 뚫리듯 통쾌한 순간을 비유", "명사", "악당에게 통쾌하게 복수하는 주인공의 모습이 완전 사이다였어요.", "The protagonist getting thrilling revenge on the villain was so satisfying.", "悪役に痛快に復讐する主人公の姿が完全にサイダー（すっきり爽快）でした。"),
+    ("고구마", "[go-gu-ma]", "Frustrating / Suffocating plot", "サツマイモ (もどかしい展開)", "목이 메는 고구마처럼 답답하고 진전 없는 드라마 전개를 비유", "명사", "주인공들이 오해를 안 풀고 질질 끄니까 너무 고구마야.", "The leads aren't clearing up misunderstandings, so it's so frustrating.", "主人公たちが誤解を解かずに引っ張るので、あまりにももどかしいです。"),
+    ("금수저", "[geum-su-jeo]", "Born with a silver spoon", "金のスプーン (裕福な生まれ)", "부유하고 영향력 있는 집안에서 태어난 특권층을 비유", "명사", "드라마 주인공은 재벌가 금수저 집안의 후계자예요.", "The drama lead is an heir born into a chaebol silver-spoon family.", "ドラマの主人公は財閥家の金のスプーン（裕福な家庭）の後継者です。"),
+    ("흙수저", "[heuk-su-jeo]", "Born into humble beginnings", "土のスプーン (庶民・貧困の生まれ)", "가난하고 평범한 집안에서 태어나 스스로 자수성가해야 하는 처지", "명사", "흙수저 출신이지만 성실하게 노력해서 최고 경영자가 되었어요.", "Though born into humble beginnings, he worked hard and became CEO.", "土のスプーンの生まれですが、誠実に努力して最高経営者になりました。"),
+    ("팩폭", "[paek-pok]", "Hard truth / Facts bomb", "事実爆撃 (ぐうの音も出ない正論)", "'팩트 폭행'의 줄임말로 너무 정확한 사실로 상대의 정곡을 찌름", "명사", "친구가 내 게으른 습관에 대해 뼈 때리는 팩폭을 날렸어요.", "My friend dropped a hard truth bomb about my lazy habits.", "友達が私の怠惰な習慣について、骨身に染みる痛烈な正論を放ちました。"),
+    ("어그로", "[eo-geu-ro]", "Trolling / Attention grabbing", "アグロ (煽り・炎上狙い)", "관심을 끌기 위해 도발적인 말이나 자극적인 행동을 함", "명사", "자극적인 유튜브 썸네일로 어그로를 끄는 영상이 많아요.", "There are many videos grabbing attention with provocative YouTube thumbnails.", "刺激的なYouTubeのサムネイルで炎上・関心煽りをする動画が多いです。"),
+]
