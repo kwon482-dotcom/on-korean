@@ -4,6 +4,7 @@ import '../services/energy_service.dart';
 import '../services/locale_service.dart';
 import '../services/stats_service.dart';
 import '../services/tts_service.dart';
+import '../services/update_service.dart';
 import '../services/word_service.dart';
 import '../widgets/ad_banner_widget.dart';
 import '../widgets/energy_badge.dart';
@@ -30,6 +31,9 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     _pageController = PageController(initialPage: _currentIndex);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      UpdateService.checkForUpdate(context);
+    });
   }
 
   @override

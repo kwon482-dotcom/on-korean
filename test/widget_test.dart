@@ -16,6 +16,7 @@ import 'package:on_korean/services/tts_service.dart';
 import 'package:on_korean/services/widget_service.dart';
 import 'package:on_korean/services/word_service.dart';
 import 'package:on_korean/services/notification_service.dart';
+import 'package:on_korean/services/update_service.dart';
 import 'package:on_korean/widgets/reading/reading_speed_chip.dart';
 import 'package:on_korean/widgets/reading/reading_passage_card.dart';
 import 'package:on_korean/widgets/reading/reading_quiz_card.dart';
@@ -543,6 +544,10 @@ void main() {
         'archive_filter_reading',
         'archive_filter_listening',
         'archive_empty_filtered',
+        'update_latest',
+        'update_downloaded',
+        'update_restart',
+        'update_check_fail',
         'btn_get_lifetime',
         'btn_try_trial',
         'ad_load_failed',
@@ -1019,5 +1024,12 @@ void main() {
         expect(s2Ids.contains(session1[1].id), false);
       },
     );
+  });
+
+  group('UpdateService Tests', () {
+    test('UpdateService checkForUpdate runs safely without throwing', () async {
+      await expectLater(UpdateService.checkForUpdate(null), completes);
+      await expectLater(UpdateService.checkForUpdate(null, isManualCheck: true), completes);
+    });
   });
 }

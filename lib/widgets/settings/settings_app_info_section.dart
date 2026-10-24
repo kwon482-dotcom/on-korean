@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../services/energy_service.dart';
 import '../../services/locale_service.dart';
+import '../../services/update_service.dart';
 import 'settings_ecosystem_tile.dart';
 
 /// 앱 정보 섹션 (GyuC 생태계 교차 홍보 + 오픈소스 라이선스 + 앱 버전 & VIP 테스터 이스터에그)
@@ -78,6 +79,8 @@ class _SettingsAppInfoSectionState extends State<SettingsAppInfoSection> {
                       ),
                     );
                   }
+                } else {
+                  await UpdateService.checkForUpdate(context, isManualCheck: true);
                 }
               },
             );
