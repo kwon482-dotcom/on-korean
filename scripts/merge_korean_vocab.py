@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Merge all Korean vocabulary datasets, deduplicate, validate, and write JSON files."""
+"""Merge all Korean vocabulary datasets, deduplicate, validate, and write JSON files (1,500 words)."""
 
 import json
 import os
@@ -39,7 +39,7 @@ from data_p2_kdrama_2 import P2_KDRAMA_WORDS_2
 from data_p2_business_1 import P2_BUSINESS_WORDS_1
 from data_p2_business_2 import P2_BUSINESS_WORDS_2
 
-# Phase 2 Final Touch (to reach exactly 1,000 words)
+# Phase 2 Final Touch
 from data_p2_final_touch import (
     FINAL_TOUCH_P2_BASICS,
     FINAL_TOUCH_P2_TOPIK1,
@@ -48,6 +48,13 @@ from data_p2_final_touch import (
     FINAL_TOUCH_P2_BUSINESS,
 )
 
+# Phase 3 Data (to reach 1,500 words)
+from data_p3_basics import P3_BASICS_WORDS
+from data_p3_topik1 import P3_TOPIK1_WORDS
+from data_p3_topik2 import P3_TOPIK2_WORDS
+from data_p3_kdrama import P3_KDRAMA_WORDS
+from data_p3_business import P3_BUSINESS_WORDS
+
 def main():
     seen_words = set()
     result = []
@@ -55,18 +62,18 @@ def main():
     # 1. Base Starter Words (from raw starter if needed or direct from categories)
     categories_map = [
         ("한글 기초 & 생존 회화",
-         BASICS_WORDS + BASICS_WORDS_2 + FINAL_TOUCH_WORDS[:10] + P2_BASICS_WORDS_1 + P2_BASICS_WORDS_2 + FINAL_TOUCH_P2_BASICS),
+         BASICS_WORDS + BASICS_WORDS_2 + FINAL_TOUCH_WORDS[:10] + P2_BASICS_WORDS_1 + P2_BASICS_WORDS_2 + FINAL_TOUCH_P2_BASICS + P3_BASICS_WORDS),
         ("TOPIK I 초급 필수 어휘",
-         TOPIK1_WORDS + TOPIK1_WORDS_2 + TOPIK1_WORDS_3 + FINAL_TOUCH_WORDS[10:18] + P2_TOPIK1_WORDS_1 + P2_TOPIK1_WORDS_2 + FINAL_TOUCH_P2_TOPIK1),
+         TOPIK1_WORDS + TOPIK1_WORDS_2 + TOPIK1_WORDS_3 + FINAL_TOUCH_WORDS[10:18] + P2_TOPIK1_WORDS_1 + P2_TOPIK1_WORDS_2 + FINAL_TOUCH_P2_TOPIK1 + P3_TOPIK1_WORDS),
         ("TOPIK II 중급 핵심 어휘",
-         TOPIK2_WORDS + TOPIK2_WORDS_2 + TOPIK2_WORDS_3 + FINAL_TOUCH_WORDS[18:] + P2_TOPIK2_WORDS_1 + P2_TOPIK2_WORDS_2 + FINAL_TOUCH_P2_TOPIK2),
+         TOPIK2_WORDS + TOPIK2_WORDS_2 + TOPIK2_WORDS_3 + FINAL_TOUCH_WORDS[18:] + P2_TOPIK2_WORDS_1 + P2_TOPIK2_WORDS_2 + FINAL_TOUCH_P2_TOPIK2 + P3_TOPIK2_WORDS),
         ("K-드라마 & 실전 리얼 회화",
-         KDRAMA_WORDS + KDRAMA_WORDS_2 + KDRAMA_WORDS_3 + KDRAMA_WORDS_4 + P2_KDRAMA_WORDS_1 + P2_KDRAMA_WORDS_2 + FINAL_TOUCH_P2_KDRAMA),
+         KDRAMA_WORDS + KDRAMA_WORDS_2 + KDRAMA_WORDS_3 + KDRAMA_WORDS_4 + P2_KDRAMA_WORDS_1 + P2_KDRAMA_WORDS_2 + FINAL_TOUCH_P2_KDRAMA + P3_KDRAMA_WORDS),
         ("비즈니스 & 시사 고급 한국어",
-         BUSINESS_WORDS + BUSINESS_WORDS_2 + P2_BUSINESS_WORDS_1 + P2_BUSINESS_WORDS_2 + FINAL_TOUCH_P2_BUSINESS),
+         BUSINESS_WORDS + BUSINESS_WORDS_2 + P2_BUSINESS_WORDS_1 + P2_BUSINESS_WORDS_2 + FINAL_TOUCH_P2_BUSINESS + P3_BUSINESS_WORDS),
     ]
 
-    # Also keep the 46 original starter words first
+    # Keep original 46 starter words at the front
     orig_starter_file = os.path.join(project_dir, "assets", "data", "korean_words.json")
     if os.path.exists(orig_starter_file):
         with open(orig_starter_file, "r", encoding="utf-8") as f:
