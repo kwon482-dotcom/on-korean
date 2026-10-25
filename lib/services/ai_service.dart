@@ -6,10 +6,11 @@ import 'locale_service.dart';
 import 'remote_config_service.dart';
 
 class AiService {
-  // 💡 Firebase Remote Config를 통해 동적 주입 및 핫픽스되는 최신 API 키 반환
+  // 💡 Firebase Remote Config를 통해 동적 주입 및 핫픽스되는 최신 API 키 반환 (로테이션 적용)
   static String get apiKey {
     final keys = RemoteConfigService.getGeminiApiKeys();
-    return keys.isNotEmpty ? keys.first : '';
+    if (keys.isEmpty) return '';
+    return (List<String>.from(keys)..shuffle()).first;
   }
 
   /// 💡 한국어 예문 엄격 유효성 검증 (순수 한국어 문장 검증 및 복붙 방지)
@@ -98,7 +99,10 @@ Output ONLY a raw valid JSON object with exactly these keys:
 Do NOT include markdown code blocks or extra text.
 ''';
 
-    for (final apiKey in keys) {
+    // 💡 키 로테이션(로드 밸런싱): 여러 키(01, 02 등)를 무작위로 섞어 균등하게 호출하고 쿼터를 극대화
+    final rotatedKeys = List<String>.from(keys)..shuffle();
+
+    for (final apiKey in rotatedKeys) {
       if (apiKey.trim().isEmpty) continue;
 
       for (final model in models) {

@@ -382,7 +382,8 @@ $formatHint
 
     // 💡 최적화: 무료 RPM(15회) 쿼터를 보호하고 과도한 대기 지연을 방지하기 위해 최우선 2개 모델까지만 시도
     final candidateModels = models.take(2).toList();
-    final candidateKeys = keys.take(2).toList();
+    // 💡 키 로테이션(로드 밸런싱): 등록된 키들(01, 02 등)을 무작위 셔플하여 트래픽을 균등 분산 (02번 키 활성화)
+    final candidateKeys = (List<String>.from(keys)..shuffle()).take(2).toList();
 
     for (final currentKey in candidateKeys) {
       for (final model in candidateModels) {
