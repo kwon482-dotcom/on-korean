@@ -55,10 +55,11 @@ from data_p3_topik2 import P3_TOPIK2_WORDS
 from data_p3_kdrama import P3_KDRAMA_WORDS
 from data_p3_business import P3_BUSINESS_WORDS
 
-# Phase 4 Data (Step 1: Basics 100 words, Step 2: TOPIK1 100 words, Step 3: TOPIK2 100 words -> 1,800 words)
+# Phase 4 Data (Step 1: Basics, Step 2: TOPIK1, Step 3: TOPIK2, Step 4: KDrama -> 1,900 words)
 from data_p4_basics import P4_BASICS_WORDS
 from data_p4_topik1 import P4_TOPIK1_WORDS
 from data_p4_topik2 import P4_TOPIK2_WORDS
+from data_p4_kdrama import P4_KDRAMA_WORDS
 
 def main():
     seen_words = set()
@@ -73,7 +74,7 @@ def main():
         ("TOPIK II 중급 핵심 어휘",
          TOPIK2_WORDS + TOPIK2_WORDS_2 + TOPIK2_WORDS_3 + FINAL_TOUCH_WORDS[18:] + P2_TOPIK2_WORDS_1 + P2_TOPIK2_WORDS_2 + FINAL_TOUCH_P2_TOPIK2 + P3_TOPIK2_WORDS + P4_TOPIK2_WORDS),
         ("K-드라마 & 실전 리얼 회화",
-         KDRAMA_WORDS + KDRAMA_WORDS_2 + KDRAMA_WORDS_3 + KDRAMA_WORDS_4 + P2_KDRAMA_WORDS_1 + P2_KDRAMA_WORDS_2 + FINAL_TOUCH_P2_KDRAMA + P3_KDRAMA_WORDS),
+         KDRAMA_WORDS + KDRAMA_WORDS_2 + KDRAMA_WORDS_3 + KDRAMA_WORDS_4 + P2_KDRAMA_WORDS_1 + P2_KDRAMA_WORDS_2 + FINAL_TOUCH_P2_KDRAMA + P3_KDRAMA_WORDS + P4_KDRAMA_WORDS),
         ("비즈니스 & 시사 고급 한국어",
          BUSINESS_WORDS + BUSINESS_WORDS_2 + P2_BUSINESS_WORDS_1 + P2_BUSINESS_WORDS_2 + FINAL_TOUCH_P2_BUSINESS + P3_BUSINESS_WORDS),
     ]
