@@ -326,6 +326,10 @@ class LocaleService {
       'empty_category': '{0} 단어가 아직 없습니다.',
       'ecosystem_title': 'GyuC Studio Apps',
       'ecosystem_subtitle': 'On가계부 · On타이머 · 작심삼일본어 · 했니?',
+      'exit_dialog_title': '앱을 종료하시겠습니까?',
+      'exit_dialog_desc': '오늘의 학습을 여기서 마무리할까요?\n내일도 꾸준히 함께해요!',
+      'exit_dialog_confirm': '앱 종료',
+      'exit_dialog_cancel': '취소',
     },
     'ja': {
       'course_hangul': 'ハングル基礎・必須表現',
@@ -640,6 +644,10 @@ class LocaleService {
       'empty_category': '{0}の単語がまだありません。',
       'ecosystem_title': 'GyuC Studio Apps',
       'ecosystem_subtitle': 'みんなの家計簿 · まとめタイマー · 三日坊主日本語 · やった？',
+      'exit_dialog_title': 'アプリを終了しますか？',
+      'exit_dialog_desc': '本日の学習をここで終了しますか？\n明日も一緒にコツコツ続けましょう！',
+      'exit_dialog_confirm': 'アプリ終了',
+      'exit_dialog_cancel': 'キャンセル',
     },
     'en': {
       'course_hangul': 'Hangul & Survival Basics',
@@ -969,6 +977,10 @@ class LocaleService {
       'empty_category': 'No cards in {0} yet.',
       'ecosystem_title': 'GyuC Studio Apps',
       'ecosystem_subtitle': 'OnWallet · OnTimer · OnVocab · OnEnglish · DidYou?',
+      'exit_dialog_title': 'Exit the app?',
+      'exit_dialog_desc': 'Wrap up today’s study session?\nKeep up the streak tomorrow!',
+      'exit_dialog_confirm': 'Exit App',
+      'exit_dialog_cancel': 'Cancel',
     },
   };
 

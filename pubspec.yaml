@@ -80,6 +80,7 @@ flutter:
   # 💡 에셋 경로 등록 (들여쓰기 주의: 띄어쓰기 2칸 / 4칸)
   assets:
     - assets/data/
+    - assets/icon/
     - assets/onboarding/ko/
     - assets/onboarding/ja/
     - assets/onboarding/en/

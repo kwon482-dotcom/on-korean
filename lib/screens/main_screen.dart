@@ -1,4 +1,9 @@
+import 'dart:io';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/exit_ad_dialog.dart';
 
 import '../services/energy_service.dart';
 import '../services/locale_service.dart';
@@ -107,7 +112,28 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
       const StatsTab(),
     ];
 
-    return Scaffold(
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) async {
+        if (didPop) return;
+        // iOS 및 웹 환경은 뒤로가기 가로채기 제외 (애플 심사 정책 준수)
+        if (kIsWeb || !Platform.isAndroid) return;
+
+        // 다른 탭에 있을 때는 홈 탭(0번)으로 먼저 복귀
+        if (_currentIndex != 0) {
+          setState(() => _currentIndex = 0);
+          _pageController.animateToPage(
+            0,
+            duration: const Duration(milliseconds: 250),
+            curve: Curves.easeInOut,
+          );
+          return;
+        }
+
+        // 홈 탭(0번)일 때만 종료 다이얼로그 팝업 노출
+        await ExitAdDialog.show(context);
+      },
+      child: Scaffold(
       appBar: AppBar(
         title: Text(
           LocaleService.tr('app_title'),
@@ -184,7 +210,8 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
           ),
         ],
       ),
-    );
+    ),
+  );
   }
 }
 

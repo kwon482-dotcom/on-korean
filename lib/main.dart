@@ -8,6 +8,7 @@ import 'services/locale_service.dart';
 import 'services/notification_service.dart';
 import 'services/reading_service.dart';
 import 'services/remote_config_service.dart';
+import 'services/exit_ad_service.dart';
 import 'services/rewarded_ad_service.dart';
 import 'services/theme_service.dart';
 import 'services/tts_service.dart';
@@ -46,6 +47,7 @@ void main() async {
     try {
       await MobileAds.instance.initialize();
       RewardedAdService.preloadAd();
+      ExitAdService.preloadAd();
       debugPrint('[AdMob] 초기화 성공 및 보상형 광고 프리로드');
     } catch (e) {
       debugPrint('[AdMob] 초기화 에러: $e');
