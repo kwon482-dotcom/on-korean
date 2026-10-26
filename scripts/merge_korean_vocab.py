@@ -55,6 +55,9 @@ from data_p3_topik2 import P3_TOPIK2_WORDS
 from data_p3_kdrama import P3_KDRAMA_WORDS
 from data_p3_business import P3_BUSINESS_WORDS
 
+# Phase 4 Data (Step 1: Basics 100 words -> 1,600 words)
+from data_p4_basics import P4_BASICS_WORDS
+
 def main():
     seen_words = set()
     result = []
@@ -62,7 +65,7 @@ def main():
     # 1. Base Starter Words (from raw starter if needed or direct from categories)
     categories_map = [
         ("한글 기초 & 생존 회화",
-         BASICS_WORDS + BASICS_WORDS_2 + FINAL_TOUCH_WORDS[:10] + P2_BASICS_WORDS_1 + P2_BASICS_WORDS_2 + FINAL_TOUCH_P2_BASICS + P3_BASICS_WORDS),
+         BASICS_WORDS + BASICS_WORDS_2 + FINAL_TOUCH_WORDS[:10] + P2_BASICS_WORDS_1 + P2_BASICS_WORDS_2 + FINAL_TOUCH_P2_BASICS + P3_BASICS_WORDS + P4_BASICS_WORDS),
         ("TOPIK I 초급 필수 어휘",
          TOPIK1_WORDS + TOPIK1_WORDS_2 + TOPIK1_WORDS_3 + FINAL_TOUCH_WORDS[10:18] + P2_TOPIK1_WORDS_1 + P2_TOPIK1_WORDS_2 + FINAL_TOUCH_P2_TOPIK1 + P3_TOPIK1_WORDS),
         ("TOPIK II 중급 핵심 어휘",
