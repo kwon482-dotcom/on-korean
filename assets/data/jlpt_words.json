@@ -17296,6 +17296,1506 @@
   },
   {
     "id": "k1154",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "보행환경",
+    "furigana": "[bo-haeng-hwan-gyeong]",
+    "meaning": "Pedestrian environment",
+    "meaningEn": "Pedestrian environment",
+    "meaningJa": "歩行環境",
+    "meaningKo": "보행자가 안전하고 쾌적하게 걸을 수 있는 주변 여건",
+    "partOfSpeech": "명사",
+    "exampleKo": "도심 내 차도를 줄이고 보행환경을 대폭 개선했다.",
+    "exampleEn": "Reduced roadways in downtown and significantly improved the pedestrian environment.",
+    "exampleJa": "都心部の車道を減らし歩行環境を大幅に改善した。"
+  },
+  {
+    "id": "k1155",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "주거복지",
+    "furigana": "[ju-geo-bok-ji]",
+    "meaning": "Housing welfare",
+    "meaningEn": "Housing welfare",
+    "meaningJa": "住宅福祉",
+    "meaningKo": "저소득층의 안정적인 주거 생활을 지원하는 복지",
+    "partOfSpeech": "명사",
+    "exampleKo": "청년과 신혼부부를 위한 공공 임대주택 등 주거복지 정책을 확대했다.",
+    "exampleEn": "Expanded housing welfare policies such as public rental homes for youth.",
+    "exampleJa": "青年や新婚夫婦のための公共賃貸住宅など住宅福祉政策を拡大した。"
+  },
+  {
+    "id": "k1156",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "최저생계비",
+    "furigana": "[choe-jeo-saeng-gye-bi]",
+    "meaning": "Minimum cost of living",
+    "meaningEn": "Minimum cost of living",
+    "meaningJa": "最低生計費",
+    "meaningKo": "국민이 건강하고 문화적인 생활을 유지하기 위한 최소한의 비용",
+    "partOfSpeech": "명사",
+    "exampleKo": "물가 상승률을 감안하여 내년도 최저생계비 기준을 상향 조정했다.",
+    "exampleEn": "Upwardly adjusted next year's minimum cost of living considering inflation.",
+    "exampleJa": "物価上昇率を考慮して来年度の最低生計費基準を引き上げた。"
+  },
+  {
+    "id": "k1157",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "기초연금",
+    "furigana": "[gi-cho-yeon-geum]",
+    "meaning": "Basic pension (for seniors)",
+    "meaningEn": "Basic pension (for seniors)",
+    "meaningJa": "基礎年金",
+    "meaningKo": "어르신들의 안정된 노후를 위해 지급하는 공적 연금",
+    "partOfSpeech": "명사",
+    "exampleKo": "만 65세 이상 저소득 어르신들에게 매달 기초연금이 지급된다.",
+    "exampleEn": "Basic pension is paid monthly to low-income seniors aged 65 or older.",
+    "exampleJa": "満65歳以上の低所得のお年寄りに毎月基礎年金が支給される。"
+  },
+  {
+    "id": "k1158",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "국민건강",
+    "furigana": "[guk-min-geon-gang]",
+    "meaning": "Public health / National health",
+    "meaningEn": "Public health / National health",
+    "meaningJa": "国民の健康",
+    "meaningKo": "국민 전체의 신체적, 정신적 건강 상태",
+    "partOfSpeech": "명사",
+    "exampleKo": "국민건강 증진을 위해 금연 캠페인과 무료 건강검진을 실시한다.",
+    "exampleEn": "Conducting anti-smoking campaigns and free checkups to promote public health.",
+    "exampleJa": "国民の健康増進のために禁煙キャンペーンと無料健康診断を実施する。"
+  },
+  {
+    "id": "k1159",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "직업훈련",
+    "furigana": "[jik-eop-hun-ryeon]",
+    "meaning": "Vocational training / Job training",
+    "meaningEn": "Vocational training / Job training",
+    "meaningJa": "職業訓練",
+    "meaningKo": "취업에 필요한 실무 기술과 자격을 가르치는 교육",
+    "partOfSpeech": "명사",
+    "exampleKo": "고용센터에서 재취업을 희망하는 구직자들에게 무료 직업훈련을 제공한다.",
+    "exampleEn": "Job centers provide free vocational training for job seekers seeking re-employment.",
+    "exampleJa": "雇用センターで再就職を希望する求職者に無料の職業訓練を提供する。"
+  },
+  {
+    "id": "k1160",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "고용안정",
+    "furigana": "[go-yong-an-jeong]",
+    "meaning": "Employment stability",
+    "meaningEn": "Employment stability",
+    "meaningJa": "雇用安定",
+    "meaningKo": "근로자가 실직 걱정 없이 안정적으로 일할 수 있는 상태",
+    "partOfSpeech": "명사",
+    "exampleKo": "정규직 전환 지원을 통해 노동 시장의 고용안정을 도모하고 있다.",
+    "exampleEn": "Promoting employment stability in the labor market via regular conversion support.",
+    "exampleJa": "正社員転換支援を通じて労働市場の雇用安定を図っている。"
+  },
+  {
+    "id": "k1161",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "평생학습",
+    "furigana": "[pyeong-saeng-hak-seup]",
+    "meaning": "Lifelong learning",
+    "meaningEn": "Lifelong learning",
+    "meaningJa": "生涯学習",
+    "meaningKo": "나이에 상관없이 일생 동안 끊임없이 배우는 일",
+    "partOfSpeech": "명사",
+    "exampleKo": "디지털 시대를 맞아 중장년층을 위한 평생학습 프로그램이 인기다.",
+    "exampleEn": "In the digital age, lifelong learning programs for middle-aged adults are popular.",
+    "exampleJa": "デジタル時代を迎え中高年層向けの生涯学習プログラムが人気だ。"
+  },
+  {
+    "id": "k1162",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "사교육비",
+    "furigana": "[sa-gyo-yuk-bi]",
+    "meaning": "Private tutoring expenses",
+    "meaningEn": "Private tutoring expenses",
+    "meaningJa": "私教育費 / 塾代",
+    "meaningKo": "학원이나 과외 등 공교육 외의 사설 교육에 드는 비용",
+    "partOfSpeech": "명사",
+    "exampleKo": "과도한 사교육비 부담은 저출산의 주된 원인 중 하나로 꼽힌다.",
+    "exampleEn": "Excessive private education expenses are cited as a key cause of low birthrates.",
+    "exampleJa": "過度な私教育費の負担は少子化の主な原因の一つに挙げられる。"
+  },
+  {
+    "id": "k1163",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "공교육",
+    "furigana": "[gong-gyo-yuk]",
+    "meaning": "Public education",
+    "meaningEn": "Public education",
+    "meaningJa": "公教育",
+    "meaningKo": "국가나 공공단체가 세금으로 운영하는 제도적 교육",
+    "partOfSpeech": "명사",
+    "exampleKo": "공교육의 신뢰성을 회복하기 위해 맞춤형 방과 후 수업을 강화했다.",
+    "exampleEn": "Strengthened tailored after-school classes to restore trust in public education.",
+    "exampleJa": "公教育の信頼性を回復するためオーダーメイドの放課後授業を強化した。"
+  },
+  {
+    "id": "k1164",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "저출생",
+    "furigana": "[jeo-chul-saeng]",
+    "meaning": "Low birthrate",
+    "meaningEn": "Low birthrate",
+    "meaningJa": "少子化 / 低出生",
+    "meaningKo": "아기가 태어나는 비율이 매우 낮아지는 현상",
+    "partOfSpeech": "명사",
+    "exampleKo": "심각한 저출생 문제를 극복하기 위해 다자녀 가정 지원을 늘렸다.",
+    "exampleEn": "Expanded support for multi-child families to overcome critical low birthrates.",
+    "exampleJa": "深刻な少子化問題を克服するため多子世帯への支援を増やした。"
+  },
+  {
+    "id": "k1165",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "은퇴설계",
+    "furigana": "[eun-toe-seol-gye]",
+    "meaning": "Retirement planning",
+    "meaningEn": "Retirement planning",
+    "meaningJa": "退職設計 / リタイアメントプラン",
+    "meaningKo": "직장에서 물러난 뒤의 경제적, 생활적 계획을 세움",
+    "partOfSpeech": "명사",
+    "exampleKo": "체계적인 은퇴설계를 통해 여유롭고 건강한 노후를 준비해야 한다.",
+    "exampleEn": "One must prepare a relaxed, healthy retirement through systematic planning.",
+    "exampleJa": "体系的な退職設計を通じてゆとりある健康的な老後を準備すべきだ。"
+  },
+  {
+    "id": "k1166",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "고용보험",
+    "furigana": "[go-yong-bo-heom]",
+    "meaning": "Employment insurance / Unemployment benefit",
+    "meaningEn": "Employment insurance / Unemployment benefit",
+    "meaningJa": "雇用保険",
+    "meaningKo": "실직 시 실업급여를 지급하여 생활 안정을 돕는 사회보험",
+    "partOfSpeech": "명사",
+    "exampleKo": "실직 기간 동안 고용보험 혜택을 받아 생활비를 충당할 수 있었다.",
+    "exampleEn": "Receiving unemployment insurance during joblessness, I could cover living costs.",
+    "exampleJa": "失業期間中に雇用保険の給付を受け生活費を充当することができた。"
+  },
+  {
+    "id": "k1167",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "산재보험",
+    "furigana": "[san-jae-bo-heom]",
+    "meaning": "Workers' compensation insurance",
+    "meaningEn": "Workers' compensation insurance",
+    "meaningJa": "労災保険 / 産業災害補償保険",
+    "meaningKo": "근무 중 다치거나 질병에 걸렸을 때 보상해 주는 보험",
+    "partOfSpeech": "명사",
+    "exampleKo": "작업 중 다친 근로자는 산재보험을 통해 치료비와 휴업급여를 받는다.",
+    "exampleEn": "Workers injured on duty receive medical bills and leave pay via comp insurance.",
+    "exampleJa": "作業中に負傷した労働者は労災保険を通じて治療費と休業給付を受ける。"
+  },
+  {
+    "id": "k1168",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "노후대책",
+    "furigana": "[no-hu-dae-chaek]",
+    "meaning": "Measures for old age / Retirement provisions",
+    "meaningEn": "Measures for old age / Retirement provisions",
+    "meaningJa": "老後対策",
+    "meaningKo": "나이가 들어 은퇴한 뒤를 대비하는 경제적 준비",
+    "partOfSpeech": "명사",
+    "exampleKo": "젊을 때부터 연금과 저축으로 든든한 노후대책을 마련해 두었다.",
+    "exampleEn": "Prepared reliable old-age provisions with pensions and savings from youth.",
+    "exampleJa": "若い頃から年金や貯蓄で心強い老後対策を整えておいた。"
+  },
+  {
+    "id": "k1169",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "시민단체",
+    "furigana": "[si-min-dan-che]",
+    "meaning": "Civic group / NGO",
+    "meaningEn": "Civic group / NGO",
+    "meaningJa": "市民団体 / NGO",
+    "meaningKo": "시민들이 자발적으로 모여 사회 공익을 추구하는 단체",
+    "partOfSpeech": "명사",
+    "exampleKo": "환경 보호 시민단체들이 플라스틱 제로 캠페인을 적극 전개하고 있다.",
+    "exampleEn": "Environmental civic groups are actively spearheading plastic-free campaigns.",
+    "exampleJa": "環境保護の市民団体がプラスチックゼロキャンペーンを積極的に展開している。"
+  },
+  {
+    "id": "k1170",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "주민자치",
+    "furigana": "[ju-min-ja-chi]",
+    "meaning": "Local resident autonomy",
+    "meaningEn": "Local resident autonomy",
+    "meaningJa": "住民自治",
+    "meaningKo": "지역 주민이 스스로 마을의 현안을 논의하고 해결함",
+    "partOfSpeech": "명사",
+    "exampleKo": "주민자치회를 통해 동네 공원 리모델링 사업 계획을 결정했다.",
+    "exampleEn": "Decided on neighborhood park remodel plans through the resident autonomy council.",
+    "exampleJa": "住民自治会を通じて近所の公園のリニューアル事業計画を決定した。"
+  },
+  {
+    "id": "k1171",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "공공복지",
+    "furigana": "[gong-gong-bok-ji]",
+    "meaning": "Public welfare",
+    "meaningEn": "Public welfare",
+    "meaningJa": "公共福祉",
+    "meaningKo": "국가와 지방자치단체가 국민을 위해 제공하는 사회적 혜택",
+    "partOfSpeech": "명사",
+    "exampleKo": "취약계층의 삶의 질을 보장하기 위한 공공복지 예산이 증액되었다.",
+    "exampleEn": "The public welfare budget guaranteeing vulnerable groups' living quality was increased.",
+    "exampleJa": "脆弱層の生活の質を保障するための公共福祉予算が増額された。"
+  },
+  {
+    "id": "k1172",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "지역발전",
+    "furigana": "[ji-yeok-bal-jeon]",
+    "meaning": "Regional development",
+    "meaningEn": "Regional development",
+    "meaningJa": "地域発展 / 地方創生",
+    "meaningKo": "특정 지역의 경제와 인프라, 주민 복지가 향상됨",
+    "partOfSpeech": "명사",
+    "exampleKo": "균형 잡힌 지역발전을 위해 지방 대도시 거점 육성 정책을 추진한다.",
+    "exampleEn": "Promoting local metropolitan hub growth policies for balanced regional development.",
+    "exampleJa": "バランスの取れた地域発展のために地方大都市の拠点育成政策を推進する。"
+  },
+  {
+    "id": "k1173",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "도심재생",
+    "furigana": "[do-sim-jae-saeng]",
+    "meaning": "Urban regeneration / Renewal",
+    "meaningEn": "Urban regeneration / Renewal",
+    "meaningJa": "都心再生 / 都市再生",
+    "meaningKo": "쇠퇴한 구도심을 허물지 않고 문화와 주거를 복원함",
+    "partOfSpeech": "명사",
+    "exampleKo": "오래된 공장 지대를 문화 예술 거리로 바꾸는 도심재생 사업이 성공했다.",
+    "exampleEn": "The urban regeneration project transforming old factory zones into art streets succeeded.",
+    "exampleJa": "古い工場地帯を文化芸術ストリートに変える都市再生事業が成功した。"
+  },
+  {
+    "id": "k1174",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "전통계승",
+    "furigana": "[jeon-tong-gye-seung]",
+    "meaning": "Inheritance of tradition",
+    "meaningEn": "Inheritance of tradition",
+    "meaningJa": "伝統継承",
+    "meaningKo": "선조들이 남긴 고유한 문화와 정신을 이어받음",
+    "partOfSpeech": "명사",
+    "exampleKo": "한복과 판소리 등 자랑스러운 문화유산의 전통계승에 힘써야 한다.",
+    "exampleEn": "We must strive for the inheritance of proud heritages like Hanbok and Pansori.",
+    "exampleJa": "韓服やパンソリなど誇らしい文化遺産の伝統継承に努めなければならない。"
+  },
+  {
+    "id": "k1175",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "문화교류",
+    "furigana": "[mun-hwa-gyo-ryu]",
+    "meaning": "Cultural exchange",
+    "meaningEn": "Cultural exchange",
+    "meaningJa": "文化交流",
+    "meaningKo": "서로 다른 국가나 민족이 문화를 주고받으며 소통함",
+    "partOfSpeech": "명사",
+    "exampleKo": "한일 청소년 문화교류 캠프를 통해 상호 이해와 우정을 다졌다.",
+    "exampleEn": "Deepened mutual understanding and friendship through Korea-Japan youth cultural exchange.",
+    "exampleJa": "韓日青少年文化交流キャンプを通じて相互理解と友情を深めた。"
+  },
+  {
+    "id": "k1176",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "세계시민",
+    "furigana": "[se-gye-si-min]",
+    "meaning": "Global citizen",
+    "meaningEn": "Global citizen",
+    "meaningJa": "世界市民 / グローバル市民",
+    "meaningKo": "지구촌 전체를 하나의 공동체로 인식하고 참여하는 시민",
+    "partOfSpeech": "명사",
+    "exampleKo": "기후 위기 극복을 위해 세계시민으로서의 책임 의식을 지녀야 한다.",
+    "exampleEn": "We must embrace a sense of responsibility as global citizens to tackle climate crisis.",
+    "exampleJa": "気候危機の克服のために世界市民としての責任意識を持つべきだ。"
+  },
+  {
+    "id": "k1177",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "정보통신",
+    "furigana": "[jeong-bo-tong-sin]",
+    "meaning": "Information and Communications Technology (ICT)",
+    "meaningEn": "Information and Communications Technology (ICT)",
+    "meaningJa": "情報通信 / ICT",
+    "meaningKo": "정보를 수집, 가공하고 주고받는 첨단 기술",
+    "partOfSpeech": "명사",
+    "exampleKo": "대한민국은 고속 인터넷망을 기반으로 세계적인 정보통신 강국으로 성장했다.",
+    "exampleEn": "Korea grew into a global ICT powerhouse based on high-speed internet networks.",
+    "exampleJa": "大韓民国は高速インターネット網を基盤に世界的な情報通信強国へと成長した。"
+  },
+  {
+    "id": "k1178",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "친환경정책",
+    "furigana": "[chin-hwan-gyeong-jeong-chaek]",
+    "meaning": "Eco-friendly policy",
+    "meaningEn": "Eco-friendly policy",
+    "meaningJa": "環境配慮政策 / エコ政策",
+    "meaningKo": "환경오염을 줄이고 생태계를 보호하기 위한 정책",
+    "partOfSpeech": "명사",
+    "exampleKo": "전기차 보조금 확대와 태양광 발전 지원 등 친환경정책을 가속화했다.",
+    "exampleEn": "Accelerated eco-friendly policies expanding EV subsidies and solar energy support.",
+    "exampleJa": "電気自動車の補助金拡大や太陽光発電支援など環境配慮政策を加速させた。"
+  },
+  {
+    "id": "k1179",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "에너지전환",
+    "furigana": "[e-neo-ji-jeon-hwan]",
+    "meaning": "Energy transition",
+    "meaningEn": "Energy transition",
+    "meaningJa": "エネルギー転換",
+    "meaningKo": "화석 연료 중심에서 청정 재생에너지 중심으로 전환함",
+    "partOfSpeech": "명사",
+    "exampleKo": "탄소 배출을 줄이기 위해 원자력과 신재생에너지 중심의 에너지전환을 추진한다.",
+    "exampleEn": "Promoting energy transition to clean renewables and nuclear to curb carbon emissions.",
+    "exampleJa": "炭素排出を減らすため原子力と新再生可能エネルギー中心のエネルギー転換を推進する。"
+  },
+  {
+    "id": "k1180",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "자원순환",
+    "furigana": "[ja-won-sun-hwan]",
+    "meaning": "Resource circulation",
+    "meaningEn": "Resource circulation",
+    "meaningJa": "資源循環 / サーキュラーエコノミー",
+    "meaningKo": "폐기물을 재활용하여 자원의 낭비를 막는 체계",
+    "partOfSpeech": "명사",
+    "exampleKo": "폐플라스틱을 고품질 의류 섬유로 재탄생시키는 자원순환 시스템을 구축했다.",
+    "exampleEn": "Built a resource circulation system transforming waste plastic into apparel fibers.",
+    "exampleJa": "廃プラスチックを高品質の衣料用繊維に再生させる資源循環システムを構築した。"
+  },
+  {
+    "id": "k1181",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "녹색성장",
+    "furigana": "[nok-saek-seong-jang]",
+    "meaning": "Green growth",
+    "meaningEn": "Green growth",
+    "meaningJa": "緑の成長 / グリーン成長",
+    "meaningKo": "환경 보전과 경제 성장을 동시에 이루어내는 발전",
+    "partOfSpeech": "명사",
+    "exampleKo": "친환경 저탄소 산업을 육성하여 미래형 녹색성장의 기틀을 마련했다.",
+    "exampleEn": "Laid the groundwork for future green growth by fostering low-carbon eco industries.",
+    "exampleJa": "環境配慮型の低炭素産業を育成し未来型グリーン成長の基盤を整えた。"
+  },
+  {
+    "id": "k1182",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "탄소중립",
+    "furigana": "[tan-so-jung-rip]",
+    "meaning": "Carbon neutrality / Net zero",
+    "meaningEn": "Carbon neutrality / Net zero",
+    "meaningJa": "カーボンニュートラル / 炭素中立",
+    "meaningKo": "온실가스 배출량과 흡수량을 같게 하여 순 배출을 0으로 만듦",
+    "partOfSpeech": "명사",
+    "exampleKo": "2050년까지 완전한 탄소중립을 달성하기 위한 종합 로드맵을 선포했다.",
+    "exampleEn": "Declared a comprehensive roadmap to achieve complete carbon neutrality by 2050.",
+    "exampleJa": "2050年までに完全なカーボンニュートラルを達成するための総合ロードマップを宣言した。"
+  },
+  {
+    "id": "k1183",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "생태보호",
+    "furigana": "[saeng-tae-bo-ho]",
+    "meaning": "Ecological protection / Ecosystem conservation",
+    "meaningEn": "Ecological protection / Ecosystem conservation",
+    "meaningJa": "生態系保護",
+    "meaningKo": "자연의 생물들과 그 서식 환경을 보존함",
+    "partOfSpeech": "명사",
+    "exampleKo": "습지 보호구역 지정을 통해 멸종위기 야생동물의 생태보호에 나섰다.",
+    "exampleEn": "Embarked on ecological protection of endangered wildlife by designating wetland preserves.",
+    "exampleJa": "湿地保護区域の指定を通じて絶滅危惧野生動物の生態系保護に乗り出した。"
+  },
+  {
+    "id": "k1184",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "가치관",
+    "furigana": "[ga-chi-gwan]",
+    "meaning": "Sense of values / Values",
+    "meaningEn": "Sense of values / Values",
+    "meaningJa": "価値観",
+    "meaningKo": "삶에서 무엇이 소중한지 판단하는 기준이나 관점",
+    "partOfSpeech": "명사",
+    "exampleKo": "다양한 문화를 접하면서 다름을 존중하는 포용적 가치관을 형성했다.",
+    "exampleEn": "Formed inclusive values respecting differences while encountering diverse cultures.",
+    "exampleJa": "多様な文化に触れながら違いを尊重する寛容な価値観を形成した。"
+  },
+  {
+    "id": "k1185",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "인생관",
+    "furigana": "[in-saeng-gwan]",
+    "meaning": "View of life / Outlook on life",
+    "meaningEn": "View of life / Outlook on life",
+    "meaningJa": "人生観",
+    "meaningKo": "인생의 의의나 가치에 대하여 가지는 근본적인 태도",
+    "partOfSpeech": "명사",
+    "exampleKo": "시련을 겪으며 매 순간을 감사히 여기는 긍정적인 인생관을 갖게 되었다.",
+    "exampleEn": "Going through hardships, I gained a positive outlook on life appreciating every moment.",
+    "exampleJa": "試練を経験しながら一瞬一瞬に感謝する前向きな人生観を持つようになった。"
+  },
+  {
+    "id": "k1186",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "상호작용",
+    "furigana": "[sang-ho-jak-yong]",
+    "meaning": "Interaction / Mutual action",
+    "meaningEn": "Interaction / Mutual action",
+    "meaningJa": "相互作用 / インタラクション",
+    "meaningKo": "서로 영향을 주고받는 작용",
+    "partOfSpeech": "명사",
+    "exampleKo": "교사와 학생 간의 활발한 상호작용이 학습 효과를 극대화한다.",
+    "exampleEn": "Active interaction between teachers and students maximizes learning efficacy.",
+    "exampleJa": "教師と学生の間の活発な相互作用が学習効果を極大化する。"
+  },
+  {
+    "id": "k1187",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "순기능",
+    "furigana": "[sun-gi-neung]",
+    "meaning": "Positive function / Beneficial role",
+    "meaningEn": "Positive function / Beneficial role",
+    "meaningJa": "順機能 / 本来の働き",
+    "meaningKo": "어떤 제도가 목적에 맞게 긍정적으로 작용하는 기능",
+    "partOfSpeech": "명사",
+    "exampleKo": "SNS는 빠르고 편리한 정보 공유라는 훌륭한 순기능을 지니고 있다.",
+    "exampleEn": "Social media has the wonderful positive function of fast, convenient information sharing.",
+    "exampleJa": "SNSは迅速で便利な情報共有という素晴らしい本来の働きを持っている。"
+  },
+  {
+    "id": "k1188",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "역기능",
+    "furigana": "[yeok-gi-neung]",
+    "meaning": "Dysfunction / Negative side effect",
+    "meaningEn": "Dysfunction / Negative side effect",
+    "meaningJa": "逆機能 / 弊害",
+    "meaningKo": "의도하지 않은 나쁜 결과나 부작용을 일으키는 기능",
+    "partOfSpeech": "명사",
+    "exampleKo": "가짜 뉴스 확산과 사생활 침해는 디지털 미디어의 대표적인 역기능이다.",
+    "exampleEn": "Fake news spread and privacy infringement are representative dysfunctions of digital media.",
+    "exampleJa": "フェイクニュースの拡散やプライバシー侵害はデジタルメディアの代表的な弊害だ。"
+  },
+  {
+    "id": "k1189",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "상관관계",
+    "furigana": "[sang-gwan-gwan-gye]",
+    "meaning": "Correlation / Interrelation",
+    "meaningEn": "Correlation / Interrelation",
+    "meaningJa": "相関関係",
+    "meaningKo": "한쪽이 변화하면 다른 쪽도 그에 따라 함께 변하는 관계",
+    "partOfSpeech": "명사",
+    "exampleKo": "독서량과 어휘력 향상 사이에는 매우 밀접한 상관관계가 존재한다.",
+    "exampleEn": "A close correlation exists between the amount of reading and vocabulary growth.",
+    "exampleJa": "読書量と語彙力の向上との間には非常に密接な相関関係が存在する。"
+  },
+  {
+    "id": "k1190",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "인과관계",
+    "furigana": "[in-gwa-gwan-gye]",
+    "meaning": "Causal relationship / Causality",
+    "meaningEn": "Causal relationship / Causality",
+    "meaningJa": "因果関係",
+    "meaningKo": "원인과 결과로 맺어지는 필연적인 관계",
+    "partOfSpeech": "명사",
+    "exampleKo": "현상만 보지 말고 사건의 본질적인 원인과 결과의 인과관계를 밝혀야 한다.",
+    "exampleEn": "One must uncover the causality of cause and effect, not just see appearances.",
+    "exampleJa": "現象だけを見るのではなく事件の本質的な原因と結果の因果関係を解明すべきだ。"
+  },
+  {
+    "id": "k1191",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "타협점",
+    "furigana": "[ta-hyeop-jeom]",
+    "meaning": "Compromise point / Middle ground",
+    "meaningEn": "Compromise point / Middle ground",
+    "meaningJa": "妥協点 / 落としどころ",
+    "meaningKo": "서로 의견이 다를 때 양보하여 합의할 수 있는 지점",
+    "partOfSpeech": "명사",
+    "exampleKo": "오랜 협상 끝에 노사 양측이 모두 만족할 만한 합리적 타협점을 찾았다.",
+    "exampleEn": "After lengthy talks, labor and management found a reasonable compromise point.",
+    "exampleJa": "長い交渉の末に労使双方が納得できる合理的な妥協点を見出した。"
+  },
+  {
+    "id": "k1192",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "문제의식",
+    "furigana": "[mun-je-ui-sik]",
+    "meaning": "Awareness of the issue / Problem consciousness",
+    "meaningEn": "Awareness of the issue / Problem consciousness",
+    "meaningJa": "問題意識",
+    "meaningKo": "현 상황의 모순이나 문제점을 예리하게 포착하는 생각",
+    "partOfSpeech": "명사",
+    "exampleKo": "환경 파괴에 대한 깊은 문제의식을 바탕으로 친환경 대체재를 개발했다.",
+    "exampleEn": "Developed eco alternatives grounded in deep awareness of ecological destruction.",
+    "exampleJa": "環境破壊に対する深い問題意識を基に環境配慮型の代替材を開発した。"
+  },
+  {
+    "id": "k1193",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "위기의식",
+    "furigana": "[wi-gi-ui-sik]",
+    "meaning": "Sense of crisis / Awareness of crisis",
+    "meaningEn": "Sense of crisis / Awareness of crisis",
+    "meaningJa": "危機意識",
+    "meaningKo": "현재 상황이 위험하다는 것을 절실히 느끼는 마음",
+    "partOfSpeech": "명사",
+    "exampleKo": "기후변화에 대한 범지구적 위기의식이 확산되고 있다.",
+    "exampleEn": "A global sense of crisis regarding climate change is spreading widely.",
+    "exampleJa": "気候変動に対する地球規模の危機意識が広く拡散している。"
+  },
+  {
+    "id": "k1194",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "유대감",
+    "furigana": "[yu-dae-gam]",
+    "meaning": "Sense of bonding / Fellowship",
+    "meaningEn": "Sense of bonding / Fellowship",
+    "meaningJa": "連帯感 / 絆",
+    "meaningKo": "서로 밀접하게 연결되어 정서적으로 일체감을 느끼는 마음",
+    "partOfSpeech": "명사",
+    "exampleKo": "함께 땀 흘려 봉사활동을 하며 동료들과 끈끈한 유대감을 쌓았다.",
+    "exampleEn": "Sweating together in volunteering, we built a tight bond with colleagues.",
+    "exampleJa": "一緒に汗を流してボランティア活動をしながら同僚たちと固い絆を築いた。"
+  },
+  {
+    "id": "k1195",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "일체감",
+    "furigana": "[il-che-gam]",
+    "meaning": "Sense of unity / Oneness",
+    "meaningEn": "Sense of unity / Oneness",
+    "meaningJa": "一体感",
+    "meaningKo": "여러 사람이 한마음 한뜻으로 뭉쳐 하나가 된 느낌",
+    "partOfSpeech": "명사",
+    "exampleKo": "온 국민이 한목소리로 국가대표팀을 응원하며 뜨거운 일체감을 느꼈다.",
+    "exampleEn": "Cheering for the national team with one voice, citizens felt intense unity.",
+    "exampleJa": "国民全員が心を一つにして代表チームを応援し熱い一体感を覚えた。"
+  },
+  {
+    "id": "k1196",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "자긍심",
+    "furigana": "[ja-geung-sim]",
+    "meaning": "Sense of pride / Self-respect",
+    "meaningEn": "Sense of pride / Self-respect",
+    "meaningJa": "自負心 / 誇り",
+    "meaningKo": "자신의 가치나 성취에 대하여 당당하고 자랑스럽게 여기는 마음",
+    "partOfSpeech": "명사",
+    "exampleKo": "한국 문화를 세계에 알리는 민간 외교관으로서 깊은 자긍심을 가진다.",
+    "exampleEn": "Holding deep pride as a civilian diplomat introducing Korean culture globally.",
+    "exampleJa": "韓国文化を世界に発信する民間外交官として深い誇りを持っている。"
+  },
+  {
+    "id": "k1197",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "경각심",
+    "furigana": "[gyeong-gak-sim]",
+    "meaning": "Vigilance / Alertness",
+    "meaningEn": "Vigilance / Alertness",
+    "meaningJa": "警覚心 / 警戒感",
+    "meaningKo": "나쁜 일이나 위험에 대하여 조심하고 주의를 기울이는 마음",
+    "partOfSpeech": "명사",
+    "exampleKo": "음주운전 사고의 위험성에 대해 사회적 경각심을 크게 높여야 한다.",
+    "exampleEn": "We must significantly raise social alertness against drunk driving dangers.",
+    "exampleJa": "飲酒運転事故の危険性について社会的な警覚心を大きく高めるべきだ。"
+  },
+  {
+    "id": "k1198",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "신뢰감",
+    "furigana": "[sin-roe-gam]",
+    "meaning": "Sense of trust / Credibility",
+    "meaningEn": "Sense of trust / Credibility",
+    "meaningJa": "信頼感",
+    "meaningKo": "믿을 만하다고 굳게 여기는 느낌",
+    "partOfSpeech": "명사",
+    "exampleKo": "정확하고 솔직한 안내를 통해 고객들에게 두터운 신뢰감을 심어주었다.",
+    "exampleEn": "Instilled solid trust in customers through accurate and candid guidance.",
+    "exampleJa": "正確で率直な案内を通じて顧客に厚い信頼感を植え付けた。"
+  },
+  {
+    "id": "k1199",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "안정감",
+    "furigana": "[an-jeong-gam]",
+    "meaning": "Sense of stability / Security",
+    "meaningEn": "Sense of stability / Security",
+    "meaningJa": "安定感 / 安心感",
+    "meaningKo": "마음이나 주변 환경이 편안하고 고요하게 가라앉아 있는 느낌",
+    "partOfSpeech": "명사",
+    "exampleKo": "차분한 톤의 인테리어 디자인이 방문객들에게 편안한 안정감을 준다.",
+    "exampleEn": "Calm interior tones offer visitors a comfortable sense of security.",
+    "exampleJa": "落ち着いたトーンのインテリアデザインが来訪者に心地よい安心感を与える。"
+  },
+  {
+    "id": "k1200",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "위기감",
+    "furigana": "[wi-gi-gam]",
+    "meaning": "Sense of imminent crisis",
+    "meaningEn": "Sense of imminent crisis",
+    "meaningJa": "危機感",
+    "meaningKo": "위험이나 파탄이 눈앞에 닥쳤다고 느끼는 불안한 마음",
+    "partOfSpeech": "명사",
+    "exampleKo": "경쟁사의 혁신 기술 발표에 시장 점유율 하락에 대한 위기감이 고조되었다.",
+    "exampleEn": "With competitors' tech unveiling, a sense of crisis over market share intensified.",
+    "exampleJa": "競合他社の革新技術の発表に市場シェア下落に対する危機感が高まった。"
+  },
+  {
+    "id": "k1201",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "성취의욕",
+    "furigana": "[seong-chwi-ui-yok]",
+    "meaning": "Drive for achievement / Motivation",
+    "meaningEn": "Drive for achievement / Motivation",
+    "meaningJa": "達成意欲 / やる気",
+    "meaningKo": "어떤 목표를 기필코 이루어내고자 하는 열정적인 마음",
+    "partOfSpeech": "명사",
+    "exampleKo": "명확한 비전과 적절한 보상은 직원들의 성취의욕을 북돋운다.",
+    "exampleEn": "Clear visions and fair rewards stimulate employees' drive for achievement.",
+    "exampleJa": "明確なビジョンと適切な報酬は社員の達成意欲を刺激する。"
+  },
+  {
+    "id": "k1202",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "승부욕",
+    "furigana": "[seung-bu-yok]",
+    "meaning": "Competitiveness / Will to win",
+    "meaningEn": "Competitiveness / Will to win",
+    "meaningJa": "勝負欲 / 負けず嫌い",
+    "meaningKo": "싸움이나 경기에서 반드시 이기고자 하는 강한 욕심",
+    "partOfSpeech": "명사",
+    "exampleKo": "그는 지는 것을 극도로 싫어하는 강한 승부욕을 가진 선수다.",
+    "exampleEn": "He is an athlete with strong competitiveness who intensely hates losing.",
+    "exampleJa": "彼は負けることを極度に嫌う強い勝負欲を持った選手だ。"
+  },
+  {
+    "id": "k1203",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "경쟁심",
+    "furigana": "[gyeong-jaeng-sim]",
+    "meaning": "Competitive spirit / Rivalry",
+    "meaningEn": "Competitive spirit / Rivalry",
+    "meaningJa": "競争心",
+    "meaningKo": "남보다 앞서거나 이기려는 마음",
+    "partOfSpeech": "명사",
+    "exampleKo": "건전한 경쟁심은 팀의 성장을 촉진하지만 과도하면 불화를 낳는다.",
+    "exampleEn": "Healthy competitive spirit drives team growth, but excess causes discord.",
+    "exampleJa": "健全な競争心はチームの成長を促進するが、過度になると不和を生む。"
+  },
+  {
+    "id": "k1204",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "소통능력",
+    "furigana": "[so-tong-neung-ryeok]",
+    "meaning": "Communication skills",
+    "meaningEn": "Communication skills",
+    "meaningJa": "コミュニケーション能力",
+    "meaningKo": "상대방과 원활하게 뜻을 주고받는 능력",
+    "partOfSpeech": "명사",
+    "exampleKo": "다양한 배경의 팀원들을 이끌기 위해서는 원활한 소통능력이 핵심이다.",
+    "exampleEn": "Smooth communication skills are key to leading team members from diverse backgrounds.",
+    "exampleJa": "多様な背景を持つチーム員を導くためには円滑なコミュニケーション能力が鍵となる。"
+  },
+  {
+    "id": "k1205",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "문제해결력",
+    "furigana": "[mun-je-hae-gyeol-ryeok]",
+    "meaning": "Problem-solving skills",
+    "meaningEn": "Problem-solving skills",
+    "meaningJa": "問題解決力",
+    "meaningKo": "어려운 문제나 난관을 슬기롭게 풀어내는 능력",
+    "partOfSpeech": "명사",
+    "exampleKo": "돌발 상황에서도 당황하지 않고 대처하는 뛰어난 문제해결력을 발휘했다.",
+    "exampleEn": "Exerted brilliant problem-solving skills responding to unexpected contingencies calmly.",
+    "exampleJa": "突発的な状況でも慌てずに対処する優れた問題解決力を発揮した。"
+  },
+  {
+    "id": "k1206",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "판단기준",
+    "furigana": "[pan-dan-gi-jun]",
+    "meaning": "Criteria for judgement",
+    "meaningEn": "Criteria for judgement",
+    "meaningJa": "判断基準",
+    "meaningKo": "사물의 옳고 그름이나 선택을 가름하는 표준",
+    "partOfSpeech": "명사",
+    "exampleKo": "결정을 내릴 때는 개인의 이익보다 공공의 이익을 우선적 판단기준으로 삼는다.",
+    "exampleEn": "When making decisions, public interest serves as the primary criteria over self-interest.",
+    "exampleJa": "決定を下す際は個人の利益よりも公益を優先的な判断基準とする。"
+  },
+  {
+    "id": "k1207",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "사고방식",
+    "furigana": "[sa-go-bang-sik]",
+    "meaning": "Way of thinking / Mindset",
+    "meaningEn": "Way of thinking / Mindset",
+    "meaningJa": "考え方 / 思考様式",
+    "meaningKo": "어떤 대상이나 일에 대하여 생각하는 방식",
+    "partOfSpeech": "명사",
+    "exampleKo": "실패를 배움의 과정으로 여기는 유연하고 열린 사고방식이 필요하다.",
+    "exampleEn": "A flexible, open way of thinking regarding failure as a learning process is needed.",
+    "exampleJa": "失敗を学びの過程と捉える柔軟で開かれた思考様式が必要だ。"
+  },
+  {
+    "id": "k1208",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "행동양식",
+    "furigana": "[haeng-dong-yang-sik]",
+    "meaning": "Behavioral pattern",
+    "meaningEn": "Behavioral pattern",
+    "meaningJa": "行動様式 / 行動パターン",
+    "meaningKo": "특정 사회 구성원들이 공통적으로 취하는 행동 방식",
+    "partOfSpeech": "명사",
+    "exampleKo": "디지털 기기의 보급으로 현대인들의 일상 행동양식이 크게 바뀌었다.",
+    "exampleEn": "With digital devices widespread, modern people's daily behavioral patterns shifted.",
+    "exampleJa": "デジタル機器の普及により現代人の日常的な行動様式が大きく変わった。"
+  },
+  {
+    "id": "k1209",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "생활양식",
+    "furigana": "[saeng-hwal-yang-sik]",
+    "meaning": "Lifestyle / Way of living",
+    "meaningEn": "Lifestyle / Way of living",
+    "meaningJa": "生活様式 / ライフスタイル",
+    "meaningKo": "인간이 삶을 영위하는 일정한 방식과 형태",
+    "partOfSpeech": "명사",
+    "exampleKo": "재택근무와 1인 가구의 증가로 새로운 도시 생활양식이 자리 잡았다.",
+    "exampleEn": "With WFH and single households rising, a new urban lifestyle took root.",
+    "exampleJa": "在宅勤務と一人暮らし世帯の増加により新しい都市の生活様式が定着した。"
+  },
+  {
+    "id": "k1210",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "사회현상",
+    "furigana": "[sa-hoe-hyeon-sang]",
+    "meaning": "Social phenomenon",
+    "meaningEn": "Social phenomenon",
+    "meaningJa": "社会現象",
+    "meaningKo": "사회 구성원 간의 관계 속에서 일어나는 여러 현상",
+    "partOfSpeech": "명사",
+    "exampleKo": "반려동물을 가족처럼 여기는 문화는 전 세계적인 사회현상이다.",
+    "exampleEn": "Treating pets like family members is a worldwide social phenomenon.",
+    "exampleJa": "ペットを家族のように大切にする文化は世界的な社会現象である。"
+  },
+  {
+    "id": "k1211",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "모색하다",
+    "furigana": "[mo-saek-ha-da]",
+    "meaning": "To seek / grope for (solutions)",
+    "meaningEn": "To seek / grope for (solutions)",
+    "meaningJa": "模索する",
+    "meaningKo": "해결할 길을 이리저리 찾다",
+    "partOfSpeech": "동사",
+    "exampleKo": "청년 일자리 부족 문제를 해결하기 위해 다양한 지원책을 모색하고 있다.",
+    "exampleEn": "Seeking diverse support measures to solve youth job shortage issues.",
+    "exampleJa": "青年の雇用不足問題を解決するため多様な支援策を模索している。"
+  },
+  {
+    "id": "k1212",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "규명하다",
+    "furigana": "[gyu-myeong-ha-da]",
+    "meaning": "To investigate / clarify / elucidate",
+    "meaningEn": "To investigate / clarify / elucidate",
+    "meaningJa": "究明する / 明らかにする",
+    "meaningKo": "사실이나 원인을 따져 분명하게 밝히다",
+    "partOfSpeech": "동사",
+    "exampleKo": "사고의 근본 원인을 과학적이고 철저하게 규명했다.",
+    "exampleEn": "Thoroughly and scientifically investigated the root causes of the accident.",
+    "exampleJa": "事故の根本的な原因を科学的かつ徹底的に究明した。"
+  },
+  {
+    "id": "k1213",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "촉진하다",
+    "furigana": "[chok-jin-ha-da]",
+    "meaning": "To promote / accelerate / facilitate",
+    "meaningEn": "To promote / accelerate / facilitate",
+    "meaningJa": "促進する",
+    "meaningKo": "어떤 일이 빨리 이루어지도록 돕고 북돋우다",
+    "partOfSpeech": "동사",
+    "exampleKo": "규제 완화는 첨단 기술 산업의 투자를 촉진하는 효과를 낳는다.",
+    "exampleEn": "Deregulation produces effects that accelerate investments in high-tech sectors.",
+    "exampleJa": "規制緩和はハイテク産業の投資を促進する効果を生み出す。"
+  },
+  {
+    "id": "k1214",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "뒷받침하다",
+    "furigana": "[dwit-bat-chim-ha-da]",
+    "meaning": "To back up / support / corroborate",
+    "meaningEn": "To back up / support / corroborate",
+    "meaningJa": "裏付ける / 後押しする",
+    "meaningKo": "근거를 대거나 힘을 보태어 지지하다",
+    "partOfSpeech": "동사",
+    "exampleKo": "객관적인 통계 수치가 그의 연구 주장을 든든하게 뒷받침해 준다.",
+    "exampleEn": "Objective statistical figures solidly back up his research argument.",
+    "exampleJa": "客観的な統計数値が彼の研究の主張を力強く裏付けている。"
+  },
+  {
+    "id": "k1215",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "간과하다",
+    "furigana": "[gan-gwa-ha-da]",
+    "meaning": "To overlook / miss",
+    "meaningEn": "To overlook / miss",
+    "meaningJa": "見過ごす / 看過する",
+    "meaningKo": "대수롭지 않게 보아 넘기다",
+    "partOfSpeech": "동사",
+    "exampleKo": "사소해 보이는 작은 징후라도 안전사고 예방을 위해 결코 간과해서는 안 된다.",
+    "exampleEn": "Never overlook even seemingly minor symptoms for safety hazard prevention.",
+    "exampleJa": "些細に見える小さな兆候であっても安全事故予防のために決して看過してはならない。"
+  },
+  {
+    "id": "k1216",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "납득하다",
+    "furigana": "[nap-deuk-ha-da]",
+    "meaning": "To be convinced / understand / accept",
+    "meaningEn": "To be convinced / understand / accept",
+    "meaningJa": "納得する",
+    "meaningKo": "다른 사람의 말이나 상황을 수긍하고 받아들이다",
+    "partOfSpeech": "동사",
+    "exampleKo": "구체적인 설명과 명확한 자료를 듣고 나서야 비로소 결과를 납득했다.",
+    "exampleEn": "Only after hearing detailed explanations and clear data was I convinced of results.",
+    "exampleJa": "具体的な説明と明確な資料を聞いてようやく結果に納得した。"
+  },
+  {
+    "id": "k1217",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "용납하다",
+    "furigana": "[yong-nap-ha-da]",
+    "meaning": "To tolerate / condone / forgive",
+    "meaningEn": "To tolerate / condone / forgive",
+    "meaningJa": "容認する / 許容する",
+    "meaningKo": "너그럽게 보아 넘기거나 허락하다",
+    "partOfSpeech": "동사",
+    "exampleKo": "부당한 차별과 비리는 어떠한 경우에도 결코 용납될 수 없다.",
+    "exampleEn": "Unfair discrimination and corruption can never be condoned under any circumstances.",
+    "exampleJa": "不当な差別や不正はいかなる場合でも決して容認されることはない。"
+  },
+  {
+    "id": "k1218",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "인정받다",
+    "furigana": "[in-jeong-bat-da]",
+    "meaning": "To be recognized / acknowledged",
+    "meaningEn": "To be recognized / acknowledged",
+    "meaningJa": "認められる / 評価される",
+    "meaningKo": "가치나 능력을 높게 평가받다",
+    "partOfSpeech": "동사",
+    "exampleKo": "끊임없는 노력 끝에 국제무대에서 뛰어난 실력을 공식 인정받았다.",
+    "exampleEn": "After tireless efforts, their outstanding caliber was officially recognized globally.",
+    "exampleJa": "不断の努力の末に国際舞台で優れた実力を公式に認められた。"
+  },
+  {
+    "id": "k1219",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "발휘하다",
+    "furigana": "[bal-hwi-ha-da]",
+    "meaning": "To exert / display / demonstrate",
+    "meaningEn": "To exert / display / demonstrate",
+    "meaningJa": "発揮する",
+    "meaningKo": "재능이나 능력을 밖으로 환히 드러내다",
+    "partOfSpeech": "동사",
+    "exampleKo": "위기 상황 속에서 침착하게 팀원들을 이끄는 리더십을 발휘했다.",
+    "exampleEn": "Exerted calm leadership guiding team members amidst crisis situations.",
+    "exampleJa": "危機的な状況の中で落ち着いてチーム員を導くリーダーシップを発揮した。"
+  },
+  {
+    "id": "k1220",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "강구하다",
+    "furigana": "[gang-gu-ha-da]",
+    "meaning": "To devise / take (measures)",
+    "meaningEn": "To devise / take (measures)",
+    "meaningJa": "講じる / 講究する",
+    "meaningKo": "좋은 방책이나 대책을 깊이 생각하여 찾다",
+    "partOfSpeech": "동사",
+    "exampleKo": "재발 방지를 위한 실효성 있는 종합 대책을 신속히 강구해야 한다.",
+    "exampleEn": "We must promptly devise effective comprehensive measures to prevent recurrence.",
+    "exampleJa": "再発防止のための実効性のある総合対策を迅速に講じなければならない。"
+  },
+  {
+    "id": "k1221",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "마련하다",
+    "furigana": "[ma-ryeon-ha-da]",
+    "meaning": "To prepare / arrange / secure",
+    "meaningEn": "To prepare / arrange / secure",
+    "meaningJa": "用意する / 設ける / 準備する",
+    "meaningKo": "필요한 물건이나 계획, 자리를 갖추다",
+    "partOfSpeech": "동사",
+    "exampleKo": "어려운 이웃들을 돕기 위한 자선 바자회 자리를 마련했습니다.",
+    "exampleEn": "Arranged a charity bazaar event to assist neighbors in need.",
+    "exampleJa": "恵まれない隣人を助けるための慈善バザーの場を用意しました。"
+  },
+  {
+    "id": "k1222",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "파악하다",
+    "furigana": "[pa-ak-ha-da]",
+    "meaning": "To grasp / identify / figure out",
+    "meaningEn": "To grasp / identify / figure out",
+    "meaningJa": "把握する",
+    "meaningKo": "사물의 형편이나 실정을 속속들이 알아차리다",
+    "partOfSpeech": "동사",
+    "exampleKo": "현장 조사를 통해 소비자들의 실제 불편 사항을 신속히 파악했다.",
+    "exampleEn": "Promptly grasped consumers' actual complaints through field investigations.",
+    "exampleJa": "現場調査を通じて消費者の実際の不満事項を迅速に把握した。"
+  },
+  {
+    "id": "k1223",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "분석하다",
+    "furigana": "[bun-seok-ha-da]",
+    "meaning": "To analyze / dissect",
+    "meaningEn": "To analyze / dissect",
+    "meaningJa": "分析する",
+    "meaningKo": "복잡한 현상이나 데이터를 쪼개어 연구하다",
+    "partOfSpeech": "동사",
+    "exampleKo": "빅데이터를 정밀 분석하여 향후 소비 트렌드를 예측했다.",
+    "exampleEn": "Accurately analyzed big data to forecast future consumption trends.",
+    "exampleJa": "ビッグデータを精密に分析して今後の消費トレンドを予測した。"
+  },
+  {
+    "id": "k1224",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "수렴하다",
+    "furigana": "[su-ryeom-ha-da]",
+    "meaning": "To converge / gather (opinions)",
+    "meaningEn": "To converge / gather (opinions)",
+    "meaningJa": "集約する / 収斂する",
+    "meaningKo": "여러 갈래의 의견이나 생각을 하나로 모으다",
+    "partOfSpeech": "동사",
+    "exampleKo": "공청회를 열어 법안 개정에 대한 시민들의 다양한 의견을 수렴했다.",
+    "exampleEn": "Held public hearings to gather diverse citizens' feedback on the bill revision.",
+    "exampleJa": "公聴会を開き法案改正に関する市民の多様な意見を集約した。"
+  },
+  {
+    "id": "k1225",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "도모하다",
+    "furigana": "[do-mo-ha-da]",
+    "meaning": "To promote / strive for / pursue",
+    "meaningEn": "To promote / strive for / pursue",
+    "meaningJa": "図る / 推進する",
+    "meaningKo": "어떤 일을 이루기 위해 대책을 세우고 꾀하다",
+    "partOfSpeech": "동사",
+    "exampleKo": "신기술 협력을 통해 기업 간의 공동 이익과 발전을 도모했다.",
+    "exampleEn": "Promoted mutual profits and growth between enterprises via new tech cooperation.",
+    "exampleJa": "新技術の協力を通じて企業間の共同利益と発展を図った。"
+  },
+  {
+    "id": "k1226",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "제고하다",
+    "furigana": "[je-go-ha-da]",
+    "meaning": "To enhance / elevate / boost",
+    "meaningEn": "To enhance / elevate / boost",
+    "meaningJa": "高める / 向上させる",
+    "meaningKo": "수준이나 가치를 한 단계 높이다",
+    "partOfSpeech": "동사",
+    "exampleKo": "직원 복지 확대를 통해 기업의 대외 경쟁력과 이미지를 제고했다.",
+    "exampleEn": "Boosted corporate competitiveness and image by expanding employee benefits.",
+    "exampleJa": "社員福利厚生の拡大を通じて企業の対外競争力とイメージを高めた。"
+  },
+  {
+    "id": "k1227",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "포용하다",
+    "furigana": "[po-yong-ha-da]",
+    "meaning": "To embrace / tolerate / encompass",
+    "meaningEn": "To embrace / tolerate / encompass",
+    "meaningJa": "包容する / 受け入れる",
+    "meaningKo": "넓은 마음으로 감싸고 너그럽게 받아들이다",
+    "partOfSpeech": "동사",
+    "exampleKo": "서로 다른 생각과 가치를 지닌 사람들을 따뜻하게 포용해야 한다.",
+    "exampleEn": "We must warmly embrace people carrying diverse thoughts and values.",
+    "exampleJa": "互いに異なる考えや価値観を持つ人々を温かく包容すべきだ。"
+  },
+  {
+    "id": "k1228",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "절충하다",
+    "furigana": "[jeol-chung-ha-da]",
+    "meaning": "To compromise / blend",
+    "meaningEn": "To compromise / blend",
+    "meaningJa": "折衷する / 妥協する",
+    "meaningKo": "서로 다른 의견을 조절하여 중간을 취하다",
+    "partOfSpeech": "동사",
+    "exampleKo": "양측의 요구 사항을 절충하여 합리적인 계약 조건을 마련했다.",
+    "exampleEn": "Compromised requests of both sides to establish rational contract conditions.",
+    "exampleJa": "双方の要求事項を折衷して合理的な契約条件を整えた。"
+  },
+  {
+    "id": "k1229",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "절제하다",
+    "furigana": "[jeol-je-ha-da]",
+    "meaning": "To restrain / moderate oneself",
+    "meaningEn": "To restrain / moderate oneself",
+    "meaningJa": "自制する / 控える",
+    "meaningKo": "욕망이나 감정을 억누르고 삼가다",
+    "partOfSpeech": "동사",
+    "exampleKo": "건강을 위해 과식을 절제하고 꾸준히 운동하고 있어요.",
+    "exampleEn": "Restraining overeating for health, I work out consistently.",
+    "exampleJa": "健康のために過食を自制し、着実に運動をしています。"
+  },
+  {
+    "id": "k1230",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "감수하다",
+    "furigana": "[gam-su-ha-da]",
+    "meaning": "To accept / bear / endure (risk/loss)",
+    "meaningEn": "To accept / bear / endure (risk/loss)",
+    "meaningJa": "甘受する / 引き受ける",
+    "meaningKo": "어려움이나 손해를 기꺼이 받아들이다",
+    "partOfSpeech": "동사",
+    "exampleKo": "성공을 위해서는 어느 정도의 실패 위험을 감수할 용기가 필요하다.",
+    "exampleEn": "Courage to bear a degree of failure risks is required for success.",
+    "exampleJa": "成功のためにはある程度の失敗のリスクを甘受する勇気が必要だ。"
+  },
+  {
+    "id": "k1231",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "견디다",
+    "furigana": "[gyeon-di-da]",
+    "meaning": "To endure / bear up / withstand",
+    "meaningEn": "To endure / bear up / withstand",
+    "meaningJa": "耐える / 持ちこたえる",
+    "meaningKo": "어려움이나 고통을 참고 버티어 내다",
+    "partOfSpeech": "동사",
+    "exampleKo": "강한 비바람 속에서도 고목은 묵묵히 폭풍우를 견뎌냈다.",
+    "exampleEn": "Even amidst severe storms, the ancient tree quietly withstood the tempest.",
+    "exampleJa": "激しい風雨の中でも古木は黙々と暴風雨に耐え抜いた。"
+  },
+  {
+    "id": "k1232",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "버티다",
+    "furigana": "[beo-ti-da]",
+    "meaning": "To hold out / stand ground / resist",
+    "meaningEn": "To hold out / stand ground / resist",
+    "meaningJa": "持ちこたえる / 踏ん張る",
+    "meaningKo": "굽히지 않고 끝까지 참으며 힘을 다해 지키다",
+    "partOfSpeech": "동사",
+    "exampleKo": "극심한 경제 위기 속에서도 희망을 잃지 않고 꿋꿋하게 버텼다.",
+    "exampleEn": "Never losing hope amid deep economic turmoil, held out steadfastly.",
+    "exampleJa": "深刻な経済危機の中でも希望を失わずしっかりと持ちこたえた。"
+  },
+  {
+    "id": "k1233",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "지탱하다",
+    "furigana": "[ji-taeng-ha-da]",
+    "meaning": "To sustain / support / maintain",
+    "meaningEn": "To sustain / support / maintain",
+    "meaningJa": "支える / 維持する",
+    "meaningKo": "무게나 어려움을 버티어 쓰러지지 않게 받치다",
+    "partOfSpeech": "동사",
+    "exampleKo": "가족들의 따뜻한 격려가 힘든 유학 생활을 지탱해 준 큰 힘이었다.",
+    "exampleEn": "Warm encouragement from family was the pillar sustaining tough study abroad.",
+    "exampleJa": "家族の温かい激励が大変な留学生活を支えてくれた大きな力だった。"
+  },
+  {
+    "id": "k1234",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "부응하다",
+    "furigana": "[bu-eung-ha-da]",
+    "meaning": "To live up to / respond to (expectations)",
+    "meaningEn": "To live up to / respond to (expectations)",
+    "meaningJa": "応える / 沿う",
+    "meaningKo": "요구나 기대에 알맞게 들어맞다",
+    "partOfSpeech": "동사",
+    "exampleKo": "국민들의 높은 기대에 부응하여 성실하게 공약을 이행하겠다.",
+    "exampleEn": "I will faithfully fulfill pledges living up to high public expectations.",
+    "exampleJa": "国民の高い期待に応えて誠実に公約を履行する。"
+  },
+  {
+    "id": "k1235",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "부합하다",
+    "furigana": "[bu-hap-ha-da]",
+    "meaning": "To coincide with / correspond to",
+    "meaningEn": "To coincide with / correspond to",
+    "meaningJa": "合致する / 符合する",
+    "meaningKo": "사물이나 조건이 서로 꼭 들어맞다",
+    "partOfSpeech": "동사",
+    "exampleKo": "이번 기획안은 회사의 장기 경영 목표에 완벽하게 부합한다.",
+    "exampleEn": "This proposal corresponds perfectly to the company's long-term business goals.",
+    "exampleJa": "今回の企画案は会社の長期的な経営目標に完璧に合致している。"
+  },
+  {
+    "id": "k1236",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "도약하다",
+    "furigana": "[do-yak-ha-da]",
+    "meaning": "To leap forward / take off",
+    "meaningEn": "To leap forward / take off",
+    "meaningJa": "跳躍する / 飛躍する",
+    "meaningKo": "더 높은 단계로 훌쩍 발전하여 나아가다",
+    "partOfSpeech": "동사",
+    "exampleKo": "신기술 혁신을 발판 삼아 세계 일류 기업으로 도약했다.",
+    "exampleEn": "Leveraging tech innovation, took off into a world-class enterprise.",
+    "exampleJa": "新技術の革新を踏み台にして世界一流企業へと跳躍した。"
+  },
+  {
+    "id": "k1237",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "성장하다",
+    "furigana": "[seong-jang-ha-da]",
+    "meaning": "To grow / mature",
+    "meaningEn": "To grow / mature",
+    "meaningJa": "成長する",
+    "meaningKo": "크기나 능력이 자라나고 커지다",
+    "partOfSpeech": "동사",
+    "exampleKo": "다양한 시련을 겪으면서 마음이 한층 성숙하게 성장했다.",
+    "exampleEn": "Undergoing diverse trials, matured and grew much more resiliently.",
+    "exampleJa": "多様な試練を経験しながら心が一段と成熟して成長した。"
+  },
+  {
+    "id": "k1238",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "발전하다",
+    "furigana": "[bal-jeon-ha-da]",
+    "meaning": "To develop / advance",
+    "meaningEn": "To develop / advance",
+    "meaningJa": "発展する / 進歩する",
+    "meaningKo": "더 좋은 상태나 수준으로 나아가다",
+    "partOfSpeech": "동사",
+    "exampleKo": "인공지능 기술의 발전으로 생활이 훨씬 편리해졌어요.",
+    "exampleEn": "Life has become much more convenient with the advance of AI technology.",
+    "exampleJa": "人工知能技術の発展により生活がはるかに便利になりました。"
+  },
+  {
+    "id": "k1239",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "도태되다",
+    "furigana": "[do-tae-doe-da]",
+    "meaning": "To be weeded out / fall behind",
+    "meaningEn": "To be weeded out / fall behind",
+    "meaningJa": "淘汰される / 取り残される",
+    "meaningKo": "경쟁에서 뒤처져 사라지거나 밀려나다",
+    "partOfSpeech": "동사",
+    "exampleKo": "시대의 빠른 변화에 적응하지 못하면 시장에서 도태되기 쉽다.",
+    "exampleEn": "Failing to adapt to fast-paced changes, one is prone to be weeded out.",
+    "exampleJa": "時代の急速な変化に適応できなければ市場で淘汰されやすい。"
+  },
+  {
+    "id": "k1240",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "퇴보하다",
+    "furigana": "[toe-bo-ha-da]",
+    "meaning": "To regress / degenerate",
+    "meaningEn": "To regress / degenerate",
+    "meaningJa": "退歩する / 後退する",
+    "meaningKo": "수준이나 상태가 예전보다 뒤떨어지다",
+    "partOfSpeech": "동사",
+    "exampleKo": "과거의 낡은 관행에 안주하면 조직 전체가 퇴보하게 된다.",
+    "exampleEn": "Resting on outdated practices causes the whole organization to regress.",
+    "exampleJa": "過去の古い慣行に安住すると組織全体が退後することになる。"
+  },
+  {
+    "id": "k1241",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "두드러지다",
+    "furigana": "[du-deu-reo-ji-da]",
+    "meaning": "To stand out / prominent / remarkable",
+    "meaningEn": "To stand out / prominent / remarkable",
+    "meaningJa": "際立つ / 目立つ",
+    "meaningKo": "겉으로 뚜렷하게 드러나다",
+    "partOfSpeech": "형용사",
+    "exampleKo": "올해 들어 수출 실적의 두드러진 성장세가 이어지고 있다.",
+    "exampleEn": "Remarkable growth in export performance continues into this year.",
+    "exampleJa": "今年に入り輸出実績の際立った成長傾向が続いている。"
+  },
+  {
+    "id": "k1242",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "드물다",
+    "furigana": "[deu-mul-da]",
+    "meaning": "Rare / Scarce",
+    "meaningEn": "Rare / Scarce",
+    "meaningJa": "珍しい / 稀だ",
+    "meaningKo": "흔하지 않고 아주 귀하다",
+    "partOfSpeech": "형용사",
+    "exampleKo": "도심 한가운데서 맑은 반딧불이를 보는 것은 매우 드문 일이다.",
+    "exampleEn": "Spotting glowing fireflies in the middle of downtown is very rare.",
+    "exampleJa": "都心の真ん中で澄んだホタルを見るのは非常に珍しいことだ。"
+  },
+  {
+    "id": "k1243",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "번거롭다",
+    "furigana": "[beon-geo-rop-da]",
+    "meaning": "Cumbersome / Troublesome",
+    "meaningEn": "Cumbersome / Troublesome",
+    "meaningJa": "煩わしい / 手間がかかる",
+    "meaningKo": "절차가 복잡하고 손이 많이 가서 귀찮다",
+    "partOfSpeech": "형용사",
+    "exampleKo": "절차가 번거롭더라도 보안을 위해 2차 인증을 꼭 설정하세요.",
+    "exampleEn": "Though cumbersome, be sure to set up 2-factor authentication for security.",
+    "exampleJa": "手続きが煩わしくてもセキュリティのために2段階認証を必ず設定してください。"
+  },
+  {
+    "id": "k1244",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "까다롭다",
+    "furigana": "[kka-da-rop-da]",
+    "meaning": "Fastidious / Demanding / Tricky",
+    "meaningEn": "Fastidious / Demanding / Tricky",
+    "meaningJa": " 까다롭다 / 気難しい / 厳しい",
+    "meaningKo": "조건이나 성격이 깐깐하고 맞추기 어렵다",
+    "partOfSpeech": "형용사",
+    "exampleKo": "품질 검증 기준이 매우 까다로워서 불량률이 거의 제로에 가깝다.",
+    "exampleEn": "Because quality audit criteria are strict, defects are nearly zero.",
+    "exampleJa": "品質検証の基準が非常に厳しいため、不良率はほぼゼロに近いです。"
+  },
+  {
+    "id": "k1245",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "너그럽다",
+    "furigana": "[neo-geu-reop-da]",
+    "meaning": "Generous / Tolerant / Broad-minded",
+    "meaningEn": "Generous / Tolerant / Broad-minded",
+    "meaningJa": "寛大だ / 心が広い",
+    "meaningKo": "마음이 넓고 남의 잘못을 잘 감싸주다",
+    "partOfSpeech": "형용사",
+    "exampleKo": "선생님은 학생들의 작은 실수를 너그럽게 감싸주셨어요.",
+    "exampleEn": "The teacher generously excused students' minor mistakes.",
+    "exampleJa": "先生は学生たちの小さな過ちを寛大に包み込んでくださいました。"
+  },
+  {
+    "id": "k1246",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "날카롭다",
+    "furigana": "[nal-ka-rop-da]",
+    "meaning": "Sharp / Keen / Piercing",
+    "meaningEn": "Sharp / Keen / Piercing",
+    "meaningJa": "鋭い / 尖っている",
+    "meaningKo": "끝이 뾰족하거나 판단과 시선이 예리하다",
+    "partOfSpeech": "형용사",
+    "exampleKo": "기자의 날카로운 질문에 대변인이 잠시 대답을 머뭇거렸다.",
+    "exampleEn": "At the reporter's sharp question, the spokesperson hesitated momentarily.",
+    "exampleJa": "記者の鋭い質問に報道官は一瞬回答をためらいました。"
+  },
+  {
+    "id": "k1247",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "미흡하다",
+    "furigana": "[mi-heup-ha-da]",
+    "meaning": "Insufficient / Inadequate / Incomplete",
+    "meaningEn": "Insufficient / Inadequate / Incomplete",
+    "meaningJa": "不備がある / 不十分だ",
+    "meaningKo": "충분하지 못하고 어딘가 모자라다",
+    "partOfSpeech": "형용사",
+    "exampleKo": "안전 점검 결과 미흡한 부분에 대해 즉각적인 보완 공사를 지시했다.",
+    "exampleEn": "Ordered immediate remedial works on parts found inadequate in safety audits.",
+    "exampleJa": "安全点検の結果、不十分な部分について即座の補完工事を指示した。"
+  },
+  {
+    "id": "k1248",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "긴밀하다",
+    "furigana": "[gin-mil-ha-da]",
+    "meaning": "Close / Tight-knit (cooperation)",
+    "meaningEn": "Close / Tight-knit (cooperation)",
+    "meaningJa": "緊密だ",
+    "meaningKo": "서로의 관계가 빈틈없이 아주 가깝다",
+    "partOfSpeech": "형용사",
+    "exampleKo": "국제 범죄를 근절하기 위해 관련 국가 간의 긴밀한 공조가 필요하다.",
+    "exampleEn": "Close coordination among involved nations is required to eradicate global crime.",
+    "exampleJa": "国際犯罪を根絶するため関係国間の緊密な連携が必要だ。"
+  },
+  {
+    "id": "k1249",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "밀접하다",
+    "furigana": "[mil-jeop-ha-da]",
+    "meaning": "Inseparable / Closely related",
+    "meaningEn": "Inseparable / Closely related",
+    "meaningJa": "密接だ",
+    "meaningKo": "서로 매우 가깝게 맞닿아 있거나 깊은 관계가 있다",
+    "partOfSpeech": "형용사",
+    "exampleKo": "식습관과 신체 건강은 떼려야 뗄 수 없을 만큼 밀접한 관계다.",
+    "exampleEn": "Dietary habits and physical health are inseparably and closely related.",
+    "exampleJa": "食習慣と身体の健康は切っても切れないほど密接な関係にある。"
+  },
+  {
+    "id": "k1250",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "적절하다",
+    "furigana": "[jeok-jeol-ha-da]",
+    "meaning": "Appropriate / Proper / Suitable",
+    "meaningEn": "Appropriate / Proper / Suitable",
+    "meaningJa": "適切だ / 相応しい",
+    "meaningKo": "형편이나 조건에 꼭 알맞다",
+    "partOfSpeech": "형용사",
+    "exampleKo": "상황에 맞는 적절한 표현을 사용하여 원활하게 대화를 이끌었다.",
+    "exampleEn": "Led conversations smoothly using proper expressions fitting the context.",
+    "exampleJa": "状況に合った適切な表現を使用して円滑に対話を導きました。"
+  },
+  {
+    "id": "k1251",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "부적절하다",
+    "furigana": "[bu-jeok-jeol-ha-da]",
+    "meaning": "Inappropriate / Improper",
+    "meaningEn": "Inappropriate / Improper",
+    "meaningJa": "不適切だ",
+    "meaningKo": "상황에 알맞지 않고 어긋나다",
+    "partOfSpeech": "형용사",
+    "exampleKo": "공식 석상에서 부적절한 언행을 삼가는 것이 기본 소양이다.",
+    "exampleEn": "Refraining from improper remarks in public forums is basic etiquette.",
+    "exampleJa": "公式の場において不適切な言動を控えることが基本的な素養だ。"
+  },
+  {
+    "id": "k1252",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "생생하다",
+    "furigana": "[saeng-saeng-ha-da]",
+    "meaning": "Vivid / Fresh / Graphic",
+    "meaningEn": "Vivid / Fresh / Graphic",
+    "meaningJa": "生き生きしている / 生々しい",
+    "meaningKo": "기억이나 묘사가 마치 눈앞에 보듯 분명하다",
+    "partOfSpeech": "형용사",
+    "exampleKo": "할아버지의 옛날이야기가 눈앞에 펼쳐지듯 생생하게 들렸다.",
+    "exampleEn": "Grandfather's old stories sounded as vivid as unfolding right before my eyes.",
+    "exampleJa": "おじいさんの昔話が目の前に広がるように生き生きと聞こえました。"
+  },
+  {
+    "id": "k1253",
+    "level": "TOPIK II 중급 핵심 어휘",
+    "category": "TOPIK II 중급 핵심 어휘",
+    "word": "팽팽하다",
+    "furigana": "[paeng-paeng-ha-da]",
+    "meaning": "Tense / Evenly balanced / Tight",
+    "meaningEn": "Tense / Evenly balanced / Tight",
+    "meaningJa": "張り詰めている / 互角だ",
+    "meaningKo": "줄이 당겨져 팽팽하거나 세력의 균형이 팽팽히 맞서다",
+    "partOfSpeech": "형용사",
+    "exampleKo": "결승전 두 팀의 실력이 팽팽하여 승부를 쉽게 예측할 수 없었다.",
+    "exampleEn": "Both finals teams were evenly matched, so the winner was hard to predict.",
+    "exampleJa": "決勝戦の両チームの実力が互角で勝負を容易に予測できませんでした。"
+  },
+  {
+    "id": "k1254",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "꿀잼",
@@ -17310,7 +18810,7 @@
     "exampleJa": "昨日新しく始まった韓国ドラマ、めっちゃ面白いです。"
   },
   {
-    "id": "k1155",
+    "id": "k1255",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "노잼",
@@ -17325,7 +18825,7 @@
     "exampleJa": "週末に見た映画はストーリーがありきたりで超つまらなかった。"
   },
   {
-    "id": "k1156",
+    "id": "k1256",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "헐",
@@ -17340,7 +18840,7 @@
     "exampleJa": "えっ、今地下鉄のドアが閉まって目の前で乗り遅れた。"
   },
   {
-    "id": "k1157",
+    "id": "k1257",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "거짓말",
@@ -17355,7 +18855,7 @@
     "exampleJa": "うそでしょ！本当にあの俳優を直接街で見たの？"
   },
   {
-    "id": "k1158",
+    "id": "k1258",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "어떡해",
@@ -17370,7 +18870,7 @@
     "exampleJa": "パスポートを宿に置いてきちゃったんだけど、どうしよう？"
   },
   {
-    "id": "k1159",
+    "id": "k1259",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "본방사수",
@@ -17385,7 +18885,7 @@
     "exampleJa": "今夜9時のドラマ最終回は絶対にリアタイします。"
   },
   {
-    "id": "k1160",
+    "id": "k1260",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "최애",
@@ -17400,7 +18900,7 @@
     "exampleJa": "私のK-POPグループの推しメンバーはメインボーカルです。"
   },
   {
-    "id": "k1161",
+    "id": "k1261",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "차애",
@@ -17415,7 +18915,7 @@
     "exampleJa": "一番の推しはリーダーだけど、2番目の推しは可愛いマンネです。"
   },
   {
-    "id": "k1162",
+    "id": "k1262",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "덕질",
@@ -17430,7 +18930,7 @@
     "exampleJa": "週末ごとにフォトカードを整理してアルバムを集めてオタ活しています。"
   },
   {
-    "id": "k1163",
+    "id": "k1263",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "츤데레",
@@ -17445,7 +18945,7 @@
     "exampleJa": "ドラマの男性主人公が典型的なツンデレの魅力を持っています。"
   },
   {
-    "id": "k1164",
+    "id": "k1264",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "썸",
@@ -17460,7 +18960,7 @@
     "exampleJa": "あの二人、最近の雰囲気を見るとサム（いい感じ）のようだけど？"
   },
   {
-    "id": "k1165",
+    "id": "k1265",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "찰떡",
@@ -17475,7 +18975,7 @@
     "exampleJa": "二人の俳優のケミストリーがドラマの中で相性抜群です。"
   },
   {
-    "id": "k1166",
+    "id": "k1266",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "국룰",
@@ -17490,7 +18990,7 @@
     "exampleJa": "チキンを食べる時の大根漬けとコーラは完全に定番ルールだよね！"
   },
   {
-    "id": "k1167",
+    "id": "k1267",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "멘붕",
@@ -17505,7 +19005,7 @@
     "exampleJa": "試験問題を見るや否や難しすぎてメンタル崩壊しました。"
   },
   {
-    "id": "k1168",
+    "id": "k1268",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "갓생",
@@ -17520,7 +19020,7 @@
     "exampleJa": "朝6時に起きて運動し、韓国語を勉強して充実した神生を生きる！"
   },
   {
-    "id": "k1169",
+    "id": "k1269",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "존맛탱",
@@ -17535,7 +19035,7 @@
     "exampleJa": "乙支路の路地で食べたホルモン鍋、マジで超絶うまいです。"
   },
   {
-    "id": "k1170",
+    "id": "k1270",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "혼밥",
@@ -17550,7 +19050,7 @@
     "exampleJa": "最近は韓国の飲食店にも一人ご飯をしやすいカウンター席が多いです。"
   },
   {
-    "id": "k1171",
+    "id": "k1271",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "소확행",
@@ -17565,7 +19065,7 @@
     "exampleJa": "帰り道にたい焼きを3つ買って食べるのが私のささやかな幸せです。"
   },
   {
-    "id": "k1172",
+    "id": "k1272",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "막장",
@@ -17580,7 +19080,7 @@
     "exampleJa": "悪口を言いながらも次回が気になって見続けてしまうマクチャンドラマの魅力！"
   },
   {
-    "id": "k1173",
+    "id": "k1273",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "연하남",
@@ -17595,7 +19095,7 @@
     "exampleJa": "ドラマで大胆で優しい年下男子のキャラクターが大人気を集めました。"
   },
   {
-    "id": "k1174",
+    "id": "k1274",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "남사친",
@@ -17610,7 +19110,7 @@
     "exampleJa": "10年来の男友達とトッポッキを食べながら悩みの相談をしました。"
   },
   {
-    "id": "k1175",
+    "id": "k1275",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "여사친",
@@ -17625,7 +19125,7 @@
     "exampleJa": "彼女は長年の女友達なので、お互いに知らない秘密がありません。"
   },
   {
-    "id": "k1176",
+    "id": "k1276",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "럽스타그램",
@@ -17640,7 +19140,7 @@
     "exampleJa": "週末のデート写真をカップルアカウントに投稿してラブスタグラムを始めました。"
   },
   {
-    "id": "k1177",
+    "id": "k1277",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "오빠",
@@ -17655,7 +19155,7 @@
     "exampleJa": "ドラマの女性主人公が優しく「オッパ」と呼びました。"
   },
   {
-    "id": "k1178",
+    "id": "k1278",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "언니",
@@ -17670,7 +19170,7 @@
     "exampleJa": "親しいオンニ（お姉さん）が美味しいサムギョプサルを奢ってくれました。"
   },
   {
-    "id": "k1179",
+    "id": "k1279",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "형",
@@ -17685,7 +19185,7 @@
     "exampleJa": "軍隊で出会った良いヒョンたちと今でも連絡を取り合っています。"
   },
   {
-    "id": "k1180",
+    "id": "k1280",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "누나",
@@ -17700,7 +19200,7 @@
     "exampleJa": "「よくおごってくれる綺麗なお姉さん」のドラマが本当に温かかったです。"
   },
   {
-    "id": "k1181",
+    "id": "k1281",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "막내",
@@ -17715,7 +19215,7 @@
     "exampleJa": "アイドルグループの可愛いマンネ（末っ子）メンバーが愛嬌を振りまきます。"
   },
   {
-    "id": "k1182",
+    "id": "k1282",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "애교",
@@ -17730,7 +19230,7 @@
     "exampleJa": "ファンサイン会でファンのために愛らしい愛嬌を見せてくれました。"
   },
   {
-    "id": "k1183",
+    "id": "k1283",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "케미",
@@ -17745,7 +19245,7 @@
     "exampleJa": "ラブコメの主演俳優二人のケミ（相性）が幻想的です。"
   },
   {
-    "id": "k1184",
+    "id": "k1284",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "팬싸",
@@ -17760,7 +19260,7 @@
     "exampleJa": "アルバムを何枚も買って、ついに週末のサイン会に当選しました！"
   },
   {
-    "id": "k1185",
+    "id": "k1285",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "포카",
@@ -17775,7 +19275,7 @@
     "exampleJa": "欲しかった推しメンバーのポカが出て、嬉しくて叫びました。"
   },
   {
-    "id": "k1186",
+    "id": "k1286",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "입덕",
@@ -17790,7 +19290,7 @@
     "exampleJa": "新曲ステージのチッケム（ファンカム）動画を見て一気に沼落ちしてしまいました。"
   },
   {
-    "id": "k1187",
+    "id": "k1287",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "탈덕",
@@ -17805,7 +19305,7 @@
     "exampleJa": "一度沼落ちしたら絶対に出口のない魅力なので、オタ卒できません。"
   },
   {
-    "id": "k1188",
+    "id": "k1288",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "역주행",
@@ -17820,7 +19320,7 @@
     "exampleJa": "SNSのショート動画のおかげで昔の歌が音楽チャートで逆走中です。"
   },
   {
-    "id": "k1189",
+    "id": "k1289",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "인생샷",
@@ -17835,7 +19335,7 @@
     "exampleJa": "北村韓屋村で韓服を着て人生最高の一枚が撮れました。"
   },
   {
-    "id": "k1190",
+    "id": "k1290",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "불소",
@@ -17850,7 +19350,7 @@
     "exampleJa": "アイドルメンバーがWeverseライブで2時間の間、熱心にコミュニケーションしてくれました。"
   },
   {
-    "id": "k1191",
+    "id": "k1291",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "사이다",
@@ -17865,7 +19365,7 @@
     "exampleJa": "悪役に痛快に復讐する主人公の姿が完全にサイダー（すっきり爽快）でした。"
   },
   {
-    "id": "k1192",
+    "id": "k1292",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "고구마",
@@ -17880,7 +19380,7 @@
     "exampleJa": "主人公たちが誤解を解かずに引っ張るので、あまりにももどかしいです。"
   },
   {
-    "id": "k1193",
+    "id": "k1293",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "금수저",
@@ -17895,7 +19395,7 @@
     "exampleJa": "ドラマの主人公は財閥家の金のスプーン（裕福な家庭）の後継者です。"
   },
   {
-    "id": "k1194",
+    "id": "k1294",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "흙수저",
@@ -17910,7 +19410,7 @@
     "exampleJa": "土のスプーンの生まれですが、誠実に努力して最高経営者になりました。"
   },
   {
-    "id": "k1195",
+    "id": "k1295",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "팩폭",
@@ -17925,7 +19425,7 @@
     "exampleJa": "友達が私の怠惰な習慣について、骨身に染みる痛烈な正論を放ちました。"
   },
   {
-    "id": "k1196",
+    "id": "k1296",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "어그로",
@@ -17940,7 +19440,7 @@
     "exampleJa": "刺激的なYouTubeのサムネイルで炎上・関心煽りをする動画が多いです。"
   },
   {
-    "id": "k1197",
+    "id": "k1297",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "첫사랑",
@@ -17955,7 +19455,7 @@
     "exampleJa": "韓国の恋愛映画の定番テーマは、初々しい初恋の物語です。"
   },
   {
-    "id": "k1198",
+    "id": "k1298",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "짝사랑",
@@ -17970,7 +19470,7 @@
     "exampleJa": "サブ男性主人公の切ない片思いの演技に視聴者が涙しました。"
   },
   {
-    "id": "k1199",
+    "id": "k1299",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "고백",
@@ -17985,7 +19485,7 @@
     "exampleJa": "南山タワーの夜景を見つめながら、主人公が心からの告白をしました。"
   },
   {
-    "id": "k1200",
+    "id": "k1300",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "이별",
@@ -18000,7 +19500,7 @@
     "exampleJa": "胸の痛む別れのシーンで流れるOSTの曲がとても悲しいです。"
   },
   {
-    "id": "k1201",
+    "id": "k1301",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "약속해",
@@ -18015,7 +19515,7 @@
     "exampleJa": "いつどこででも必ずまた会おうと、私と約束して。"
   },
   {
-    "id": "k1202",
+    "id": "k1302",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "보고 싶어",
@@ -18030,7 +19530,7 @@
     "exampleJa": "一日中あなたのことばかり思い浮かんで、とても会いたいです。"
   },
   {
-    "id": "k1203",
+    "id": "k1303",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "사랑해",
@@ -18045,7 +19545,7 @@
     "exampleJa": "照れくさそうに口にした「愛してる」のひと言に、世界中が止まったようでした。"
   },
   {
-    "id": "k1204",
+    "id": "k1304",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "진심",
@@ -18060,7 +19560,7 @@
     "exampleJa": "冗談じゃなくて、本心からあなたのことが好きです。"
   },
   {
-    "id": "k1205",
+    "id": "k1305",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "설레다",
@@ -18075,7 +19575,7 @@
     "exampleJa": "初めて手を握った時、心臓が破裂しそうなくらいトキメキました。"
   },
   {
-    "id": "k1206",
+    "id": "k1306",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "눈물",
@@ -18090,7 +19590,7 @@
     "exampleJa": "主人公の切ない事情を聞いて、自然と涙が溢れました。"
   },
   {
-    "id": "k1207",
+    "id": "k1307",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "운명",
@@ -18105,7 +19605,7 @@
     "exampleJa": "幼い頃に別れた二人が大人になって再会したのは運命でした。"
   },
   {
-    "id": "k1208",
+    "id": "k1308",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "영원히",
@@ -18120,7 +19620,7 @@
     "exampleJa": "あなたのそばで永遠に一緒にいることを誓うよ。"
   },
   {
-    "id": "k1209",
+    "id": "k1309",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "행복해",
@@ -18135,7 +19635,7 @@
     "exampleJa": "あなたと一緒にいるこの瞬間が、私の人生で一番幸せです。"
   },
   {
-    "id": "k1210",
+    "id": "k1310",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "화이팅",
@@ -18150,7 +19650,7 @@
     "exampleJa": "明日の試験、上手くいきますように！ファイティン！"
   },
   {
-    "id": "k1211",
+    "id": "k1311",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "힘내",
@@ -18165,7 +19665,7 @@
     "exampleJa": "今は辛いけれど全部過ぎ去るよ。少しだけ元気を出して！"
   },
   {
-    "id": "k1212",
+    "id": "k1312",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "축하해",
@@ -18180,7 +19680,7 @@
     "exampleJa": "念願の会社に最終合格したこと、本当におめでとう！"
   },
   {
-    "id": "k1213",
+    "id": "k1313",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "대단해",
@@ -18195,7 +19695,7 @@
     "exampleJa": "独学で韓国語5級を取ったなんて、君は本当にすごいよ！"
   },
   {
-    "id": "k1214",
+    "id": "k1314",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "멋있어",
@@ -18210,7 +19710,7 @@
     "exampleJa": "ステージの上で踊るアイドルのカリスマがとてもかっこいいです。"
   },
   {
-    "id": "k1215",
+    "id": "k1315",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "솔직히",
@@ -18225,7 +19725,7 @@
     "exampleJa": "正直に言って、最初はあなたが少し怖かったよ。"
   },
   {
-    "id": "k1216",
+    "id": "k1316",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "직캠",
@@ -18240,7 +19740,7 @@
     "exampleJa": "YouTubeで推しメンバーのチッケム（ファンカム）動画を100回以上見返しました。"
   },
   {
-    "id": "k1217",
+    "id": "k1317",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "엔딩요정",
@@ -18255,7 +19755,7 @@
     "exampleJa": "新曲ステージの最後で息を切らしながら微笑むエンディング妖精のカットが話題です。"
   },
   {
-    "id": "k1218",
+    "id": "k1318",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "칼군무",
@@ -18270,7 +19770,7 @@
     "exampleJa": "K-POPボーイズグループの寸分の狂いもないカル群舞は世界最高水準です。"
   },
   {
-    "id": "k1219",
+    "id": "k1319",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "수고했어",
@@ -18285,7 +19785,7 @@
     "exampleJa": "今日は本当に大変な一日だったよね？ご苦労さま、お疲れさま！"
   },
   {
-    "id": "k1220",
+    "id": "k1320",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "잘자",
@@ -18300,7 +19800,7 @@
     "exampleJa": "今日一日も疲れたでしょうに、ゆっくり休んでおやすみ。"
   },
   {
-    "id": "k1221",
+    "id": "k1321",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "밥 먹었어?",
@@ -18315,7 +19815,7 @@
     "exampleJa": "久しぶりに会った友達が嬉しそうに「ご飯食べた？」と尋ねてくれました。"
   },
   {
-    "id": "k1222",
+    "id": "k1322",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "어쩌라고",
@@ -18330,7 +19830,7 @@
     "exampleJa": "自分が遅れておきながら私に怒ったって、だから何？"
   },
   {
-    "id": "k1223",
+    "id": "k1323",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "내돈내산",
@@ -18345,7 +19845,7 @@
     "exampleJa": "率直なレビューを残します。協賛ではなく100％自腹購入です。"
   },
   {
-    "id": "k1224",
+    "id": "k1324",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "티미",
@@ -18360,7 +19860,7 @@
     "exampleJa": "今朝靴下を左右ちぐはぐに履いてきたの、完全なTMI（どうでもいい情報）でしょ？"
   },
   {
-    "id": "k1225",
+    "id": "k1325",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "갑분싸",
@@ -18375,7 +19875,7 @@
     "exampleJa": "部長のオヤジギャグのひと言に、飲み会の席が急に凍りつきました。"
   },
   {
-    "id": "k1226",
+    "id": "k1326",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "존버",
@@ -18390,7 +19890,7 @@
     "exampleJa": "辛い試用期間でしたが、ひたすら耐え忍んで正社員になりました。"
   },
   {
-    "id": "k1227",
+    "id": "k1327",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "현타",
@@ -18405,7 +19905,7 @@
     "exampleJa": "華やかなコンサートが終わり、誰もいない部屋に一人戻ると現実に引き戻されました。"
   },
   {
-    "id": "k1228",
+    "id": "k1328",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "취향저격",
@@ -18420,7 +19920,7 @@
     "exampleJa": "このカフェのレトロなインテリアとプレイリストは完全に好みにドンピシャです。"
   },
   {
-    "id": "k1229",
+    "id": "k1329",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "모태솔로",
@@ -18435,7 +19935,7 @@
     "exampleJa": "ドラマの男性主人公は恋愛経験が全くない純真なモテソロ（交際経験ゼロ）です。"
   },
   {
-    "id": "k1230",
+    "id": "k1330",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "밀당",
@@ -18450,7 +19950,7 @@
     "exampleJa": "恋愛する時、疲れる駆け引きをせずに素直に気持ちを表現しよう。"
   },
   {
-    "id": "k1231",
+    "id": "k1331",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "금사빠",
@@ -18465,7 +19965,7 @@
     "exampleJa": "親切な笑顔ひとつに心を奪われてしまう典型的な惚れっぽい人です。"
   },
   {
-    "id": "k1232",
+    "id": "k1332",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "어안이 벙벙",
@@ -18480,7 +19980,7 @@
     "exampleJa": "宝くじに1等で当選したという知らせを聞いて、あっけに取られました。"
   },
   {
-    "id": "k1233",
+    "id": "k1333",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "손발이 오그라들다",
@@ -18495,7 +19995,7 @@
     "exampleJa": "昔書いた日記帳を読み返してみると、恥ずかしくて手足が縮こまります。"
   },
   {
-    "id": "k1234",
+    "id": "k1334",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "눈치가 빠르다",
@@ -18510,7 +20010,7 @@
     "exampleJa": "その友達は空気が読めるので、いつも雰囲気を愉快にリードします。"
   },
   {
-    "id": "k1235",
+    "id": "k1335",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "응원봉",
@@ -18525,7 +20025,7 @@
     "exampleJa": "コンサート開始前にペンライトのBluetooth連動を完了しました。"
   },
   {
-    "id": "k1236",
+    "id": "k1336",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "스밍",
@@ -18540,7 +20040,7 @@
     "exampleJa": "新曲のチャート1位のためにファンたちが徹夜でスミンを回しています。"
   },
   {
-    "id": "k1237",
+    "id": "k1337",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "피켓팅",
@@ -18555,7 +20055,7 @@
     "exampleJa": "サーバーが落ちるほど熾烈だったチケッティングでついに成功しました！"
   },
   {
-    "id": "k1238",
+    "id": "k1338",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "역조공",
@@ -18570,7 +20070,7 @@
     "exampleJa": "早朝収録に来てくれたファンのためにサンドイッチとコーヒーを差し入れしました。"
   },
   {
-    "id": "k1239",
+    "id": "k1339",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "굿즈",
@@ -18585,7 +20085,7 @@
     "exampleJa": "ポップアップストアで限定版Tシャツとキーリングのグッズを購入しました。"
   },
   {
-    "id": "k1240",
+    "id": "k1340",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "떼창",
@@ -18600,7 +20100,7 @@
     "exampleJa": "韓国のコンサートのハイライトは観客たちの熱い大合唱の文化です。"
   },
   {
-    "id": "k1241",
+    "id": "k1341",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "컴백",
@@ -18615,7 +20115,7 @@
     "exampleJa": "来月フルアルバムでカムバックするというティーザーが出ました！"
   },
   {
-    "id": "k1242",
+    "id": "k1342",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "타이틀곡",
@@ -18630,7 +20130,7 @@
     "exampleJa": "タイトル曲のダンスチャレンジがTikTokやリールで流行しています。"
   },
   {
-    "id": "k1243",
+    "id": "k1343",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "수록곡",
@@ -18645,7 +20145,7 @@
     "exampleJa": "タイトル曲も良いですが、3曲目の収録曲が隠れた名曲です。"
   },
   {
-    "id": "k1244",
+    "id": "k1344",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "양도",
@@ -18660,7 +20160,7 @@
     "exampleJa": "都合で行けなくなったコンサートのチケットを定価で譲渡しました。"
   },
   {
-    "id": "k1245",
+    "id": "k1345",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "플미",
@@ -18675,7 +20175,7 @@
     "exampleJa": "ダフ屋が法外なプレ値を上乗せしてチケットを売っています。"
   },
   {
-    "id": "k1246",
+    "id": "k1346",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "세계관",
@@ -18690,7 +20190,7 @@
     "exampleJa": "このグループはMVごとに繋がる神秘的な世界観が魅力的です。"
   },
   {
-    "id": "k1247",
+    "id": "k1347",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "억까",
@@ -18705,7 +20205,7 @@
     "exampleJa": "何も悪くないのに些細な言いがかりで理不尽に叩かれました。"
   },
   {
-    "id": "k1248",
+    "id": "k1348",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "억빠",
@@ -18720,7 +20220,7 @@
     "exampleJa": "明らかな欠点まで無条件で擁護する盲目的な持ち上げはむしろ毒です。"
   },
   {
-    "id": "k1249",
+    "id": "k1349",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "킹받네",
@@ -18735,7 +20235,7 @@
     "exampleJa": "友達の憎たらしい表情を見て本当に超ムカつきます（笑）。"
   },
   {
-    "id": "k1250",
+    "id": "k1350",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "폼미쳤다",
@@ -18750,7 +20250,7 @@
     "exampleJa": "今日のうちのチームのソン・フンミン選手のプレー、キレキレで神がかってた！"
   },
   {
-    "id": "k1251",
+    "id": "k1351",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "갓벽하다",
@@ -18765,7 +20265,7 @@
     "exampleJa": "歌、ダンス、ビジュアルまで全てが完璧すぎるステージでした。"
   },
   {
-    "id": "k1252",
+    "id": "k1352",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "알잘딱깔센",
@@ -18780,7 +20280,7 @@
     "exampleJa": "新入社員が指示されなくても空気を読んでスマートに資料をまとめました。"
   },
   {
-    "id": "k1253",
+    "id": "k1353",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "뇌피셜",
@@ -18795,7 +20295,7 @@
     "exampleJa": "それはニュース記事ではなく掲示板の根拠のない推測に過ぎないよ。"
   },
   {
-    "id": "k1254",
+    "id": "k1354",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "중꺾마",
@@ -18810,7 +20310,7 @@
     "exampleJa": "点数が伸びなくても折れない心の精神で最後まで諦めないでください！"
   },
   {
-    "id": "k1255",
+    "id": "k1355",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "꾸안꾸",
@@ -18825,7 +20325,7 @@
     "exampleJa": "白Tシャツにデニムを合わせるだけでもこなれ感のある自然体ルックです。"
   },
   {
-    "id": "k1256",
+    "id": "k1356",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "점메추",
@@ -18840,7 +20340,7 @@
     "exampleJa": "今日のランチに何を食べるか悩んでいるのでメニューをおすすめしてください！"
   },
   {
-    "id": "k1257",
+    "id": "k1357",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "저메추",
@@ -18855,7 +20355,7 @@
     "exampleJa": "仕事帰りに冷たいビールと合う夜ご飯のおすすめをお願いします。"
   },
   {
-    "id": "k1258",
+    "id": "k1358",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "낄끼빠빠",
@@ -18870,7 +20370,7 @@
     "exampleJa": "空気を読まずに割り込まず、わきまえて行動しなさい。"
   },
   {
-    "id": "k1259",
+    "id": "k1359",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "졌잘싸",
@@ -18885,7 +20385,7 @@
     "exampleJa": "試合には負けましたが最後まで闘志を見せたナイスファイトでした。"
   },
   {
-    "id": "k1260",
+    "id": "k1360",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "쌉가능",
@@ -18900,7 +20400,7 @@
     "exampleJa": "今夜12時までにこの程度のレポートなら超余裕で終わるよ！"
   },
   {
-    "id": "k1261",
+    "id": "k1361",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "워라밸",
@@ -18915,7 +20415,7 @@
     "exampleJa": "給料も大事ですが退社時間が保証されるワークライフバランスを好みます。"
   },
   {
-    "id": "k1262",
+    "id": "k1362",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "안물안궁",
@@ -18930,7 +20430,7 @@
     "exampleJa": "興味もない他人の噂話なんて聞いてないし知りたくもないからやめて。"
   },
   {
-    "id": "k1263",
+    "id": "k1363",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "흑역사",
@@ -18945,7 +20445,7 @@
     "exampleJa": "中学校の時に撮った中二病写真の数々は全て黒歴史です。"
   },
   {
-    "id": "k1264",
+    "id": "k1364",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "첫눈에반하다",
@@ -18960,7 +20460,7 @@
     "exampleJa": "図書館で本を取っていた彼女に一目惚れしました。"
   },
   {
-    "id": "k1265",
+    "id": "k1365",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "고백하다",
@@ -18975,7 +20475,7 @@
     "exampleJa": "漢江公園で花束を渡しながら本心を告白しました。"
   },
   {
-    "id": "k1266",
+    "id": "k1366",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "차이다",
@@ -18990,7 +20490,7 @@
     "exampleJa": "昨日勇気を出して告白したのですが、残念ながら振られてしまいました。"
   },
   {
-    "id": "k1267",
+    "id": "k1367",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "바람피우다",
@@ -19005,7 +20505,7 @@
     "exampleJa": "ドラマで夫が浮気するシーンを見て怒りを覚えました。"
   },
   {
-    "id": "k1268",
+    "id": "k1368",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "미련이남다",
@@ -19020,7 +20520,7 @@
     "exampleJa": "別れてから1年が経ちましたが、まだ心に未練が残っています。"
   },
   {
-    "id": "k1269",
+    "id": "k1369",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "질투하다",
@@ -19035,7 +20535,7 @@
     "exampleJa": "他の人と仲良さそうに笑っている姿を見てヤキモチを焼きました。"
   },
   {
-    "id": "k1270",
+    "id": "k1370",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "눈에밟히다",
@@ -19050,7 +20550,7 @@
     "exampleJa": "保護施設に置いてきた子猫がずっと目に焼き付いて離れません。"
   },
   {
-    "id": "k1271",
+    "id": "k1371",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "정들다",
@@ -19065,7 +20565,7 @@
     "exampleJa": "一緒に苦労した同僚たちと情が移り、離れるのが名残惜しいです。"
   },
   {
-    "id": "k1272",
+    "id": "k1372",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "콩깍지",
@@ -19080,7 +20580,7 @@
     "exampleJa": "あばたもえくぼでオナラの音まで可愛く感じるそうです。"
   },
   {
-    "id": "k1273",
+    "id": "k1373",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "밀당하다",
@@ -19095,7 +20595,7 @@
     "exampleJa": "恋愛の初期は駆け引きばかりせず誠実に接してください。"
   },
   {
-    "id": "k1274",
+    "id": "k1374",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "닭살돋다",
@@ -19110,7 +20610,7 @@
     "exampleJa": "ドラマのセリフが甘ったるすぎて腕に鳥肌が立ちました。"
   },
   {
-    "id": "k1275",
+    "id": "k1375",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "어이없다",
@@ -19125,7 +20625,7 @@
     "exampleJa": "当日に約束をドタキャンしておいて謝りもしないなんて呆れます。"
   },
   {
-    "id": "k1276",
+    "id": "k1376",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "말도안돼",
@@ -19140,7 +20640,7 @@
     "exampleJa": "私たちが当選したって？本当にあり得ない！"
   },
   {
-    "id": "k1277",
+    "id": "k1377",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "설마",
@@ -19155,7 +20655,7 @@
     "exampleJa": "まさか今日残業しなきゃいけないんじゃないよね？"
   },
   {
-    "id": "k1278",
+    "id": "k1378",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "역시",
@@ -19170,7 +20670,7 @@
     "exampleJa": "ポン・ジュノ監督の映画はやっぱり期待を裏切りませんね。"
   },
   {
-    "id": "k1279",
+    "id": "k1379",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "당연하지",
@@ -19185,7 +20685,7 @@
     "exampleJa": "韓国に来たらサムギョプサルを食べなきゃ！当たり前でしょ！"
   },
   {
-    "id": "k1280",
+    "id": "k1380",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "극혐",
@@ -19200,7 +20700,7 @@
     "exampleJa": "地下鉄で割り込みをする人は本当に生理的に無理です。"
   },
   {
-    "id": "k1281",
+    "id": "k1381",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "맛도리",
@@ -19215,7 +20715,7 @@
     "exampleJa": "この路地に隠れた美味しいグルメが多いのでぜひ行ってみてください。"
   },
   {
-    "id": "k1282",
+    "id": "k1382",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "힐링",
@@ -19230,7 +20730,7 @@
     "exampleJa": "週末に静かな済州島の海を眺めながら癒やされてきました。"
   },
   {
-    "id": "k1283",
+    "id": "k1383",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "불멍",
@@ -19245,7 +20745,7 @@
     "exampleJa": "キャンプのロマンは夜空の下で焚き火をぼーっと眺める時間です。"
   },
   {
-    "id": "k1284",
+    "id": "k1384",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "물멍",
@@ -19260,7 +20760,7 @@
     "exampleJa": "漢江のベンチに座って川の水を眺めながらぼーっと過ごしました。"
   },
   {
-    "id": "k1285",
+    "id": "k1385",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "입덕부정기",
@@ -19275,7 +20775,7 @@
     "exampleJa": "動画を漁りながら「ファンじゃない」と言い訳していた沼落ち否定期を過ごしました。"
   },
   {
-    "id": "k1286",
+    "id": "k1386",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "최애캐",
@@ -19290,7 +20790,7 @@
     "exampleJa": "ドラマで私の最推しキャラは黙々とヒロインを守るサブナムジャです。"
   },
   {
-    "id": "k1287",
+    "id": "k1387",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "클리셰",
@@ -19305,7 +20805,7 @@
     "exampleJa": "財閥御曹司と平凡な女性の恋はベタなお約束ですが常にキュンとします。"
   },
   {
-    "id": "k1288",
+    "id": "k1388",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "반전",
@@ -19320,7 +20820,7 @@
     "exampleJa": "最後の10分で明かされた衝撃のどんでん返しに鳥肌が立ちました。"
   },
   {
-    "id": "k1289",
+    "id": "k1389",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "눈물버튼",
@@ -19335,7 +20835,7 @@
     "exampleJa": "母からのビデオレターは私の永遠の涙腺崩壊スイッチです。"
   },
   {
-    "id": "k1290",
+    "id": "k1390",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "떡밥",
@@ -19350,7 +20850,7 @@
     "exampleJa": "1話で撒かれた伏線が最終回で見事に回収されました。"
   },
   {
-    "id": "k1291",
+    "id": "k1391",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "떡상",
@@ -19365,7 +20865,7 @@
     "exampleJa": "ドラマ出演以降、新人俳優のSNSフォロワー数が急上昇しました。"
   },
   {
-    "id": "k1292",
+    "id": "k1392",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "떡락",
@@ -19380,7 +20880,7 @@
     "exampleJa": "一度の騒動で好感度が一気に暴落してしまいました。"
   },
   {
-    "id": "k1293",
+    "id": "k1393",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "킬포",
@@ -19395,7 +20895,7 @@
     "exampleJa": "このステージ映像のキリングポイントは2分30秒のウインクの瞬間です。"
   },
   {
-    "id": "k1294",
+    "id": "k1394",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "엔딩크레딧",
@@ -19410,7 +20910,7 @@
     "exampleJa": "エンドロールが全て流れ終わるまで席を立つことができませんでした。"
   },
   {
-    "id": "k1295",
+    "id": "k1395",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "렬루",
@@ -19425,7 +20925,7 @@
     "exampleJa": "今日の天気ガチで寒いからマフラー絶対に持ってって。"
   },
   {
-    "id": "k1296",
+    "id": "k1396",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "영고",
@@ -19440,7 +20940,7 @@
     "exampleJa": "グループワークで一人で全部作業する永遠に苦しむリーダー役です。"
   },
   {
-    "id": "k1297",
+    "id": "k1397",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "피셜",
@@ -19455,7 +20955,7 @@
     "exampleJa": "事務所の公式発表が出るまでは軽率に信じないでください。"
   },
   {
-    "id": "k1298",
+    "id": "k1398",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "핵이득",
@@ -19470,7 +20970,7 @@
     "exampleJa": "1+1のセールで安く買えたので完全に超得でした。"
   },
   {
-    "id": "k1299",
+    "id": "k1399",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "멘탈관리",
@@ -19485,7 +20985,7 @@
     "exampleJa": "受験生にとっては知識の習得と同じくらいメンタル管理が重要です。"
   },
   {
-    "id": "k1300",
+    "id": "k1400",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "손절하다",
@@ -19500,7 +21000,7 @@
     "exampleJa": "自己中心的で嘘ばかりつく友達とは結局縁を切りました。"
   },
   {
-    "id": "k1301",
+    "id": "k1401",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "티키타카",
@@ -19515,7 +21015,7 @@
     "exampleJa": "2人のテンポの良い掛け合いがとても自然で見ていると楽しいです。"
   },
   {
-    "id": "k1302",
+    "id": "k1402",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "과몰입",
@@ -19530,7 +21030,7 @@
     "exampleJa": "ドラマに感情移入しすぎて悪役の俳優を見るだけで憎らしくなります。"
   },
   {
-    "id": "k1303",
+    "id": "k1403",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "인생작",
@@ -19545,7 +21045,7 @@
     "exampleJa": "「マイ・ディア・ミスター」は私の人生で最も温かい人生最高の作品です。"
   },
   {
-    "id": "k1304",
+    "id": "k1404",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "인생캐",
@@ -19560,7 +21060,7 @@
     "exampleJa": "その俳優は今作で完璧な当たり役に出会ったという絶賛を受けました。"
   },
   {
-    "id": "k1305",
+    "id": "k1405",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "회빙환",
@@ -19575,7 +21075,7 @@
     "exampleJa": "最近の人気ドラマはタイムリープや転生の設定をスリリングに描いています。"
   },
   {
-    "id": "k1306",
+    "id": "k1406",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "사극",
@@ -19590,7 +21090,7 @@
     "exampleJa": "韓服の美しい色合いや宮殿の風景が見られる時代劇を好んで観ます。"
   },
   {
-    "id": "k1307",
+    "id": "k1407",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "로코",
@@ -19605,7 +21105,7 @@
     "exampleJa": "週末には気軽に笑って癒やされるラブコメドラマをおすすめします。"
   },
   {
-    "id": "k1308",
+    "id": "k1408",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "오스트",
@@ -19620,7 +21120,7 @@
     "exampleJa": "ドラマの劇中歌（OST）テーマ曲が音源チャート1位を席巻しました。"
   },
   {
-    "id": "k1309",
+    "id": "k1409",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "직관",
@@ -19635,7 +21135,7 @@
     "exampleJa": "蚕室野球場に行ってチキンを食べながら生観戦する醍醐味があります。"
   },
   {
-    "id": "k1310",
+    "id": "k1410",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "성덕",
@@ -19650,7 +21150,7 @@
     "exampleJa": "大ファンだった俳優と共演することになった新人俳優は正真正銘の成功したオタクです。"
   },
   {
-    "id": "k1311",
+    "id": "k1411",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "홈마",
@@ -19665,7 +21165,7 @@
     "exampleJa": "大砲望遠レンズを持ったマスターたちが会場の入口に集まっていました。"
   },
   {
-    "id": "k1312",
+    "id": "k1412",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "꿀잠",
@@ -19680,7 +21180,7 @@
     "exampleJa": "温かいオンドル部屋で疲れを癒やし、ぐっすり熟睡しました。"
   },
   {
-    "id": "k1313",
+    "id": "k1413",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "굿밤",
@@ -19695,7 +21195,7 @@
     "exampleJa": "今日一日もお疲れ様、みんな良い夢見ておやすみ！"
   },
   {
-    "id": "k1314",
+    "id": "k1414",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "흑화",
@@ -19710,7 +21210,7 @@
     "exampleJa": "裏切りに遭った主人公が冷酷に闇堕ちする姿が印象的でした。"
   },
   {
-    "id": "k1315",
+    "id": "k1415",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "막방",
@@ -19725,7 +21225,7 @@
     "exampleJa": "今日が最推しのドラマの最終回（マッパン）なのでとても名残惜しいです。"
   },
   {
-    "id": "k1316",
+    "id": "k1416",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "삼각관계",
@@ -19740,7 +21240,7 @@
     "exampleJa": "主人公たちの張り詰めた三角関係のためにドラマがさらに面白いです。"
   },
   {
-    "id": "k1317",
+    "id": "k1417",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "첫눈에 반하다",
@@ -19755,7 +21255,7 @@
     "exampleJa": "横断歩道の向かい側に立っている彼女を見て一目惚れしました。"
   },
   {
-    "id": "k1318",
+    "id": "k1418",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "질투",
@@ -19770,7 +21270,7 @@
     "exampleJa": "男性主人公が他の人と親しげな姿を見て、かわいい嫉妬をした。"
   },
   {
-    "id": "k1319",
+    "id": "k1419",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "재회",
@@ -19785,7 +21285,7 @@
     "exampleJa": "10年の歳月が流れた後、雨の降る停留所で劇的に再会した。"
   },
   {
-    "id": "k1320",
+    "id": "k1420",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "비밀",
@@ -19800,7 +21300,7 @@
     "exampleJa": "彼女が隠していた途方もない過去の秘密がついに明かされた。"
   },
   {
-    "id": "k1321",
+    "id": "k1421",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "복수",
@@ -19815,7 +21315,7 @@
     "exampleJa": "家族の無念の死を明らかにするため、壮絶な復讐を誓った。"
   },
   {
-    "id": "k1322",
+    "id": "k1422",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "출생의 비밀",
@@ -19830,7 +21330,7 @@
     "exampleJa": "韓国のマクチャンドラマの定番の素材はまさに出生の秘密だ。"
   },
   {
-    "id": "k1323",
+    "id": "k1423",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "기억상실",
@@ -19845,7 +21345,7 @@
     "exampleJa": "不慮の交通事故で愛していた恋人に関する記憶喪失にかかった。"
   },
   {
-    "id": "k1324",
+    "id": "k1424",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "계약결혼",
@@ -19860,7 +21360,7 @@
     "exampleJa": "各自の事情で契約結婚を結んだが、本物の愛に落ちた。"
   },
   {
-    "id": "k1325",
+    "id": "k1425",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "위장연애",
@@ -19875,7 +21375,7 @@
     "exampleJa": "両親の結婚のプレッシャーを逃れるため友達と偽装恋愛を始めた。"
   },
   {
-    "id": "k1326",
+    "id": "k1426",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "신데렐라",
@@ -19890,7 +21390,7 @@
     "exampleJa": "貧しいながらも堂々としたシンデレラ主人公のサクセスストーリーが人気を集めた。"
   },
   {
-    "id": "k1327",
+    "id": "k1427",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "재벌 2세",
@@ -19905,7 +21405,7 @@
     "exampleJa": "気難しいけれど温かい心を持つ財閥2世の男性主人公が登場する。"
   },
   {
-    "id": "k1328",
+    "id": "k1428",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "재벌 3세",
@@ -19920,7 +21420,7 @@
     "exampleJa": "グループを受け継ぐ野心あふれる財閥3世の役を完璧に演じ切った。"
   },
   {
-    "id": "k1329",
+    "id": "k1429",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "본부장님",
@@ -19935,7 +21435,7 @@
     "exampleJa": "ドラマの中の本部長はいつもハンサムで能力まで完璧です。"
   },
   {
-    "id": "k1330",
+    "id": "k1430",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "악역",
@@ -19950,7 +21450,7 @@
     "exampleJa": "悪役俳優の鳥肌が立つような演技力のおかげで劇の緊張感があふれた。"
   },
   {
-    "id": "k1331",
+    "id": "k1431",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "서브남주",
@@ -19965,7 +21465,7 @@
     "exampleJa": "優しくて親切で視聴者の心を切なくさせるサブ男性主人公です。"
   },
   {
-    "id": "k1332",
+    "id": "k1432",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "서브여주",
@@ -19980,7 +21480,7 @@
     "exampleJa": "堂々として素敵な魅力を持つサブ女性主人公のキャラクターが大きな反響を得た。"
   },
   {
-    "id": "k1333",
+    "id": "k1433",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "정주행",
@@ -19995,7 +21495,7 @@
     "exampleJa": "週末中、夜更かしをしながら話題のドラマを一気見しました。"
   },
   {
-    "id": "k1334",
+    "id": "k1434",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "결방",
@@ -20010,7 +21510,7 @@
     "exampleJa": "オリンピック中継放送のため、今週金曜日のドラマは放送休止です。"
   },
   {
-    "id": "k1335",
+    "id": "k1435",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "예고편",
@@ -20025,7 +21525,7 @@
     "exampleJa": "次回予告編を見たら、とても1週間待てそうにありません。"
   },
   {
-    "id": "k1336",
+    "id": "k1436",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "내가 지켜줄게",
@@ -20040,7 +21540,7 @@
     "exampleJa": "どんな危険が迫っても僕が最後まで君を守ってあげる。"
   },
   {
-    "id": "k1337",
+    "id": "k1437",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "밥은 먹었어?",
@@ -20055,7 +21555,7 @@
     "exampleJa": "顔がやつれて見えるね、今日ご飯はちゃんと食べた？"
   },
   {
-    "id": "k1338",
+    "id": "k1438",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "가지 마",
@@ -20070,7 +21570,7 @@
     "exampleJa": "お願いだから私の手を離して行かないで、頼むよ。"
   },
   {
-    "id": "k1339",
+    "id": "k1439",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "보고 싶었어",
@@ -20085,7 +21585,7 @@
     "exampleJa": "離れていた時間の間、一日も欠かさず会いたかった。"
   },
   {
-    "id": "k1340",
+    "id": "k1440",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "내 눈엔 너만 보여",
@@ -20100,7 +21600,7 @@
     "exampleJa": "数多くの人々の中でも僕の目にはただ君しか見えない。"
   },
   {
-    "id": "k1341",
+    "id": "k1441",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "날 떠나지 마",
@@ -20115,7 +21615,7 @@
     "exampleJa": "君のいない世界は想像できない、僕を置いていかないで。"
   },
   {
-    "id": "k1342",
+    "id": "k1442",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "꿈만 같아",
@@ -20130,7 +21630,7 @@
     "exampleJa": "君が私のそばにこうしているという事実が夢のようだ。"
   },
   {
-    "id": "k1343",
+    "id": "k1443",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "절대 용서 못 해",
@@ -20145,7 +21645,7 @@
     "exampleJa": "私の家族を破滅に導いたあなたを絶対に許さない。"
   },
   {
-    "id": "k1344",
+    "id": "k1444",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "가슴이 찢어지다",
@@ -20160,7 +21660,7 @@
     "exampleJa": "苦しんでいる子供の姿を見守りながら胸が張り裂けそうだった。"
   },
   {
-    "id": "k1345",
+    "id": "k1445",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "숨이 멎을 것 같다",
@@ -20175,7 +21675,7 @@
     "exampleJa": "ウェディングドレスを着た新婦の姿に息が止まりそうだった。"
   },
   {
-    "id": "k1346",
+    "id": "k1446",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "눈물이 앞을 가리다",
@@ -20190,7 +21690,7 @@
     "exampleJa": "母の献身的な愛に涙で前が見えなくなりました。"
   },
   {
-    "id": "k1347",
+    "id": "k1447",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "심장이 쿵쾅거리다",
@@ -20205,7 +21705,7 @@
     "exampleJa": "彼が近づいてくると心臓が狂ったようにバクバクした。"
   },
   {
-    "id": "k1348",
+    "id": "k1448",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "정신 차려",
@@ -20220,7 +21720,7 @@
     "exampleJa": "まだ終わったわけじゃない、動揺しないでしっかりして！"
   },
   {
-    "id": "k1349",
+    "id": "k1449",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "네가 뭔데",
@@ -20235,7 +21735,7 @@
     "exampleJa": "お前が何様のつもりで私の人生に勝手に干渉するんだ？"
   },
   {
-    "id": "k1350",
+    "id": "k1450",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "상관하지 마",
@@ -20250,7 +21750,7 @@
     "exampleJa": "私の問題は自分で何とかするから、気にしないで放っておいて。"
   },
   {
-    "id": "k1351",
+    "id": "k1451",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "내 곁에 있어 줘",
@@ -20265,7 +21765,7 @@
     "exampleJa": "世界中の人が背を向けたとしても、君だけは私のそばにいて。"
   },
   {
-    "id": "k1352",
+    "id": "k1452",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "두 번 다시 보지 말자",
@@ -20280,7 +21780,7 @@
     "exampleJa": "これ以上言うことはないから、私たち二度と会わないでおこう。"
   },
   {
-    "id": "k1353",
+    "id": "k1453",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "어떻게 날 배신해",
@@ -20295,7 +21795,7 @@
     "exampleJa": "あんなに君を信じていたのに、どうして私をこんな風に裏切れるの？"
   },
   {
-    "id": "k1354",
+    "id": "k1454",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "죽을 만큼 사랑해",
@@ -20310,7 +21810,7 @@
     "exampleJa": "自分の命よりも大切な人、死ぬほど愛してる。"
   },
   {
-    "id": "k1355",
+    "id": "k1455",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "너 없인 안 돼",
@@ -20325,7 +21825,7 @@
     "exampleJa": "一日しか生きられないとしてもいい、君なしじゃ僕は生きていけない。"
   },
   {
-    "id": "k1356",
+    "id": "k1456",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "다 거짓말이야",
@@ -20340,7 +21840,7 @@
     "exampleJa": "あの人が私を捨てて去ったという言葉、お願いだから全部嘘だと言って。"
   },
   {
-    "id": "k1357",
+    "id": "k1457",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "진심이야",
@@ -20355,7 +21855,7 @@
     "exampleJa": "笑わないで、今君にふざけてるんじゃなくて本気なんだ。"
   },
   {
-    "id": "k1358",
+    "id": "k1458",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "장난치지 마",
@@ -20370,7 +21870,7 @@
     "exampleJa": "真剣な話をしている最中なんだから、ヘラヘラ笑ってふざけないで。"
   },
   {
-    "id": "k1359",
+    "id": "k1459",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "어이없네",
@@ -20385,7 +21885,7 @@
     "exampleJa": "自分が悪いことをしておいて逆に大声を出すなんて、本当にあきれたな。"
   },
   {
-    "id": "k1360",
+    "id": "k1460",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "뻔뻔하다",
@@ -20400,7 +21900,7 @@
     "exampleJa": "すべての証拠が揃っているのに最後まで厚かましくシラを切った。"
   },
   {
-    "id": "k1361",
+    "id": "k1461",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "소름 돋다",
@@ -20415,7 +21915,7 @@
     "exampleJa": "ドラマの最後のどんでん返しのシーンを見て全身に鳥肌が立った。"
   },
   {
-    "id": "k1362",
+    "id": "k1462",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "가슴에 못을 박다",
@@ -20430,7 +21930,7 @@
     "exampleJa": "両親の胸に釘を刺すようなひどい言葉を吐き捨てて後悔した。"
   },
   {
-    "id": "k1363",
+    "id": "k1463",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "발목을 잡다",
@@ -20445,7 +21945,7 @@
     "exampleJa": "過去の些細な過ちが彼の前途の足を引っ張った。"
   },
   {
-    "id": "k1364",
+    "id": "k1464",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "뒤통수치다",
@@ -20460,7 +21960,7 @@
     "exampleJa": "最も信頼していた共同経営者が私の裏をかくとは夢にも思わなかった。"
   },
   {
-    "id": "k1365",
+    "id": "k1465",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "진짜로?",
@@ -20475,7 +21975,7 @@
     "exampleJa": "あの二人の俳優が実際に結婚するって？ マジで？"
   },
   {
-    "id": "k1366",
+    "id": "k1466",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "어쩐지",
@@ -20490,7 +21990,7 @@
     "exampleJa": "どうりで今日に限って顔色がやけに明るく良さそうに見えたわけだ。"
   },
   {
-    "id": "k1367",
+    "id": "k1467",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "아무래도",
@@ -20505,7 +22005,7 @@
     "exampleJa": "どうやら今週末は家でゆっくり休まないといけないようです。"
   },
   {
-    "id": "k1368",
+    "id": "k1468",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "역시나",
@@ -20520,7 +22020,7 @@
     "exampleJa": "名作ドラマらしく、やっぱり第1話から没入感が素晴らしかった。"
   },
   {
-    "id": "k1369",
+    "id": "k1469",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "세상에나",
@@ -20535,7 +22035,7 @@
     "exampleJa": "なんてことだ、主人公が生きて帰ってくるなんて一体どういうことなの！"
   },
   {
-    "id": "k1370",
+    "id": "k1470",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "대박 사건",
@@ -20550,7 +22050,7 @@
     "exampleJa": "うちの近所のカフェで有名芸能人を見たよ、完全にやばい事件だよ！"
   },
   {
-    "id": "k1371",
+    "id": "k1471",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "어머나",
@@ -20565,7 +22065,7 @@
     "exampleJa": "あらまあ、もうドラマが終わる時間になっちゃったね。"
   },
   {
-    "id": "k1372",
+    "id": "k1472",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "완전 감동",
@@ -20580,7 +22080,7 @@
     "exampleJa": "ファンのために用意されたサプライズビデオレターに超感動しました。"
   },
   {
-    "id": "k1373",
+    "id": "k1473",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "귀차니즘",
@@ -20595,7 +22095,7 @@
     "exampleJa": "週末はめんどくさがり症候群のせいでベッドの外に一歩も出ません。"
   },
   {
-    "id": "k1374",
+    "id": "k1474",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "빼박",
@@ -20610,7 +22110,7 @@
     "exampleJa": "防犯カメラに現場がそのまま映っていたので、これは動かぬ証拠だ。"
   },
   {
-    "id": "k1375",
+    "id": "k1475",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "찐친",
@@ -20625,7 +22125,7 @@
     "exampleJa": "10年以上秘密なしで過ごしてきた私たちは掛け替えのない大親友です。"
   },
   {
-    "id": "k1376",
+    "id": "k1476",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "힐링되다",
@@ -20640,7 +22140,7 @@
     "exampleJa": "温かい田舎町を舞台にしたドラマを見ていると心が癒やされます。"
   },
   {
-    "id": "k1377",
+    "id": "k1477",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "존멋",
@@ -20655,7 +22155,7 @@
     "exampleJa": "スーツを着てアクション演技を繰り広げる主人公が本当に超かっこいいです。"
   },
   {
-    "id": "k1378",
+    "id": "k1478",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "덕후",
@@ -20670,7 +22170,7 @@
     "exampleJa": "彼は韓国のロマンスドラマなら知らないことがない本物のオタクです。"
   },
   {
-    "id": "k1379",
+    "id": "k1479",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "팬미팅",
@@ -20685,7 +22185,7 @@
     "exampleJa": "ドラマ終了後、主演俳優の単独ファンミーティングのチケットが完売した。"
   },
   {
-    "id": "k1380",
+    "id": "k1480",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "포토카드",
@@ -20700,7 +22200,7 @@
     "exampleJa": "ドラマ公式グッズセットに含まれる未公開フォトカードを集めました。"
   },
   {
-    "id": "k1381",
+    "id": "k1481",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "조공",
@@ -20715,7 +22215,7 @@
     "exampleJa": "ファンが撮影現場に心を込めて送ったコーヒートラックの差し入れが到着しました。"
   },
   {
-    "id": "k1382",
+    "id": "k1482",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "총공",
@@ -20730,7 +22230,7 @@
     "exampleJa": "新しく出たドラマOSTの1位のためにファンが一斉ストリーミングを展開した。"
   },
   {
-    "id": "k1383",
+    "id": "k1483",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "금손",
@@ -20745,7 +22245,7 @@
     "exampleJa": "神の手を持つファンが作ったドラマ名シーンのイラストが話題になりました。"
   },
   {
-    "id": "k1384",
+    "id": "k1484",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "똥손",
@@ -20760,7 +22260,7 @@
     "exampleJa": "私はチケッティングとなると必ず失敗する不器用な手なので友達に頼んだ。"
   },
   {
-    "id": "k1385",
+    "id": "k1485",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "눈물 버튼",
@@ -20775,7 +22275,7 @@
     "exampleJa": "お母さんが主人公を抱きしめるシーンは完全に私の涙腺崩壊ボタンだ。"
   },
   {
-    "id": "k1386",
+    "id": "k1486",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "눈물 펑펑",
@@ -20790,7 +22290,7 @@
     "exampleJa": "ドラマの最終回を見ながら胸が詰まり、涙がポロポロ止まりませんでした。"
   },
   {
-    "id": "k1387",
+    "id": "k1487",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "과몰입러",
@@ -20805,7 +22305,7 @@
     "exampleJa": "ドラマの主人公たちの悲しい運命に夜も眠れない過剰没入者です。"
   },
   {
-    "id": "k1388",
+    "id": "k1488",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "심장 폭행",
@@ -20820,7 +22320,7 @@
     "exampleJa": "彼の甘い笑顔と眼差しは完全にファンの心臓直撃だ。"
   },
   {
-    "id": "k1389",
+    "id": "k1489",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "안구 정화",
@@ -20835,7 +22335,7 @@
     "exampleJa": "二人の主演俳優の眩しいビジュアルのおかげで毎週目の保養をしています。"
   },
   {
-    "id": "k1390",
+    "id": "k1490",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "무한 반복",
@@ -20850,7 +22350,7 @@
     "exampleJa": "エンディングのキスシーンの動画クリップを一日中無限リピート再生しました。"
   },
   {
-    "id": "k1391",
+    "id": "k1491",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "배경음악",
@@ -20865,7 +22365,7 @@
     "exampleJa": "緊迫した追撃シーンに流れる緊張感あふれるBGMが絶品だった。"
   },
   {
-    "id": "k1392",
+    "id": "k1492",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "OST",
@@ -20880,7 +22380,7 @@
     "exampleJa": "甘美なバラードOSTがドラマの感動を2倍に高めてくれる。"
   },
   {
-    "id": "k1393",
+    "id": "k1493",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "엔딩 맛집",
@@ -20895,7 +22395,7 @@
     "exampleJa": "このドラマは毎回想像もできない瞬間に終わるエンディングの名手です。"
   },
   {
-    "id": "k1394",
+    "id": "k1494",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "마음이 찡하다",
@@ -20910,7 +22410,7 @@
     "exampleJa": "家族のために黙々と犠牲になる父親の姿に胸がジーンときた。"
   },
   {
-    "id": "k1395",
+    "id": "k1495",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "눈시울이 붉어지다",
@@ -20925,7 +22425,7 @@
     "exampleJa": "最後の別れの挨拶を交わす中で、二人の目頭が熱くなった。"
   },
   {
-    "id": "k1396",
+    "id": "k1496",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "가슴이 먹먹하다",
@@ -20940,7 +22440,7 @@
     "exampleJa": "主人公の悲劇的な犠牲を見て一日中胸が詰まる思いだった。"
   },
   {
-    "id": "k1397",
+    "id": "k1497",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "속이 시원하다",
@@ -20955,7 +22455,7 @@
     "exampleJa": "悪党に痛快な一撃を食らわせるシーンを見て胸がすっとした。"
   },
   {
-    "id": "k1398",
+    "id": "k1498",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "피가 거꾸로 솟다",
@@ -20970,7 +22470,7 @@
     "exampleJa": "居直る犯人の態度に血が逆流するような怒りを覚えた。"
   },
   {
-    "id": "k1399",
+    "id": "k1499",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "기가 막히다",
@@ -20985,7 +22485,7 @@
     "exampleJa": "あの俳優の涙の演技は見るたびに本当に途方もなく素晴らしいです。"
   },
   {
-    "id": "k1400",
+    "id": "k1500",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "기가 차다",
@@ -21000,7 +22500,7 @@
     "exampleJa": "厚かましい嘘を並べ立てる相手の姿に呆れて言葉が出なかった。"
   },
   {
-    "id": "k1401",
+    "id": "k1501",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "막장드라마",
@@ -21015,7 +22515,7 @@
     "exampleJa": "悪態をつきながらも結末が気になって見続けてしまうマクチャンドラマだ。"
   },
   {
-    "id": "k1402",
+    "id": "k1502",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "쪽대본",
@@ -21030,7 +22530,7 @@
     "exampleJa": "俳優たちは徹夜の撮影中でもギリギリの台本を完璧に暗記して演技した。"
   },
   {
-    "id": "k1403",
+    "id": "k1503",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "시청률 1위",
@@ -21045,7 +22545,7 @@
     "exampleJa": "初回放送から同時間帯の視聴率1位を記録し、旋風を巻き起こした。"
   },
   {
-    "id": "k1404",
+    "id": "k1504",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "인생 캐릭터",
@@ -21060,7 +22560,7 @@
     "exampleJa": "今作で抜け目のない詐欺師役を演じ、人生最高のキャラクターに出会った。"
   },
   {
-    "id": "k1405",
+    "id": "k1505",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "명장면",
@@ -21075,7 +22575,7 @@
     "exampleJa": "雪の降る橋の上で交わしたファーストキスはドラマ最高の名シーンだ。"
   },
   {
-    "id": "k1406",
+    "id": "k1506",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "명대사",
@@ -21090,7 +22590,7 @@
     "exampleJa": "「俺、お前のこと好きなのか？」という男性主人公の名セリフが大流行語になった。"
   },
   {
-    "id": "k1407",
+    "id": "k1507",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "현대극",
@@ -21105,7 +22605,7 @@
     "exampleJa": "時代劇で活躍していた俳優が久しぶりにトレンディな現代劇に復帰した。"
   },
   {
-    "id": "k1408",
+    "id": "k1508",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "타임슬립",
@@ -21120,7 +22620,7 @@
     "exampleJa": "タイムスリップを通じて朝鮮時代に戻って繰り広げられる刺激的なロマンスだ。"
   },
   {
-    "id": "k1409",
+    "id": "k1509",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "빙의",
@@ -21135,7 +22635,7 @@
     "exampleJa": "ツンとした財閥令嬢の体にたくましい料理人の魂が憑依した。"
   },
   {
-    "id": "k1410",
+    "id": "k1510",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "심쿵 유발",
@@ -21150,7 +22650,7 @@
     "exampleJa": "優しい眼差しとバックハグで毎回女心を揺さぶる胸キュン誘発者です。"
   },
   {
-    "id": "k1411",
+    "id": "k1511",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "연애 세포",
@@ -21165,7 +22665,7 @@
     "exampleJa": "甘いロマンスを見ていると眠っていた恋愛細胞が蘇ります。"
   },
   {
-    "id": "k1412",
+    "id": "k1512",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "사랑꾼",
@@ -21180,7 +22680,7 @@
     "exampleJa": "劇中、妻のことしか頭にない至高の愛妻家として出演している。"
   },
   {
-    "id": "k1413",
+    "id": "k1513",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "직진남",
@@ -21195,7 +22695,7 @@
     "exampleJa": "遠回しに言わず自分の気持ちを素直に告白する素敵な一直線な男だ。"
   },
   {
-    "id": "k1414",
+    "id": "k1514",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "순정남",
@@ -21210,7 +22710,7 @@
     "exampleJa": "幼い頃の初恋の相手を大人になっても忘れられない純情男の役だ。"
   },
   {
-    "id": "k1415",
+    "id": "k1515",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "츤츤대다",
@@ -21225,7 +22725,7 @@
     "exampleJa": "やたらとツンツンしながらも風邪を引いた女性主人公に温かいお茶を差し出した。"
   },
   {
-    "id": "k1416",
+    "id": "k1516",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "어장관리",
@@ -21240,7 +22740,7 @@
     "exampleJa": "本気のふりをして近づきキープしていた人物に痛快に別れを告げた。"
   },
   {
-    "id": "k1417",
+    "id": "k1517",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "성지순례",
@@ -21255,7 +22755,7 @@
     "exampleJa": "海外のファンが韓国に来てドラマの主人公たちが訪れた名店を聖地巡礼しました。"
   },
   {
-    "id": "k1418",
+    "id": "k1518",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "포토북",
@@ -21270,7 +22770,7 @@
     "exampleJa": "ドラマの名シーンがたっぷり詰まった限定版フォトブックを購入しました。"
   },
   {
-    "id": "k1419",
+    "id": "k1519",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "안방 1열",
@@ -21285,7 +22785,7 @@
     "exampleJa": "今夜もお茶の間最前列でポップコーンを手にドラマの始まりを待ちます。"
   },
   {
-    "id": "k1420",
+    "id": "k1520",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "팬덤",
@@ -21300,7 +22800,7 @@
     "exampleJa": "グローバルファンダムの熱狂的な支持の中、主演俳優の人気が急上昇した。"
   },
   {
-    "id": "k1421",
+    "id": "k1521",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "아이돌 굿즈",
@@ -21315,7 +22815,7 @@
     "exampleJa": "コンサート現場の売り場にはアイドルグッズを買おうとする列が長く伸びた。"
   },
   {
-    "id": "k1422",
+    "id": "k1522",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "꿀케미",
@@ -21330,7 +22830,7 @@
     "exampleJa": "男女主人公の甘い抜群のケミのおかげで視聴者の心がとろけた。"
   },
   {
-    "id": "k1423",
+    "id": "k1523",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "설렘 폭발",
@@ -21345,7 +22845,7 @@
     "exampleJa": "二人の切ない眼差しの交わし合いにお茶の間はときめき爆発だった。"
   },
   {
-    "id": "k1424",
+    "id": "k1524",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "눈물샘 폭발",
@@ -21360,7 +22860,7 @@
     "exampleJa": "主人公の手紙が公開された瞬間、全視聴者の涙腺が崩壊した。"
   },
   {
-    "id": "k1425",
+    "id": "k1525",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "연기력 폭발",
@@ -21375,7 +22875,7 @@
     "exampleJa": "法廷での号泣シーンで俳優の演技力が完璧に爆発した。"
   },
   {
-    "id": "k1426",
+    "id": "k1526",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "미친 연기력",
@@ -21390,7 +22890,7 @@
     "exampleJa": "悪役俳優の狂気じみた神演技のおか게でドラマの没入度が倍増した。"
   },
   {
-    "id": "k1427",
+    "id": "k1527",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "소장각",
@@ -21405,7 +22905,7 @@
     "exampleJa": "華やかな映像美と美しい音楽が調和し、このドラマは完全に永久保存版だ。"
   },
   {
-    "id": "k1428",
+    "id": "k1528",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "정주행 각",
@@ -21420,7 +22920,7 @@
     "exampleJa": "第1話からテンポが速くて、今週末にすぐ一気見必至です。"
   },
   {
-    "id": "k1429",
+    "id": "k1529",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "취저",
@@ -21435,7 +22935,7 @@
     "exampleJa": "甘いロマンチックコメディのジャンルなので私の好みに完全ドストライクだ。"
   },
   {
-    "id": "k1430",
+    "id": "k1530",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "믿보배",
@@ -21450,7 +22950,7 @@
     "exampleJa": "彼は信頼して見る俳優らしく、今回の新作でも確かな演技力を証明した。"
   },
   {
-    "id": "k1431",
+    "id": "k1531",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "신스틸러",
@@ -21465,7 +22965,7 @@
     "exampleJa": "方言を味付け豊かに使いこなす名脇役が最高のシーンスティーラーだった。"
   },
   {
-    "id": "k1432",
+    "id": "k1532",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "케미 맛집",
@@ -21480,7 +22980,7 @@
     "exampleJa": "主演・助演を問わず幻想的な呼吸を誇るケミの殿堂ドラマです。"
   },
   {
-    "id": "k1433",
+    "id": "k1533",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "눈물 콧물",
@@ -21495,7 +22995,7 @@
     "exampleJa": "悲しい結末に家族みんなが涙と鼻水を流しながら大号泣しました。"
   },
   {
-    "id": "k1434",
+    "id": "k1534",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "심장 쫄깃",
@@ -21510,7 +23010,7 @@
     "exampleJa": "どんでん返しが続く犯罪捜査劇なので見ている間ずっとハラハラドキドキでした。"
   },
   {
-    "id": "k1435",
+    "id": "k1535",
     "level": "K-드라마 & 실전 리얼 회화",
     "category": "K-드라마 & 실전 리얼 회화",
     "word": "현생 불가",
@@ -21525,7 +23025,7 @@
     "exampleJa": "ドラマの後遺症がひどすぎて、月曜出勤なのに完全に現実復帰不可です。"
   },
   {
-    "id": "k1436",
+    "id": "k1536",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "업무",
@@ -21540,7 +23040,7 @@
     "exampleJa": "今日処理すべき主要な業務リストを作成しました。"
   },
   {
-    "id": "k1437",
+    "id": "k1537",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "회의",
@@ -21555,7 +23055,7 @@
     "exampleJa": "午後2時に企画チームと第3四半期のプロジェクト会議があります。"
   },
   {
-    "id": "k1438",
+    "id": "k1538",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "보고",
@@ -21570,7 +23070,7 @@
     "exampleJa": "毎週金曜日ごとに週間業務報告書をチーム長に提出します。"
   },
   {
-    "id": "k1439",
+    "id": "k1539",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "결재",
@@ -21585,7 +23085,7 @@
     "exampleJa": "予算の使用件についてチーム長の決裁をもらいました。"
   },
   {
-    "id": "k1440",
+    "id": "k1540",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "마감",
@@ -21600,7 +23100,7 @@
     "exampleJa": "プロジェクトの締め切りが目前に迫っており、みんな残業しています。"
   },
   {
-    "id": "k1441",
+    "id": "k1541",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "피드백",
@@ -21615,7 +23115,7 @@
     "exampleJa": "プレゼン資料に対する部長のフィードバックを反映して修正しました。"
   },
   {
-    "id": "k1442",
+    "id": "k1542",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "협업",
@@ -21630,7 +23130,7 @@
     "exampleJa": "開発チームとデザインチームの緊密な協業がプロジェクト成功の鍵です。"
   },
   {
-    "id": "k1443",
+    "id": "k1543",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "미팅",
@@ -21645,7 +23145,7 @@
     "exampleJa": "午前に新規クライアントとビデオミーティングを行いました。"
   },
   {
-    "id": "k1444",
+    "id": "k1544",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "거래처",
@@ -21660,7 +23160,7 @@
     "exampleJa": "重要な取引先の担当者との昼食ミーティングの予定を取りました。"
   },
   {
-    "id": "k1445",
+    "id": "k1545",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "제안서",
@@ -21675,7 +23175,7 @@
     "exampleJa": "来週の入札のためにサービス提案書を入念に検討中です。"
   },
   {
-    "id": "k1446",
+    "id": "k1546",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "첨부파일",
@@ -21690,7 +23190,7 @@
     "exampleJa": "詳細なお見積書はメールに添付ファイルとしてお送りしました。"
   },
   {
-    "id": "k1447",
+    "id": "k1547",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "출근",
@@ -21705,7 +23205,7 @@
     "exampleJa": "私たちの会社はフレックスタイム制なので、10時までに出勤すればいいです。"
   },
   {
-    "id": "k1448",
+    "id": "k1548",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "퇴근",
@@ -21720,7 +23220,7 @@
     "exampleJa": "今日のやるべきことをすっきりと終えて、定時退勤しました。"
   },
   {
-    "id": "k1449",
+    "id": "k1549",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "야근",
@@ -21735,7 +23235,7 @@
     "exampleJa": "急なシステム点検のため、昨晩残業をしました。"
   },
   {
-    "id": "k1450",
+    "id": "k1550",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "연차",
@@ -21750,7 +23250,7 @@
     "exampleJa": "来週の月曜日に有給を取って実家に帰省するつもりです。"
   },
   {
-    "id": "k1451",
+    "id": "k1551",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "회식",
@@ -21765,7 +23265,7 @@
     "exampleJa": "サムギョプサルに焼酎を一杯飲みながら、チーム結束の会食を行いました。"
   },
   {
-    "id": "k1452",
+    "id": "k1552",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "대리",
@@ -21780,7 +23280,7 @@
     "exampleJa": "キム代理が新入社員のメンタリングを親切に引き受けてくれました。"
   },
   {
-    "id": "k1453",
+    "id": "k1553",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "과장",
@@ -21795,7 +23295,7 @@
     "exampleJa": "この案件については、パク課長にまず検討を依頼してください。"
   },
   {
-    "id": "k1454",
+    "id": "k1554",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "팀장",
@@ -21810,7 +23310,7 @@
     "exampleJa": "チーム長の戦略的な決断のおかげで、危機を乗り切ることができました。"
   },
   {
-    "id": "k1455",
+    "id": "k1555",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "대표",
@@ -21825,7 +23325,7 @@
     "exampleJa": "代表が新年の辞で革新と成長を強調されました。"
   },
   {
-    "id": "k1456",
+    "id": "k1556",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "잘 부탁드립니다",
@@ -21840,7 +23340,7 @@
     "exampleJa": "この度新しく着任したマーケティング担当者です。よろしくお願いいたします！"
   },
   {
-    "id": "k1457",
+    "id": "k1557",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "기획",
@@ -21855,7 +23355,7 @@
     "exampleJa": "来年度の新製品マーケティング戦略を企画しています。"
   },
   {
-    "id": "k1458",
+    "id": "k1558",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "예산",
@@ -21870,7 +23370,7 @@
     "exampleJa": "下半期の開発人件費の予算を慎重に編成しました。"
   },
   {
-    "id": "k1459",
+    "id": "k1559",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "투자",
@@ -21885,7 +23385,7 @@
     "exampleJa": "有望なAIテックスタートアップに大規模な投資を誘致しました。"
   },
   {
-    "id": "k1460",
+    "id": "k1560",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "계약",
@@ -21900,7 +23400,7 @@
     "exampleJa": "両社の代表が集まり、独占供給契約書に最終署名しました。"
   },
   {
-    "id": "k1461",
+    "id": "k1561",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "협상",
@@ -21915,7 +23415,7 @@
     "exampleJa": "単価調整のために相手企業と徹夜の交渉を行いました。"
   },
   {
-    "id": "k1462",
+    "id": "k1562",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "전략",
@@ -21930,7 +23430,7 @@
     "exampleJa": "海外進出のための段階的なブランディング戦略を樹立しました。"
   },
   {
-    "id": "k1463",
+    "id": "k1563",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "성과",
@@ -21945,7 +23445,7 @@
     "exampleJa": "全チーム員が一つに団結し、目標値を上回る優れた成果を上げました。"
   },
   {
-    "id": "k1464",
+    "id": "k1564",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "혁신",
@@ -21960,7 +23460,7 @@
     "exampleJa": "継続的なデジタル革新が企業の生存を決定づけます。"
   },
   {
-    "id": "k1465",
+    "id": "k1565",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "효율",
@@ -21975,7 +23475,7 @@
     "exampleJa": "反復的な単純業務を自動化して、業務効率を大幅に高めました。"
   },
   {
-    "id": "k1466",
+    "id": "k1566",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "조직",
@@ -21990,7 +23490,7 @@
     "exampleJa": "水平的で柔軟な組織文化を醸成しようと努力しています。"
   },
   {
-    "id": "k1467",
+    "id": "k1567",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "인재",
@@ -22005,7 +23505,7 @@
     "exampleJa": "グローバルビジネスを率いる優秀なグローバル人材を積極的に採用します。"
   },
   {
-    "id": "k1468",
+    "id": "k1568",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "고객",
@@ -22020,7 +23520,7 @@
     "exampleJa": "顧客の貴重なフィードバックをサービス改善に最優先で反映します。"
   },
   {
-    "id": "k1469",
+    "id": "k1569",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "브랜드",
@@ -22035,7 +23535,7 @@
     "exampleJa": "韓国のコスメブランドの認知度が全世界で急上昇しました。"
   },
   {
-    "id": "k1470",
+    "id": "k1570",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "홍보",
@@ -22050,7 +23550,7 @@
     "exampleJa": "SNSインフルエンサーと連携して、新製品のオンライン広報を開始しました。"
   },
   {
-    "id": "k1471",
+    "id": "k1571",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "자료",
@@ -22065,7 +23565,7 @@
     "exampleJa": "午後のプレゼンテーション発表に使う核心的な統計資料をまとめました。"
   },
   {
-    "id": "k1472",
+    "id": "k1572",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "공지",
@@ -22080,7 +23580,7 @@
     "exampleJa": "社内掲示板に秋夕（チュソク）連休の特別勤務および休務の告知が出ました。"
   },
   {
-    "id": "k1473",
+    "id": "k1573",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "지원",
@@ -22095,7 +23595,7 @@
     "exampleJa": "政府の中小企業向け青年就職支援政策を活用しました。"
   },
   {
-    "id": "k1474",
+    "id": "k1574",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "자격증",
@@ -22110,7 +23610,7 @@
     "exampleJa": "韓国の就職ビザを取得するためにTOPIK5級の資格証を取得しました。"
   },
   {
-    "id": "k1475",
+    "id": "k1575",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "면접",
@@ -22125,7 +23625,7 @@
     "exampleJa": "明日ある大企業の役員最終面接のために徹夜で練習中です。"
   },
   {
-    "id": "k1476",
+    "id": "k1576",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "노고",
@@ -22140,7 +23640,7 @@
     "exampleJa": "チームメンバーの皆様の惜しみないご尽力に深く感謝申し上げます。"
   },
   {
-    "id": "k1477",
+    "id": "k1577",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "건승",
@@ -22155,7 +23655,7 @@
     "exampleJa": "貴社の無窮の発展と貴殿のご健勝をお祈り申し上げます。"
   },
   {
-    "id": "k1478",
+    "id": "k1578",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "참조",
@@ -22170,7 +23670,7 @@
     "exampleJa": "当該案件に関連するチーム長をCC（参照）に入れました。"
   },
   {
-    "id": "k1479",
+    "id": "k1579",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "회신",
@@ -22185,7 +23685,7 @@
     "exampleJa": "ご検討の上、明日の午後3時までにご返信をお願い申し上げます。"
   },
   {
-    "id": "k1480",
+    "id": "k1580",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "수신인",
@@ -22200,7 +23700,7 @@
     "exampleJa": "メール送信前に受信者のアドレスが正確であるかご確認ください。"
   },
   {
-    "id": "k1481",
+    "id": "k1581",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "발신인",
@@ -22215,7 +23715,7 @@
     "exampleJa": "差出人情報と署名欄に会社名と役職を明記しました。"
   },
   {
-    "id": "k1482",
+    "id": "k1582",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "공문",
@@ -22230,7 +23730,7 @@
     "exampleJa": "提携協力に関する公式の公文書を郵送およびメールで送付しました。"
   },
   {
-    "id": "k1483",
+    "id": "k1583",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "기안서",
@@ -22245,7 +23745,7 @@
     "exampleJa": "新規マーケティング予算承認のための起案書を作成しました。"
   },
   {
-    "id": "k1484",
+    "id": "k1584",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "품의서",
@@ -22260,7 +23760,7 @@
     "exampleJa": "老朽化したPCの買い替えに関する稟議書を部長に上申しました。"
   },
   {
-    "id": "k1485",
+    "id": "k1585",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "반려",
@@ -22275,7 +23775,7 @@
     "exampleJa": "予算算出の根拠が不足していたため起案書が差し戻されました。"
   },
   {
-    "id": "k1486",
+    "id": "k1586",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "전결",
@@ -22290,7 +23790,7 @@
     "exampleJa": "100万ウォン以下の消耗品購入はチーム長の専決で処理可能です。"
   },
   {
-    "id": "k1487",
+    "id": "k1587",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "시말서",
@@ -22305,7 +23805,7 @@
     "exampleJa": "サーバーダウン事故の経緯をまとめて始末書を提出しました。"
   },
   {
-    "id": "k1488",
+    "id": "k1588",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "사유서",
@@ -22320,7 +23820,7 @@
     "exampleJa": "交通事故による遅刻の理由書を証明資料と共に提出しました。"
   },
   {
-    "id": "k1489",
+    "id": "k1589",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "회의록",
@@ -22335,7 +23835,7 @@
     "exampleJa": "会議終了直後に議事録をまとめて出席者全員に共有しました。"
   },
   {
-    "id": "k1490",
+    "id": "k1590",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "보고서",
@@ -22350,7 +23850,7 @@
     "exampleJa": "今四半期の売上実績報告書を作成して報告会を開きました。"
   },
   {
-    "id": "k1491",
+    "id": "k1591",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "일정표",
@@ -22365,7 +23865,7 @@
     "exampleJa": "プロジェクトの進行スケジュール表をガントチャートで可視化しました。"
   },
   {
-    "id": "k1492",
+    "id": "k1592",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "출장비",
@@ -22380,7 +23880,7 @@
     "exampleJa": "釜山出張を終えて出張費の精算書を作成しました。"
   },
   {
-    "id": "k1493",
+    "id": "k1593",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "법인카드",
@@ -22395,7 +23895,7 @@
     "exampleJa": "取引先の接待食事代を法人カードで決済しました。"
   },
   {
-    "id": "k1494",
+    "id": "k1594",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "지출결의서",
@@ -22410,7 +23910,7 @@
     "exampleJa": "領収書を添付して支出決議書を経理チームに提出してください。"
   },
   {
-    "id": "k1495",
+    "id": "k1595",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "세금계산서",
@@ -22425,7 +23925,7 @@
     "exampleJa": "事業者番号を教えていただければ電子税金計算書を発行いたします。"
   },
   {
-    "id": "k1496",
+    "id": "k1596",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "사업자등록증",
@@ -22440,7 +23940,7 @@
     "exampleJa": "新規取引先登録のために事業者登録証のコピーを要請しました。"
   },
   {
-    "id": "k1497",
+    "id": "k1597",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "계약서",
@@ -22455,7 +23955,7 @@
     "exampleJa": "契約書の署名前に違約金条項を入念に検討する必要があります。"
   },
   {
-    "id": "k1498",
+    "id": "k1598",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "견적서",
@@ -22470,7 +23970,7 @@
     "exampleJa": "3箇所の外注業者から相見積もりを受け取りました。"
   },
   {
-    "id": "k1499",
+    "id": "k1599",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "발주서",
@@ -22485,7 +23985,7 @@
     "exampleJa": "部品の数量を最終確認し、協力会社に発注書を送りました。"
   },
   {
-    "id": "k1500",
+    "id": "k1600",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "검수",
@@ -22500,7 +24000,7 @@
     "exampleJa": "開発完了後に最終検収を経て代金を支払いました。"
   },
   {
-    "id": "k1501",
+    "id": "k1601",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "단가",
@@ -22515,7 +24015,7 @@
     "exampleJa": "大量注文を条件に部品単価を5％引き下げることで合意しました。"
   },
   {
-    "id": "k1502",
+    "id": "k1602",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "부가세",
@@ -22530,7 +24030,7 @@
     "exampleJa": "見積書に表記された金額は付加価値税（VAT）抜きの価格です。"
   },
   {
-    "id": "k1503",
+    "id": "k1603",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "원천징수",
@@ -22545,7 +24045,7 @@
     "exampleJa": "フリーランスの講師料は3.3％の源泉徴収後に振り込まれます。"
   },
   {
-    "id": "k1504",
+    "id": "k1604",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "연말정산",
@@ -22560,7 +24060,7 @@
     "exampleJa": "年末調整簡素化サービスで所得控除の領収書を印刷しました。"
   },
   {
-    "id": "k1505",
+    "id": "k1605",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "근로계약서",
@@ -22575,7 +24075,7 @@
     "exampleJa": "入社初日に正社員の標準労働契約書を作成しました。"
   },
   {
-    "id": "k1506",
+    "id": "k1606",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "병가",
@@ -22590,7 +24090,7 @@
     "exampleJa": "手術後の回復のために1週間の病気休暇を申請しました。"
   },
   {
-    "id": "k1507",
+    "id": "k1607",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "육아휴직",
@@ -22605,7 +24105,7 @@
     "exampleJa": "男女の労働者ともに1年間の有給育児休業を利用できます。"
   },
   {
-    "id": "k1508",
+    "id": "k1608",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "퇴직금",
@@ -22620,7 +24120,7 @@
     "exampleJa": "1年以上真面目に勤務すれば法定退職金が支給されます。"
   },
   {
-    "id": "k1509",
+    "id": "k1609",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "복리후생",
@@ -22635,7 +24135,7 @@
     "exampleJa": "学資金支援や健康診断など福利厚生制度が充実しています。"
   },
   {
-    "id": "k1510",
+    "id": "k1610",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "취업규칙",
@@ -22650,7 +24150,7 @@
     "exampleJa": "社内就業規則に従い時差出退勤制度を遵守してください。"
   },
   {
-    "id": "k1511",
+    "id": "k1611",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "인사과",
@@ -22665,7 +24165,7 @@
     "exampleJa": "新規人材採用の告知について人事課に問い合わせました。"
   },
   {
-    "id": "k1512",
+    "id": "k1612",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "총무과",
@@ -22680,7 +24180,7 @@
     "exampleJa": "事務用の椅子が壊れたので総務課に交換をお願いしました。"
   },
   {
-    "id": "k1513",
+    "id": "k1613",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "재무과",
@@ -22695,7 +24195,7 @@
     "exampleJa": "出張費精算の領収書を経理部に提出しました。"
   },
   {
-    "id": "k1514",
+    "id": "k1614",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "영업부",
@@ -22710,7 +24210,7 @@
     "exampleJa": "営業部の同僚たちが今四半期の目標売上を120％達成しました。"
   },
   {
-    "id": "k1515",
+    "id": "k1615",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "마케팅팀",
@@ -22725,7 +24225,7 @@
     "exampleJa": "マーケティングチームでインフルエンサーとの協業キャンペーンを企画しました。"
   },
   {
-    "id": "k1516",
+    "id": "k1616",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "개발팀",
@@ -22740,7 +24240,7 @@
     "exampleJa": "開発チームとデザインチームが緊密に協業してアプリをローンチしました。"
   },
   {
-    "id": "k1517",
+    "id": "k1617",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "기획팀",
@@ -22755,7 +24255,7 @@
     "exampleJa": "企画チームで下半期の新規事業の妥当性検討を完了しました。"
   },
   {
-    "id": "k1518",
+    "id": "k1618",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "고객지원팀",
@@ -22770,7 +24270,7 @@
     "exampleJa": "カスタマーサポートチームの迅速で親切な対応のおかげで評価が上がりました。"
   },
   {
-    "id": "k1519",
+    "id": "k1619",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "법무팀",
@@ -22785,7 +24285,7 @@
     "exampleJa": "海外パートナーシップ契約締結前に法務チームの法律助言を受けました。"
   },
   {
-    "id": "k1520",
+    "id": "k1620",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "연구소",
@@ -22800,7 +24300,7 @@
     "exampleJa": "本社研究所で次世代人工知能アルゴリズムの特許を出願しました。"
   },
   {
-    "id": "k1521",
+    "id": "k1621",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "안건",
@@ -22815,7 +24315,7 @@
     "exampleJa": "今日の定期週次会議の主な議題は第3四半期の予算案です。"
   },
   {
-    "id": "k1522",
+    "id": "k1622",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "개회",
@@ -22830,7 +24330,7 @@
     "exampleJa": "出席者全員が着席し、午前10時ちょうどに開会いたしました。"
   },
   {
-    "id": "k1523",
+    "id": "k1623",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "폐회",
@@ -22845,7 +24345,7 @@
     "exampleJa": "すべての質疑応答を終えた後、代表のお言葉をもって閉会しました。"
   },
   {
-    "id": "k1524",
+    "id": "k1624",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "사회자",
@@ -22860,7 +24360,7 @@
     "exampleJa": "司会者のスムーズな進行のおかげで会議が時間通りに終了しました。"
   },
   {
-    "id": "k1525",
+    "id": "k1625",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "발언권",
@@ -22875,7 +24375,7 @@
     "exampleJa": "司会者に挙手して発言権を得てから意見を提示してください。"
   },
   {
-    "id": "k1526",
+    "id": "k1626",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "브리핑",
@@ -22890,7 +24390,7 @@
     "exampleJa": "新任の本部長にプロジェクトの進捗状況を10分間ブリーフィングしました。"
   },
   {
-    "id": "k1527",
+    "id": "k1627",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "질의응답",
@@ -22905,7 +24405,7 @@
     "exampleJa": "発表が終わった後、15分間にわたり深い質疑応答の時間を持ちました。"
   },
   {
-    "id": "k1528",
+    "id": "k1628",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "브레인스토밍",
@@ -22920,7 +24420,7 @@
     "exampleJa": "新製品の広告コピーのためにチームメンバーがブレインストーミングを開きました。"
   },
   {
-    "id": "k1529",
+    "id": "k1629",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "시너지",
@@ -22935,7 +24435,7 @@
     "exampleJa": "両社の強みを結合して強力なビジネスの相乗効果を創出しましょう。"
   },
   {
-    "id": "k1530",
+    "id": "k1630",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "로드맵",
@@ -22950,7 +24450,7 @@
     "exampleJa": "今後3年間の人工知能研究開発ロードマップを策定しました。"
   },
   {
-    "id": "k1531",
+    "id": "k1631",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "마일스톤",
@@ -22965,7 +24465,7 @@
     "exampleJa": "ベータ版リリースという重要なマイルストーンを無事に達成しました。"
   },
   {
-    "id": "k1532",
+    "id": "k1632",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "킥오프",
@@ -22980,7 +24480,7 @@
     "exampleJa": "来週月曜日にグローバルローンチのキックオフミーティングが予定されています。"
   },
   {
-    "id": "k1533",
+    "id": "k1633",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "워크숍",
@@ -22995,7 +24495,7 @@
     "exampleJa": "年末の事業戦略構想のため江原道へ1泊2日のワークショップに行ってきました。"
   },
   {
-    "id": "k1534",
+    "id": "k1634",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "양해",
@@ -23010,7 +24510,7 @@
     "exampleJa": "システム点検による一時的な接続中断にお客様のご理解をお願いいたします。"
   },
   {
-    "id": "k1535",
+    "id": "k1635",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "결례",
@@ -23025,7 +24525,7 @@
     "exampleJa": "ミーティングに遅刻し、クライアントのご担当者様に大変な失礼をいたしました。"
   },
   {
-    "id": "k1536",
+    "id": "k1636",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "송구하다",
@@ -23040,7 +24540,7 @@
     "exampleJa": "日程の遅延によりご不便をおかけし、誠に恐縮に存じます。"
   },
   {
-    "id": "k1537",
+    "id": "k1637",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "외람되다",
@@ -23055,7 +24555,7 @@
     "exampleJa": "僭越ながら私の考えを一言付け加えさせていただいてもよろしいでしょうか。"
   },
   {
-    "id": "k1538",
+    "id": "k1638",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "다름이아니라",
@@ -23070,7 +24570,7 @@
     "exampleJa": "他でもなく先週ご依頼いただいた見積書の送付の件でご連絡いたしました。"
   },
   {
-    "id": "k1539",
+    "id": "k1639",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "확인부탁드립니다",
@@ -23085,7 +24585,7 @@
     "exampleJa": "添付いたしました修正契約書の草案のご確認をお願い申し上げます。"
   },
   {
-    "id": "k1540",
+    "id": "k1640",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "조율",
@@ -23100,7 +24600,7 @@
     "exampleJa": "ミーティングの日程と場所を先方の担当者と円満に調整しました。"
   },
   {
-    "id": "k1541",
+    "id": "k1641",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "타결",
@@ -23115,7 +24615,7 @@
     "exampleJa": "長期間対立していた労使の団体協約がついに妥結しました。"
   },
   {
-    "id": "k1542",
+    "id": "k1642",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "결렬",
@@ -23130,7 +24630,7 @@
     "exampleJa": "条件の隔たりを埋められず、残念ながら今回の買収交渉は決裂しました。"
   },
   {
-    "id": "k1543",
+    "id": "k1643",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "파트너십",
@@ -23145,7 +24645,7 @@
     "exampleJa": "グローバル企業との戦略的パートナーシップを締結し販路を開拓しました。"
   },
   {
-    "id": "k1544",
+    "id": "k1644",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "독점계약",
@@ -23160,7 +24660,7 @@
     "exampleJa": "韓国内での独占輸入および販売権を確保する独占契約を結びました。"
   },
   {
-    "id": "k1545",
+    "id": "k1645",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "비밀유지계약",
@@ -23175,7 +24675,7 @@
     "exampleJa": "技術ミーティングの進行に先立ち、相互秘密保持契約（NDA）を締結しました。"
   },
   {
-    "id": "k1546",
+    "id": "k1646",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "위약금",
@@ -23190,7 +24690,7 @@
     "exampleJa": "正当な理由なく一方的に破棄する場合、違約金が請求されます。"
   },
   {
-    "id": "k1547",
+    "id": "k1647",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "면책조항",
@@ -23205,7 +24705,7 @@
     "exampleJa": "自然災害による配送遅延に備えて免責条項を挿入しました。"
   },
   {
-    "id": "k1548",
+    "id": "k1648",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "양해각서",
@@ -23220,7 +24720,7 @@
     "exampleJa": "環境配慮型再生可能エネルギー共同投資のための覚書（MOU）を締結しました。"
   },
   {
-    "id": "k1549",
+    "id": "k1649",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "성과급",
@@ -23235,7 +24735,7 @@
     "exampleJa": "会社の過去最高売上達成により全社員に成果給（インセンティブ）が支給されました。"
   },
   {
-    "id": "k1550",
+    "id": "k1650",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "인사고과",
@@ -23250,7 +24750,7 @@
     "exampleJa": "年末の人事考課の評価結果に基づいて来年度の年俸が決定されます。"
   },
   {
-    "id": "k1551",
+    "id": "k1651",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "역량평가",
@@ -23265,7 +24765,7 @@
     "exampleJa": "昇進候補者を対象に多面的な能力評価を実施しました。"
   },
   {
-    "id": "k1552",
+    "id": "k1652",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "승진",
@@ -23280,7 +24780,7 @@
     "exampleJa": "入社5年で優れた実績により課長に早期昇進しました。"
   },
   {
-    "id": "k1553",
+    "id": "k1653",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "발령",
@@ -23295,7 +24795,7 @@
     "exampleJa": "来月1日付で済州支社勤務の人事異動の辞令を受けました。"
   },
   {
-    "id": "k1554",
+    "id": "k1654",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "사직서",
@@ -23310,7 +24810,7 @@
     "exampleJa": "個人起業を準備するために部署長に退職届を提出しました。"
   },
   {
-    "id": "k1555",
+    "id": "k1655",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "정년퇴직",
@@ -23325,7 +24825,7 @@
     "exampleJa": "生涯を捧げられた部長の定年退職記念の送別会を開きました。"
   },
   {
-    "id": "k1556",
+    "id": "k1656",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "인수인계",
@@ -23340,7 +24840,7 @@
     "exampleJa": "退職前に後任者へ支障なく業務の引き継ぎを完了してください。"
   },
   {
-    "id": "k1557",
+    "id": "k1657",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "업무매뉴얼",
@@ -23355,7 +24855,7 @@
     "exampleJa": "新入社員がマニュアルを見るだけで業務を習得できるよう整理しました。"
   },
   {
-    "id": "k1558",
+    "id": "k1658",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "직무교육",
@@ -23370,7 +24870,7 @@
     "exampleJa": "全社員を対象に生成AIの業務活用に関する職務研修を実施します。"
   },
   {
-    "id": "k1559",
+    "id": "k1659",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "주지하다시피",
@@ -23385,7 +24885,7 @@
     "exampleJa": "皆様ご承知の通り、今年は海外市場進出の分岐点となる年です。"
   },
   {
-    "id": "k1560",
+    "id": "k1660",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "말씀드린바와같이",
@@ -23400,7 +24900,7 @@
     "exampleJa": "先ほど申し上げました通り、詳細な見積もりは別添資料をご参照ください。"
   },
   {
-    "id": "k1561",
+    "id": "k1661",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "양해바랍니다",
@@ -23415,7 +24915,7 @@
     "exampleJa": "事前予約人数が超過したため早期締め切りとなりましたこと、何卒ご了承ください。"
   },
   {
-    "id": "k1562",
+    "id": "k1662",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "검토바랍니다",
@@ -23430,7 +24930,7 @@
     "exampleJa": "修正された最終試案をお送りいたしますので、入念なご検討をお願い申し上げます。"
   },
   {
-    "id": "k1563",
+    "id": "k1663",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "문의사항",
@@ -23445,7 +24945,7 @@
     "exampleJa": "追加のご不明点がございましたら、いつでもお電話やメールにてご連絡ください。"
   },
   {
-    "id": "k1564",
+    "id": "k1664",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "노사화합",
@@ -23460,7 +24960,7 @@
     "exampleJa": "労使協調を基盤に危機を克服し、黒字転換に成功しました。"
   },
   {
-    "id": "k1565",
+    "id": "k1665",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "경영위기",
@@ -23475,7 +24975,7 @@
     "exampleJa": "果敢な事業構造調整を通じて経営危機を早期に克服しました。"
   },
   {
-    "id": "k1566",
+    "id": "k1666",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "원가절감",
@@ -23490,7 +24990,7 @@
     "exampleJa": "工程自動化を導入し、製造原価削減の目標を早期達成しました。"
   },
   {
-    "id": "k1567",
+    "id": "k1667",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "경쟁우위",
@@ -23505,7 +25005,7 @@
     "exampleJa": "独自開発のバッテリー特許技術によりグローバル市場で競争優位を確保しました。"
   },
   {
-    "id": "k1568",
+    "id": "k1668",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "비즈니스매너",
@@ -23520,7 +25020,7 @@
     "exampleJa": "名刺交換やメールの書き方など新入社員必須のビジネスマナーを学びました。"
   },
   {
-    "id": "k1569",
+    "id": "k1669",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "조직문화",
@@ -23535,7 +25035,7 @@
     "exampleJa": "フラットで自由な議論を奨励する組織文化を目指しています。"
   },
   {
-    "id": "k1570",
+    "id": "k1670",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "브랜딩",
@@ -23550,7 +25050,7 @@
     "exampleJa": "単なる製品販売を超えて哲学を込めたプレミアムブランディングを構築しました。"
   },
   {
-    "id": "k1571",
+    "id": "k1671",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "벤치마킹",
@@ -23565,7 +25065,7 @@
     "exampleJa": "シリコンバレーのテック企業による柔軟勤務制の事例をベンチマークしました。"
   },
   {
-    "id": "k1572",
+    "id": "k1672",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "인센티브",
@@ -23580,7 +25080,7 @@
     "exampleJa": "プロジェクトの成果達成に貢献したチームメンバーに特別インセンティブを支給しました。"
   },
   {
-    "id": "k1573",
+    "id": "k1673",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "유연근무",
@@ -23595,7 +25095,7 @@
     "exampleJa": "フレックスタイム制を通じて通勤ラッシュの混雑を避けることができるようになりました。"
   },
   {
-    "id": "k1574",
+    "id": "k1674",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "재량근무",
@@ -23610,7 +25110,7 @@
     "exampleJa": "研究職の社員は出退勤の規制なく自律的な裁量労働を行っています。"
   },
   {
-    "id": "k1575",
+    "id": "k1675",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "경력직",
@@ -23625,7 +25125,7 @@
     "exampleJa": "新規プロジェクト総括のため海外企業出身の経験者を採用しました。"
   },
   {
-    "id": "k1576",
+    "id": "k1676",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "신입공채",
@@ -23640,7 +25140,7 @@
     "exampleJa": "下半期の大企業の新卒一括採用筆記試験に数多くの志願者が殺到しました。"
   },
   {
-    "id": "k1577",
+    "id": "k1677",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "헤드헌터",
@@ -23655,7 +25155,7 @@
     "exampleJa": "グローバルなヘッドハンターを通じて最高技術責任者（CTO）を招聘しました。"
   },
   {
-    "id": "k1578",
+    "id": "k1678",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "구조조정",
@@ -23670,7 +25170,7 @@
     "exampleJa": "収益性が悪化した事業部を整理する大規模な構造調整が断行されました。"
   },
   {
-    "id": "k1579",
+    "id": "k1679",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "근태관리",
@@ -23685,7 +25185,7 @@
     "exampleJa": "モバイルアプリを通じて出退勤チェックや有給申請を簡単に勤怠管理します。"
   },
   {
-    "id": "k1580",
+    "id": "k1680",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "사내복지",
@@ -23700,7 +25200,7 @@
     "exampleJa": "私たちの会社は社員食堂の無料提供など社内福利厚生が素晴らしいです。"
   },
   {
-    "id": "k1581",
+    "id": "k1681",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "후결",
@@ -23715,7 +25215,7 @@
     "exampleJa": "緊急の出張案件のため部署長に電話報告後、事後決裁で処理しました。"
   },
   {
-    "id": "k1582",
+    "id": "k1682",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "반려하다",
@@ -23730,7 +25230,7 @@
     "exampleJa": "予算算出の根拠が不足していたため、起案書が差し戻されました。"
   },
   {
-    "id": "k1583",
+    "id": "k1683",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "승인하다",
@@ -23745,7 +25245,7 @@
     "exampleJa": "役員会議で下半期のマーケティング予算増額を最終承認しました。"
   },
   {
-    "id": "k1584",
+    "id": "k1684",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "재검토",
@@ -23760,7 +25260,7 @@
     "exampleJa": "契約条項の中にリスク要因が発見され、法務チームの再検討を要請した。"
   },
   {
-    "id": "k1585",
+    "id": "k1685",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "아젠다",
@@ -23775,7 +25275,7 @@
     "exampleJa": "明日の戦略会議の主要アジェンダは新製品の海外進出策です。"
   },
   {
-    "id": "k1586",
+    "id": "k1686",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "보고체계",
@@ -23790,7 +25290,7 @@
     "exampleJa": "非常事態発生時の迅速な意思決定のため報告体制を一元化した。"
   },
   {
-    "id": "k1587",
+    "id": "k1687",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "업무분장",
@@ -23805,7 +25305,7 @@
     "exampleJa": "チーム改編に合わせてチーム員別の業務分掌表を新しく作成しました。"
   },
   {
-    "id": "k1588",
+    "id": "k1688",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "연차휴가",
@@ -23820,7 +25320,7 @@
     "exampleJa": "残った年次有給休暇を活用して年末に家族と海外旅行に行ってきました。"
   },
   {
-    "id": "k1589",
+    "id": "k1689",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "대체휴무",
@@ -23835,7 +25335,7 @@
     "exampleJa": "週末のシステム点検作業に参加した社員たちに代休が付与される。"
   },
   {
-    "id": "k1590",
+    "id": "k1690",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "탄력근무제",
@@ -23850,7 +25350,7 @@
     "exampleJa": "弾力勤務制を導入してプロジェクト締め切り時期の業務集中度を高めた。"
   },
   {
-    "id": "k1591",
+    "id": "k1691",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "유연근무제",
@@ -23865,7 +25365,7 @@
     "exampleJa": "柔軟勤務制の施行のおかげでワークライフバランスと社員満足度が大幅に向上した。"
   },
   {
-    "id": "k1592",
+    "id": "k1692",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "재택근무",
@@ -23880,7 +25380,7 @@
     "exampleJa": "クラウドコラボレーションツールを活用して週2回在宅勤務を実施している。"
   },
   {
-    "id": "k1593",
+    "id": "k1693",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "야간근무",
@@ -23895,7 +25395,7 @@
     "exampleJa": "24時間サーバー監視のためエンジニアたちが夜間勤務を交代で務める。"
   },
   {
-    "id": "k1594",
+    "id": "k1694",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "사업계획서",
@@ -23910,7 +25410,7 @@
     "exampleJa": "投資家の信頼を得るために完成度の高い事業計画書を作成した。"
   },
   {
-    "id": "k1595",
+    "id": "k1695",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "타당성조사",
@@ -23925,7 +25425,7 @@
     "exampleJa": "海外工場設立に先立ち徹底した妥当性調査を実施しました。"
   },
   {
-    "id": "k1596",
+    "id": "k1696",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "시장조사",
@@ -23940,7 +25440,7 @@
     "exampleJa": "新規ターゲット層を発掘するため大規模なオンライン市場調査を実施した。"
   },
   {
-    "id": "k1597",
+    "id": "k1697",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "타깃팅",
@@ -23955,7 +25455,7 @@
     "exampleJa": "20〜30代をターゲットにした精密なターゲティング広告で会員数が急増した。"
   },
   {
-    "id": "k1598",
+    "id": "k1698",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "포지셔닝",
@@ -23970,7 +25470,7 @@
     "exampleJa": "環境に優しいプレミアムブランドとしての独自のポジショニングに成功した。"
   },
   {
-    "id": "k1599",
+    "id": "k1699",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "브랜드이미지",
@@ -23985,7 +25485,7 @@
     "exampleJa": "社会貢献活動を着実に展開し企業の肯定的なブランドイメージを向上させた。"
   },
   {
-    "id": "k1600",
+    "id": "k1700",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "고객유치",
@@ -24000,7 +25500,7 @@
     "exampleJa": "破格の初回購入割引プロモーションを通じて新規顧客の誘致に拍車をかけた。"
   },
   {
-    "id": "k1601",
+    "id": "k1701",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "판촉행사",
@@ -24015,7 +25515,7 @@
     "exampleJa": "夏の最盛期を迎えて大型マートと連携した大々的な販促イベントを開催した。"
   },
   {
-    "id": "k1602",
+    "id": "k1702",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "신제품출시",
@@ -24030,7 +25530,7 @@
     "exampleJa": "メディアショーケースを通じて下半期の期待作であるスマートフォン新製品発売を知らせた。"
   },
   {
-    "id": "k1603",
+    "id": "k1703",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "고객만족도",
@@ -24045,7 +25545,7 @@
     "exampleJa": "迅速なアフターサービスの提供で顧客満足度調査で1位を獲得した。"
   },
   {
-    "id": "k1604",
+    "id": "k1704",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "재구매율",
@@ -24060,7 +25560,7 @@
     "exampleJa": "優れた品質と顧客対応により当社製品の再購入率は70％に達する。"
   },
   {
-    "id": "k1605",
+    "id": "k1705",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "이탈률",
@@ -24075,7 +25575,7 @@
     "exampleJa": "アプリのUIを刷新し会員登録段階での離脱率を下げた。"
   },
   {
-    "id": "k1606",
+    "id": "k1706",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "시장점유율",
@@ -24090,7 +25590,7 @@
     "exampleJa": "革新的なバッテリー技術を武器にグローバル市場占有率を30％まで引き上げた。"
   },
   {
-    "id": "k1607",
+    "id": "k1707",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "핵심역량",
@@ -24105,7 +25605,7 @@
     "exampleJa": "人工知能アルゴリズムの研究能力こそが当社のスタートアップの中核能力だ。"
   },
   {
-    "id": "k1608",
+    "id": "k1708",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "사업다각화",
@@ -24120,7 +25620,7 @@
     "exampleJa": "リスクを分散し新たな成長軸を確保するため事業の多角化を推進した。"
   },
   {
-    "id": "k1609",
+    "id": "k1709",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "신성장동력",
@@ -24135,7 +25635,7 @@
     "exampleJa": "環境に優しいバイオエネルギーをグループの次世代新成長エンジンとして集中育成する。"
   },
   {
-    "id": "k1610",
+    "id": "k1710",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "블루오션",
@@ -24150,7 +25650,7 @@
     "exampleJa": "まだ競争が激しくないシルバーケアテック市場は代表的なブルーオーシャンだ。"
   },
   {
-    "id": "k1611",
+    "id": "k1711",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "영업실적",
@@ -24165,7 +25665,7 @@
     "exampleJa": "海外法人の目覚ましい活躍に支えられ、史上最大の営業実績を達成した。"
   },
   {
-    "id": "k1612",
+    "id": "k1712",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "바이어",
@@ -24180,7 +25680,7 @@
     "exampleJa": "国際貿易博覧会でヨーロッパのバイヤーたちと大規模な供給商談を行った。"
   },
   {
-    "id": "k1613",
+    "id": "k1713",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "수주",
@@ -24195,7 +25695,7 @@
     "exampleJa": "中東地域の大規模プラント建設工事を単独で受注する快挙を成し遂げた。"
   },
   {
-    "id": "k1614",
+    "id": "k1714",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "발주",
@@ -24210,7 +25710,7 @@
     "exampleJa": "部品の在庫が底をつく前に協力会社に追加分を緊急発注した。"
   },
   {
-    "id": "k1615",
+    "id": "k1715",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "손익계산서",
@@ -24225,7 +25725,7 @@
     "exampleJa": "四半期の損益計算書を分析して不要な固定費の支出を点検しました。"
   },
   {
-    "id": "k1616",
+    "id": "k1716",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "재무제표",
@@ -24240,7 +25740,7 @@
     "exampleJa": "外部の会計監査法人による監査を経た公認財務諸表を株主に開示した。"
   },
   {
-    "id": "k1617",
+    "id": "k1717",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "자산",
@@ -24255,7 +25755,7 @@
     "exampleJa": "安全資産を中心にポートフォリオを再編し金融の変動性に備えた。"
   },
   {
-    "id": "k1618",
+    "id": "k1718",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "부채",
@@ -24270,7 +25770,7 @@
     "exampleJa": "企業の財務健全性を確保するため高金利の負債を優先的に返済した。"
   },
   {
-    "id": "k1619",
+    "id": "k1719",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "자본금",
@@ -24285,7 +25785,7 @@
     "exampleJa": "新規法人設立のため出資者たちと共に資本金5億ウォンを拡充した。"
   },
   {
-    "id": "k1620",
+    "id": "k1720",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "당기순이익",
@@ -24300,7 +25800,7 @@
     "exampleJa": "今年の当期純利益が前年比45％急増し過去最高値を更新した。"
   },
   {
-    "id": "k1621",
+    "id": "k1721",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "영업이익",
@@ -24315,7 +25815,7 @@
     "exampleJa": "原材料価格の下落とコスト削減のおかげで第2四半期の営業利益が大幅に増えた。"
   },
   {
-    "id": "k1622",
+    "id": "k1722",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "매출액",
@@ -24330,7 +25830,7 @@
     "exampleJa": "新製品の世界的大ヒットで創業以来初めて年間売上高1兆ウォンを突破した。"
   },
   {
-    "id": "k1623",
+    "id": "k1723",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "감가상각",
@@ -24345,7 +25845,7 @@
     "exampleJa": "工場設備に対する減価償却費を会計帳簿に正確に反映した。"
   },
   {
-    "id": "k1624",
+    "id": "k1724",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "현금흐름",
@@ -24360,7 +25860,7 @@
     "exampleJa": "黒字倒産を防ぐためには何よりも円滑なキャッシュフロー管理が要となる。"
   },
   {
-    "id": "k1625",
+    "id": "k1725",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "유동자산",
@@ -24375,7 +25875,7 @@
     "exampleJa": "短期債務を返済できる流動資産を十分に確保しておいた。"
   },
   {
-    "id": "k1626",
+    "id": "k1726",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "고정자산",
@@ -24390,7 +25890,7 @@
     "exampleJa": "スマートファクトリー構築のため大規模な固定資産投資を執行しました。"
   },
   {
-    "id": "k1627",
+    "id": "k1727",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "회계감사",
@@ -24405,7 +25905,7 @@
     "exampleJa": "上場要件を満たすため会計法人による厳格な会計監査を受けた。"
   },
   {
-    "id": "k1628",
+    "id": "k1728",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "투자유치",
@@ -24420,7 +25920,7 @@
     "exampleJa": "グローバルVCから100億ウォン規模のシリーズA投資誘致に成功した。"
   },
   {
-    "id": "k1629",
+    "id": "k1729",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "지분율",
@@ -24435,7 +25935,7 @@
     "exampleJa": "創業者の持分比率を安定して維持しながら新株を発行した。"
   },
   {
-    "id": "k1630",
+    "id": "k1730",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "주주총회",
@@ -24450,7 +25950,7 @@
     "exampleJa": "定期株主総会で新任代表理事の選任案が圧倒的多数で可決された。"
   },
   {
-    "id": "k1631",
+    "id": "k1731",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "배당금",
@@ -24465,7 +25965,7 @@
     "exampleJa": "会社の業績好調に支えられ、1株当たりの配当金を前年より20％引き上げた。"
   },
   {
-    "id": "k1632",
+    "id": "k1732",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "부가가치세",
@@ -24480,7 +25980,7 @@
     "exampleJa": "税金計算書の発行時、供給価額と付加価値税を別々に表記しなければなりません。"
   },
   {
-    "id": "k1633",
+    "id": "k1733",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "세무조사",
@@ -24495,7 +25995,7 @@
     "exampleJa": "定期税務調査に備えて関連する会計証憑書類を徹底的に点検した。"
   },
   {
-    "id": "k1634",
+    "id": "k1734",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "공시",
@@ -24510,7 +26010,7 @@
     "exampleJa": "重大な契約締結の事実を金融監督院の電子開示システムに即時公示した。"
   },
   {
-    "id": "k1635",
+    "id": "k1735",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "유상증자",
@@ -24525,7 +26025,7 @@
     "exampleJa": "研究開発資金を調達するため500億ウォン規模の株主割当有償増資を決議した。"
   },
   {
-    "id": "k1636",
+    "id": "k1736",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "기업공개",
@@ -24540,7 +26040,7 @@
     "exampleJa": "来年下半期のコスダック市場上場を目指し新規株式公開の手続きに突入した。"
   },
   {
-    "id": "k1637",
+    "id": "k1737",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "투자포트폴리오",
@@ -24555,7 +26055,7 @@
     "exampleJa": "安全資産と成長株をバランスよく配分して投資ポートフォリオを再構築した。"
   },
   {
-    "id": "k1638",
+    "id": "k1738",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "환율변동",
@@ -24570,7 +26070,7 @@
     "exampleJa": "急激な為替レートの変動により原材料輸入企業のコスト負担が加重された。"
   },
   {
-    "id": "k1639",
+    "id": "k1739",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "금리인상",
@@ -24585,7 +26085,7 @@
     "exampleJa": "中央銀行の急速な利上げにより企業の融資利息の負担が大きくなった。"
   },
   {
-    "id": "k1640",
+    "id": "k1740",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "금리인하",
@@ -24600,7 +26100,7 @@
     "exampleJa": "景気後退を防ぐため流動性を供給し先制的な利下げを断行した。"
   },
   {
-    "id": "k1641",
+    "id": "k1741",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "물가상승률",
@@ -24615,7 +26115,7 @@
     "exampleJa": "消費者物価上昇率が2％台に鈍化し安定傾向を示した。"
   },
   {
-    "id": "k1642",
+    "id": "k1742",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "인플레이션",
@@ -24630,7 +26130,7 @@
     "exampleJa": "インフレ圧力を下げるため緊縮的な金融政策を維持した。"
   },
   {
-    "id": "k1643",
+    "id": "k1743",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "디플레이션",
@@ -24645,7 +26145,7 @@
     "exampleJa": "デフレが発生すると消費と投資が冷え込み不況が長期化する。"
   },
   {
-    "id": "k1644",
+    "id": "k1744",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "통화정책",
@@ -24660,7 +26160,7 @@
     "exampleJa": "景気回復と物価安定をバランスよく考慮した金融政策を運用する。"
   },
   {
-    "id": "k1645",
+    "id": "k1745",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "기준금리",
@@ -24675,7 +26175,7 @@
     "exampleJa": "韓国銀行金融通貨委員会で基準金利を年3.5％に据え置いた。"
   },
   {
-    "id": "k1646",
+    "id": "k1746",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "경기부양책",
@@ -24690,7 +26190,7 @@
     "exampleJa": "政府は内需消費刺激のため大規模な景気浮揚策を発表した。"
   },
   {
-    "id": "k1647",
+    "id": "k1747",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "무역수지",
@@ -24705,7 +26205,7 @@
     "exampleJa": "半導体と自動車の輸出好調により貿易収支が大規模な黒字を記録した。"
   },
   {
-    "id": "k1648",
+    "id": "k1748",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "경상수지",
@@ -24720,7 +26220,7 @@
     "exampleJa": "我が国は10ヶ月連続で経常収支の黒字行進を続けた。"
   },
   {
-    "id": "k1649",
+    "id": "k1749",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "수출입",
@@ -24735,7 +26235,7 @@
     "exampleJa": "グローバルサプライチェーンの乱れにより主要港湾の輸出入取扱量が減少した。"
   },
   {
-    "id": "k1650",
+    "id": "k1750",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "관세율",
@@ -24750,7 +26250,7 @@
     "exampleJa": "貿易協定に基づき来年から該当品目の関税率が段階的に引き下げられる。"
   },
   {
-    "id": "k1651",
+    "id": "k1751",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "자유무역협정",
@@ -24765,7 +26265,7 @@
     "exampleJa": "両国間の自由貿易協定が発効し農産物の輸出機会が拡大した。"
   },
   {
-    "id": "k1652",
+    "id": "k1752",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "환율리스크",
@@ -24780,7 +26280,7 @@
     "exampleJa": "為替ヘッジ契約を締結し予期せぬ為替リスクに先手を打って対応した。"
   },
   {
-    "id": "k1653",
+    "id": "k1753",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "금융위기",
@@ -24795,7 +26295,7 @@
     "exampleJa": "過度な負債は国家経済を致命的な金融危機へと追い込む可能性がある。"
   },
   {
-    "id": "k1654",
+    "id": "k1754",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "국가신용등급",
@@ -24810,7 +26310,7 @@
     "exampleJa": "安定した財政健全性のおかげで最高水準の国家信用格付けを維持した。"
   },
   {
-    "id": "k1655",
+    "id": "k1755",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "외환보유액",
@@ -24825,7 +26325,7 @@
     "exampleJa": "我が国の外貨準備高は4千億ドルを上回り対外ショックの吸収に十分だ。"
   },
   {
-    "id": "k1656",
+    "id": "k1756",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "유동성공급",
@@ -24840,7 +26340,7 @@
     "exampleJa": "短期金融市場の安定のため韓国銀行が迅速な流動性供給に乗り出した。"
   },
   {
-    "id": "k1657",
+    "id": "k1757",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "공급망",
@@ -24855,7 +26355,7 @@
     "exampleJa": "重要部品の調達先を多角化しグローバルサプライチェーンの危機を克服した。"
   },
   {
-    "id": "k1658",
+    "id": "k1758",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "원자재가격",
@@ -24870,7 +26370,7 @@
     "exampleJa": "国際原材料価格の急騰により完成品の消費者価格の引き上げが不可避だった。"
   },
   {
-    "id": "k1659",
+    "id": "k1759",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "유가상승",
@@ -24885,7 +26385,7 @@
     "exampleJa": "産油国の減産措置による原油高が航空業界の燃料費負担を増大させた。"
   },
   {
-    "id": "k1660",
+    "id": "k1760",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "경기침체",
@@ -24900,7 +26400,7 @@
     "exampleJa": "世界的な景気後退の懸念の中でも輸出企業はR＆D投資を増やした。"
   },
   {
-    "id": "k1661",
+    "id": "k1761",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "호황",
@@ -24915,7 +26415,7 @@
     "exampleJa": "造船業界が環境対応船の受注好況を享受し黒字転換に成功した。"
   },
   {
-    "id": "k1662",
+    "id": "k1762",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "불황",
@@ -24930,7 +26430,7 @@
     "exampleJa": "長期化した内需不況を打開するためマーケティング戦略を全面的に見直した。"
   },
   {
-    "id": "k1663",
+    "id": "k1763",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "상호존중",
@@ -24945,7 +26445,7 @@
     "exampleJa": "円満な交渉を引き出すためには相手に対する相互尊重が不可欠である。"
   },
   {
-    "id": "k1664",
+    "id": "k1764",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "명함교환",
@@ -24960,7 +26460,7 @@
     "exampleJa": "初対面では両手で丁寧に名刺交換をするのが基本マナーだ。"
   },
   {
-    "id": "k1665",
+    "id": "k1765",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "사전조율",
@@ -24975,7 +26475,7 @@
     "exampleJa": "本格的な契約交渉に先立ち実務陣の間で事前調整を終えました。"
   },
   {
-    "id": "k1666",
+    "id": "k1766",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "의전",
@@ -24990,7 +26490,7 @@
     "exampleJa": "海外のVIP訪問日程に合わせて儀典担当チームが細やかに接遇を準備した。"
   },
   {
-    "id": "k1667",
+    "id": "k1767",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "상생협력",
@@ -25005,7 +26505,7 @@
     "exampleJa": "協力会社の技術開発を支援する共生協力プログラムを拡大運用する。"
   },
   {
-    "id": "k1668",
+    "id": "k1768",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "계약체결",
@@ -25020,7 +26520,7 @@
     "exampleJa": "激しい交渉の末、3年間の長期独占供給の契約締結に合意した。"
   },
   {
-    "id": "k1669",
+    "id": "k1769",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "계약위반",
@@ -25035,7 +26535,7 @@
     "exampleJa": "納品期日を1ヶ月以上遅延させたことは明白な契約違反に該当する。"
   },
   {
-    "id": "k1670",
+    "id": "k1770",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "손해배상",
@@ -25050,7 +26550,7 @@
     "exampleJa": "契約破棄による経済的損失に対し裁判所に損害賠償請求訴訟を提起した。"
   },
   {
-    "id": "k1671",
+    "id": "k1771",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "원만한합의",
@@ -25065,7 +26565,7 @@
     "exampleJa": "労使間のマラソン交渉の末にストライキ直前で円満な合意に達した。"
   },
   {
-    "id": "k1672",
+    "id": "k1772",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "합의각서",
@@ -25080,7 +26580,7 @@
     "exampleJa": "両社は共同技術開発に着手することとし合意覚書を取り交わした。"
   },
   {
-    "id": "k1673",
+    "id": "k1773",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "신의성실",
@@ -25095,7 +26595,7 @@
     "exampleJa": "すべての商取引契約は相互の信義誠実の原則に従って履行されなければならない。"
   },
   {
-    "id": "k1674",
+    "id": "k1774",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "갑을관계",
@@ -25110,7 +26610,7 @@
     "exampleJa": "不公正な甲乙関係を清算し同等なパートナーシップを定着させるべきだ。"
   },
   {
-    "id": "k1675",
+    "id": "k1775",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "상명하복",
@@ -25125,7 +26625,7 @@
     "exampleJa": "垂直的で硬直した上命下服の文化から脱却し自律性を強化した。"
   },
   {
-    "id": "k1676",
+    "id": "k1776",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "직장내괴롭힘",
@@ -25140,7 +26640,7 @@
     "exampleJa": "政府は職場内ハラスメント防止法を通じて被害労働者の権益を保護している。"
   },
   {
-    "id": "k1677",
+    "id": "k1777",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "조정안",
@@ -25155,7 +26655,7 @@
     "exampleJa": "労働委員会が提示した賃金引き上げ調停案を労使双方が電撃的に受け入れた。"
   },
   {
-    "id": "k1678",
+    "id": "k1778",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "중재",
@@ -25170,7 +26670,7 @@
     "exampleJa": "国際商業会議所の仲裁を通じて長期間続いた特許訴訟を結審させた。"
   },
   {
-    "id": "k1679",
+    "id": "k1779",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "우호적협력",
@@ -25185,7 +26685,7 @@
     "exampleJa": "両国はエネルギー安全保障分野で緊密かつ友好的協力を継続することに合意した。"
   },
   {
-    "id": "k1680",
+    "id": "k1780",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "양자회담",
@@ -25200,7 +26700,7 @@
     "exampleJa": "首脳会談期間中に別途の二者会談を開き経済協力策を議論した。"
   },
   {
-    "id": "k1681",
+    "id": "k1781",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "다자간협상",
@@ -25215,7 +26715,7 @@
     "exampleJa": "グローバル炭素税導入に向けた多国間交渉が最終妥結段階に入った。"
   },
   {
-    "id": "k1682",
+    "id": "k1782",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "수습기간",
@@ -25230,7 +26730,7 @@
     "exampleJa": "3ヶ月の見習い期間を無事に終え正式な社員として発令された。"
   },
   {
-    "id": "k1683",
+    "id": "k1783",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "정규직",
@@ -25245,7 +26745,7 @@
     "exampleJa": "優秀な契約職社員を正社員へ転換し雇用の安定を図った。"
   },
   {
-    "id": "k1684",
+    "id": "k1784",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "계약직",
@@ -25260,7 +26760,7 @@
     "exampleJa": "プロジェクト期間中に特定業務を専任する契約職の専門家を採用した。"
   },
   {
-    "id": "k1685",
+    "id": "k1785",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "희망퇴직",
@@ -25275,7 +26775,7 @@
     "exampleJa": "経営効率化のため特別退職金を提示し希望退職を実施した。"
   },
   {
-    "id": "k1686",
+    "id": "k1786",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "권고사직",
@@ -25290,7 +26790,7 @@
     "exampleJa": "事業部の廃止に伴い該当部署の社員たちに退職勧告を通知した。"
   },
   {
-    "id": "k1687",
+    "id": "k1787",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "승진누락",
@@ -25305,7 +26805,7 @@
     "exampleJa": "今回の人事で昇進見送りとなった部長は黙々と次の機会を準備している。"
   },
   {
-    "id": "k1688",
+    "id": "k1788",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "스카우트",
@@ -25320,7 +26820,7 @@
     "exampleJa": "グローバルビッグテック企業からAI主席研究員を高額年俸でスカウトした。"
   },
   {
-    "id": "k1689",
+    "id": "k1789",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "조직개편",
@@ -25335,7 +26835,7 @@
     "exampleJa": "迅速な意思決定のために階層を減らす大々的な組織改編を断行した。"
   },
   {
-    "id": "k1690",
+    "id": "k1790",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "사내공모",
@@ -25350,7 +26850,7 @@
     "exampleJa": "新設されたAI新規事業チームのメンバーを社内公募を通じて選抜した。"
   },
   {
-    "id": "k1691",
+    "id": "k1791",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "플랫폼비즈니스",
@@ -25365,7 +26865,7 @@
     "exampleJa": "配達アプリや宿泊予約アプリは代表的なプラットフォームビジネスの成功事例だ。"
   },
   {
-    "id": "k1692",
+    "id": "k1792",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "스타트업",
@@ -25380,7 +26880,7 @@
     "exampleJa": "政府は青年スタートアップ育成のため創業スペースと投資金を積極的に支援している。"
   },
   {
-    "id": "k1693",
+    "id": "k1793",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "벤처기업",
@@ -25395,7 +26895,7 @@
     "exampleJa": "独自開発したバイオ新薬技術でコスダックに上場された優秀なベンチャー企業だ。"
   },
   {
-    "id": "k1694",
+    "id": "k1794",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "유니콘기업",
@@ -25410,7 +26910,7 @@
     "exampleJa": "フィンテック分野で韓国内10番目のユニコーン企業が誕生した。"
   },
   {
-    "id": "k1695",
+    "id": "k1795",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "스마트팩토리",
@@ -25425,7 +26925,7 @@
     "exampleJa": "スマートファクトリーの導入を通じて不良率を画期的に下げ生産性を極大化した。"
   },
   {
-    "id": "k1696",
+    "id": "k1796",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "이커머스",
@@ -25440,7 +26940,7 @@
     "exampleJa": "オンライン消費が普遍化するにつれEコマース市場の規模が爆発的に成長した。"
   },
   {
-    "id": "k1697",
+    "id": "k1797",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "전자결제",
@@ -25455,7 +26955,7 @@
     "exampleJa": "簡単電子決済サービスの普及により財布を持たずに外出する人が増えた。"
   },
   {
-    "id": "k1698",
+    "id": "k1798",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "핀테크",
@@ -25470,7 +26970,7 @@
     "exampleJa": "フィンテックの革新により簡単送金や海外送金の手数料が大幅に引き下げられた。"
   },
   {
-    "id": "k1699",
+    "id": "k1799",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "디지털전환",
@@ -25485,7 +26985,7 @@
     "exampleJa": "伝統的な製造業が生き残りのためクラウドベースのDXを急いでいる。"
   },
   {
-    "id": "k1700",
+    "id": "k1800",
     "level": "비즈니스 & 시사 고급 한국어",
     "category": "비즈니스 & 시사 고급 한국어",
     "word": "구독경제",
