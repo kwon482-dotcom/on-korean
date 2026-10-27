@@ -9,6 +9,7 @@ import sys
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_dir = os.path.dirname(script_dir)
 sys.path.insert(0, script_dir)
+sys.path.insert(0, project_dir)
 
 # Phase 1 Data
 from data_basics import BASICS_WORDS
@@ -62,6 +63,13 @@ from data_p4_topik2 import P4_TOPIK2_WORDS
 from data_p4_kdrama import P4_KDRAMA_WORDS
 from data_p4_business import P4_BUSINESS_WORDS
 
+# Phase 5 Data (+500 words -> 2,500 words Milestone!)
+from data_p5_basics import P5_BASICS_WORDS
+from data_p5_topik1 import P5_TOPIK1_WORDS
+from data_p5_topik2 import P5_TOPIK2_WORDS
+from data_p5_kdrama import P5_KDRAMA_WORDS
+from data_p5_business import P5_BUSINESS_WORDS
+
 def main():
     seen_words = set()
     result = []
@@ -69,15 +77,15 @@ def main():
     # 1. Base Starter Words (from raw starter if needed or direct from categories)
     categories_map = [
         ("한글 기초 & 생존 회화",
-         BASICS_WORDS + BASICS_WORDS_2 + FINAL_TOUCH_WORDS[:10] + P2_BASICS_WORDS_1 + P2_BASICS_WORDS_2 + FINAL_TOUCH_P2_BASICS + P3_BASICS_WORDS + P4_BASICS_WORDS),
+         BASICS_WORDS + BASICS_WORDS_2 + FINAL_TOUCH_WORDS[:10] + P2_BASICS_WORDS_1 + P2_BASICS_WORDS_2 + FINAL_TOUCH_P2_BASICS + P3_BASICS_WORDS + P4_BASICS_WORDS + P5_BASICS_WORDS),
         ("TOPIK I 초급 필수 어휘",
-         TOPIK1_WORDS + TOPIK1_WORDS_2 + TOPIK1_WORDS_3 + FINAL_TOUCH_WORDS[10:18] + P2_TOPIK1_WORDS_1 + P2_TOPIK1_WORDS_2 + FINAL_TOUCH_P2_TOPIK1 + P3_TOPIK1_WORDS + P4_TOPIK1_WORDS),
+         TOPIK1_WORDS + TOPIK1_WORDS_2 + TOPIK1_WORDS_3 + FINAL_TOUCH_WORDS[10:18] + P2_TOPIK1_WORDS_1 + P2_TOPIK1_WORDS_2 + FINAL_TOUCH_P2_TOPIK1 + P3_TOPIK1_WORDS + P4_TOPIK1_WORDS + P5_TOPIK1_WORDS),
         ("TOPIK II 중급 핵심 어휘",
-         TOPIK2_WORDS + TOPIK2_WORDS_2 + TOPIK2_WORDS_3 + FINAL_TOUCH_WORDS[18:] + P2_TOPIK2_WORDS_1 + P2_TOPIK2_WORDS_2 + FINAL_TOUCH_P2_TOPIK2 + P3_TOPIK2_WORDS + P4_TOPIK2_WORDS),
+         TOPIK2_WORDS + TOPIK2_WORDS_2 + TOPIK2_WORDS_3 + FINAL_TOUCH_WORDS[18:] + P2_TOPIK2_WORDS_1 + P2_TOPIK2_WORDS_2 + FINAL_TOUCH_P2_TOPIK2 + P3_TOPIK2_WORDS + P4_TOPIK2_WORDS + P5_TOPIK2_WORDS),
         ("K-드라마 & 실전 리얼 회화",
-         KDRAMA_WORDS + KDRAMA_WORDS_2 + KDRAMA_WORDS_3 + KDRAMA_WORDS_4 + P2_KDRAMA_WORDS_1 + P2_KDRAMA_WORDS_2 + FINAL_TOUCH_P2_KDRAMA + P3_KDRAMA_WORDS + P4_KDRAMA_WORDS),
+         KDRAMA_WORDS + KDRAMA_WORDS_2 + KDRAMA_WORDS_3 + KDRAMA_WORDS_4 + P2_KDRAMA_WORDS_1 + P2_KDRAMA_WORDS_2 + FINAL_TOUCH_P2_KDRAMA + P3_KDRAMA_WORDS + P4_KDRAMA_WORDS + P5_KDRAMA_WORDS),
         ("비즈니스 & 시사 고급 한국어",
-         BUSINESS_WORDS + BUSINESS_WORDS_2 + P2_BUSINESS_WORDS_1 + P2_BUSINESS_WORDS_2 + FINAL_TOUCH_P2_BUSINESS + P3_BUSINESS_WORDS + P4_BUSINESS_WORDS),
+         BUSINESS_WORDS + BUSINESS_WORDS_2 + P2_BUSINESS_WORDS_1 + P2_BUSINESS_WORDS_2 + FINAL_TOUCH_P2_BUSINESS + P3_BUSINESS_WORDS + P4_BUSINESS_WORDS + P5_BUSINESS_WORDS),
     ]
 
     # Keep original 46 starter words at the front
