@@ -18,7 +18,9 @@ class _AdBannerWidgetState extends State<AdBannerWidget> {
   // 💡 출시 빌드(kReleaseMode)일 때만 실제 배너 노출, 평소엔 공식 테스트 배너
   String get _adUnitId {
     if (kReleaseMode) {
-      return 'ca-app-pub-4701087745821757/3057088263'; // 실제 배너 ID (on-korean)
+      return Platform.isAndroid
+          ? 'ca-app-pub-4701087745821757/3057088263' // 실제 배너 ID (Android)
+          : 'ca-app-pub-4701087745821757/3782745523'; // 실제 배너 ID (iOS)
     } else {
       return Platform.isAndroid
           ? 'ca-app-pub-3940256099942544/6300978111' // 구글 공식 안드로이드 테스트 ID

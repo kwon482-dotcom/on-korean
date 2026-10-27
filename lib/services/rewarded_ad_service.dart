@@ -12,7 +12,9 @@ class RewardedAdService {
     // 💡 출시 빌드(kReleaseMode)일 때 실제 발급받은 보상형 광고 단위 노출
     // 디버그/개발 중에는 구글 공식 테스트 광고 ID로 무효 트래픽/계정 제재 방지
     if (kReleaseMode) {
-      return 'ca-app-pub-4701087745821757/4980544020'; // on-korean 보상형 광고 ID
+      return Platform.isAndroid
+          ? 'ca-app-pub-4701087745821757/4980544020' // on-korean 보상형 광고 ID (Android)
+          : 'ca-app-pub-4701087745821757/4354425312'; // on-korean 보상형 광고 ID (iOS)
     } else {
       return Platform.isAndroid
           ? 'ca-app-pub-3940256099942544/5224354917'

@@ -327,6 +327,27 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
                               ),
                             ],
                           ),
+                          TextButton.icon(
+                            onPressed: _restorePurchases,
+                            style: TextButton.styleFrom(
+                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                              minimumSize: Size.zero,
+                              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                            ),
+                            icon: Icon(
+                              Icons.restore,
+                              size: 13,
+                              color: isDark ? const Color(0xFF94A3B8) : Colors.grey.shade600,
+                            ),
+                            label: Text(
+                              LocaleService.tr('pro_restore_purchases'),
+                              style: TextStyle(
+                                fontSize: 11,
+                                color: isDark ? const Color(0xFF94A3B8) : Colors.grey.shade600,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                       const SizedBox(height: 10),
@@ -520,6 +541,12 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
   void _showPreparingSnackbar() {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(LocaleService.tr('pro_preparing_iap'))),
+    );
+  }
+
+  void _restorePurchases() {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(LocaleService.tr('pro_restore_result'))),
     );
   }
 

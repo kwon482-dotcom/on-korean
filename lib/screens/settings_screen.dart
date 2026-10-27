@@ -253,6 +253,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   trailing: const Icon(Icons.chevron_right, size: 20),
                   onTap: () => BackupService.importBackup(context),
                 ),
+                ListTile(
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 24),
+                  leading: const Icon(Icons.restore, color: Colors.indigo),
+                  title: Text(LocaleService.tr('pro_restore_purchases')),
+                  subtitle: Text(LocaleService.tr('pro_restore_purchases_desc')),
+                  trailing: const Icon(Icons.chevron_right, size: 20),
+                  onTap: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text(LocaleService.tr('pro_restore_result'))),
+                    );
+                  },
+                ),
               ],
             ),
             const Divider(),
