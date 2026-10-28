@@ -67,7 +67,7 @@ class SettingsAudioSection extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton.icon(
-                  onPressed: () => TtsService.speak('日本語の勉強を始めましょう'),
+                  onPressed: () => TtsService.speak('안녕하세요, 한국어 공부를 시작해 볼까요?'),
                   icon: const Icon(Icons.volume_up, size: 18),
                   label: Text(LocaleService.tr('settings_tts_test')),
                 ),

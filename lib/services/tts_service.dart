@@ -32,12 +32,28 @@ class TtsService {
       });
 
       if (!kIsWeb) {
-        try {
-          final dynamic engines = await _flutterTts.getEngines;
-          if (engines is List && engines.contains('com.google.android.tts')) {
-            await _flutterTts.setEngine('com.google.android.tts');
-          }
-        } catch (_) {}
+        if (defaultTargetPlatform == TargetPlatform.android) {
+          try {
+            final dynamic engines = await _flutterTts.getEngines;
+            if (engines is List && engines.contains('com.google.android.tts')) {
+              await _flutterTts.setEngine('com.google.android.tts');
+            }
+          } catch (_) {}
+        } else if (defaultTargetPlatform == TargetPlatform.iOS) {
+          try {
+            await _flutterTts.setSharedInstance(true);
+            await _flutterTts.setIosAudioCategory(
+              IosTextToSpeechAudioCategory.playback,
+              [
+                IosTextToSpeechAudioCategoryOptions.allowBluetooth,
+                IosTextToSpeechAudioCategoryOptions.allowBluetoothA2DP,
+                IosTextToSpeechAudioCategoryOptions.mixWithOthers,
+                IosTextToSpeechAudioCategoryOptions.defaultToSpeaker,
+              ],
+              IosTextToSpeechAudioMode.defaultMode,
+            );
+          } catch (_) {}
+        }
       }
 
       await _flutterTts.setLanguage('ko-KR');

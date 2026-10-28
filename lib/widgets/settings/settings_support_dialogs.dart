@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -10,6 +11,7 @@ class SettingsSupportDialogs {
   static void showNotice(BuildContext context) {
     final isJa = LocaleService.currentLocale.value.languageCode == 'ja';
     final isEn = LocaleService.currentLocale.value.languageCode == 'en';
+    final isIOS = !kIsWeb && defaultTargetPlatform == TargetPlatform.iOS;
 
     showDialog(
       context: context,
@@ -50,11 +52,17 @@ class SettingsSupportDialogs {
               ),
               const SizedBox(height: 4),
               Text(
-                isJa
-                    ? 'スマートフォンの[設定] > [ユーザー補助] > [テキスト読み上げ]で「Googleテキスト読み上げ」を選択し、韓国語高音質音声をダウンロードすると、より自然な発音で学習できます。'
-                    : (isEn
-                        ? 'In your device Settings > Accessibility > Text-to-Speech, select "Google Speech Services" and download Korean high-quality voice for natural pronunciation.'
-                        : '스마트폰 [설정] > [일반] > [글자 읽어주기]에서 기본 엔진을 "Google 음성 서비스"로 설정하시고 한국어 고음질 팩을 다운로드하시면 원어민 수준의 자연스러운 음성을 들으실 수 있습니다.'),
+                isIOS
+                    ? (isJa
+                        ? 'iPhoneの[設定] > [アクセシビリティ] > [読み上げコンテンツ] > [声] > [韓国語]から「Yuna(ユナ)」などの高音質(プレミアム)音声をダウンロードすると、より自然な発音で学習できます。'
+                        : (isEn
+                            ? 'In iPhone [Settings] > [Accessibility] > [Spoken Content] > [Voices] > [Korean], download a high-quality (Premium) voice such as "Yuna" for natural native pronunciation.'
+                            : '아이폰 [설정] > [손쉬운 사용] > [콘텐츠 말하기] > [음성] > [한국어]에서 "유나(Yuna)" 등의 고품질(프리미엄) 음성을 다운로드하시면 원어민 수준의 자연스러운 음성을 들으실 수 있습니다.'))
+                    : (isJa
+                        ? 'スマートフォンの[設定] > [ユーザー補助] > [テキスト読み上げ]で「Googleテキスト読み上げ」を選択し、韓国語高音質音声をダウンロードすると、より自然な発音で学習できます。'
+                        : (isEn
+                            ? 'In your device Settings > Accessibility > Text-to-Speech, select "Google Speech Services" and download Korean high-quality voice for natural pronunciation.'
+                            : '스마트폰 [설정] > [일반] > [글자 읽어주기]에서 기본 엔진을 "Google 음성 서비스"로 설정하시고 한국어 고음질 팩을 다운로드하시면 원어민 수준의 자연스러운 음성을 들으실 수 있습니다.')),
                 style: const TextStyle(fontSize: 13),
               ),
               const SizedBox(height: 12),
