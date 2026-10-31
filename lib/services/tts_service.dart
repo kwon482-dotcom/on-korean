@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -18,6 +20,10 @@ class TtsService {
   static const String _prefRepeatWordTwiceKey = 'tts_repeat_word_twice';
   static const String _prefVoiceGenderKey = 'tts_voice_gender';
 
+  // 💡 단어 카드 발음 전용 세션 ID (사용자가 다른 단어로 넘어가거나 정지 시 2회 반복 취소용)
+  static int _activeSessionId = 0;
+  static Completer<void>? _speakCompleter;
+
   static Future<void> init() async {
     await _init();
   }
@@ -33,6 +39,19 @@ class TtsService {
 
       _flutterTts.setErrorHandler((msg) {
         debugPrint('[TTS] 음성 이벤트 안내: $msg');
+        if (_speakCompleter != null && !_speakCompleter!.isCompleted) {
+          _speakCompleter!.complete();
+        }
+      });
+      _flutterTts.setCompletionHandler(() {
+        if (_speakCompleter != null && !_speakCompleter!.isCompleted) {
+          _speakCompleter!.complete();
+        }
+      });
+      _flutterTts.setCancelHandler(() {
+        if (_speakCompleter != null && !_speakCompleter!.isCompleted) {
+          _speakCompleter!.complete();
+        }
       });
 
       if (!kIsWeb) {
@@ -110,7 +129,10 @@ class TtsService {
   }
 
   static Future<void> stop() async {
-    _speakWordSession++;
+    _activeSessionId++;
+    if (_speakCompleter != null && !_speakCompleter!.isCompleted) {
+      _speakCompleter!.complete();
+    }
     try {
       await _flutterTts.stop();
     } catch (_) {}
@@ -223,8 +245,6 @@ class TtsService {
     }
   }
 
-  static int _speakWordSession = 0;
-
   // 💡 단어/문장 텍스트에서 순수 한국어 발음 대상 추출
   static String getPronounceableText(WordModel word) {
     // 로마자 발음 표기 [ ... ] 또는 주석 ( ... ) 제거 후 순수 한국어 본문 추출
@@ -234,19 +254,41 @@ class TtsService {
   // 💡 WordModel 객체를 안전하게 한국어로 발음 (단어 2회 반복 설정 지원)
   static Future<void> speakWord(WordModel word, {double? rate}) async {
     final text = getPronounceableText(word);
-    final currentSession = ++_speakWordSession;
-    await speak(text, rate: rate);
-    if (repeatWordTwice) {
-      await Future.delayed(const Duration(milliseconds: 650));
-      if (_speakWordSession == currentSession) {
-        await speak(text, rate: rate);
+    final sessionId = ++_activeSessionId;
+
+    // 1회차 발음 실행
+    await _executeSpeak(text, rate: rate);
+
+    // 단어 2회 반복 설정이 활성화되어 있고, 사용자가 다음 단어로 넘기지 않은 경우
+    if (repeatWordTwice && _activeSessionId == sessionId) {
+      final effectiveRate = rate ?? currentRate;
+      // 글자 수 기반 예상 소요 시간 계산 (1자당 약 280ms)
+      final estimatedMillis = ((text.length * 280) / effectiveRate).clamp(600.0, 4000.0).toInt();
+
+      // 1회차 발음 종료 대기 (네이티브 완료 이벤트 또는 예상 발음 시간)
+      await _speakCompleter?.future.timeout(
+        Duration(milliseconds: estimatedMillis),
+        onTimeout: () => null,
+      );
+
+      // 1회차와 2회차 발음 사이 자연스러운 호흡 간격 (0.45초)
+      await Future.delayed(const Duration(milliseconds: 450));
+
+      // 딜레이 동안 사용자가 다른 카드로 넘기거나 정지하지 않았는지 최종 확인
+      if (_activeSessionId == sessionId) {
+        await _executeSpeak(text, rate: rate);
       }
     }
   }
 
-  // 💡 일반 텍스트 발음 (로마자 기호 및 영/일 번역 자동 필터링, ko-KR 음성 출력)
+  // 💡 일반 텍스트 발음 (예문, 안내 음성 등 단일 재생)
   static Future<void> speak(String text, {double? rate}) async {
-    _speakWordSession++;
+    _activeSessionId++; // 기존 대기 중인 단어 반복 세션 무효화
+    await _executeSpeak(text, rate: rate);
+  }
+
+  // 💡 실제 네이티브 TTS 엔진을 호출하는 내부 공통 메서드
+  static Future<void> _executeSpeak(String text, {double? rate}) async {
     try {
       // 1. 발음기호 대괄호 [ ... ] 및 슬래시 / ... / 제거
       String clean = text.replaceAll(RegExp(r'\[.*?\]'), ' ').replaceAll(RegExp(r'/.*?/'), ' ');
@@ -260,6 +302,13 @@ class TtsService {
 
       await _init();
       await _flutterTts.stop();
+
+      // 이전 completer 정리 및 새 발음 완료 대기 completer 생성
+      if (_speakCompleter != null && !_speakCompleter!.isCompleted) {
+        _speakCompleter!.complete();
+      }
+      _speakCompleter = Completer<void>();
+
       final effectiveRate = rate ?? currentRate;
       await _flutterTts.setSpeechRate((effectiveRate * 0.45).clamp(0.1, 1.0));
       final double basePitch = voiceGender == 'male' ? 0.98 : 1.05;
@@ -267,6 +316,9 @@ class TtsService {
       await _flutterTts.speak(clean);
     } catch (e) {
       debugPrint('[TTS] 재생 오류: $e');
+      if (_speakCompleter != null && !_speakCompleter!.isCompleted) {
+        _speakCompleter!.complete();
+      }
     }
   }
 }
