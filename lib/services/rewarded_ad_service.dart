@@ -69,11 +69,16 @@ class RewardedAdService {
       return;
     }
 
+    bool earnedReward = false;
+
     _rewardedAd!.fullScreenContentCallback = FullScreenContentCallback(
       onAdDismissedFullScreenContent: (ad) {
         ad.dispose();
         _rewardedAd = null;
         preloadAd(); // 다음 시청을 위해 미리 준비
+        if (earnedReward) {
+          onRewarded();
+        }
         if (onDismissed != null) {
           onDismissed();
         }
@@ -92,7 +97,7 @@ class RewardedAdService {
     await _rewardedAd!.show(
       onUserEarnedReward: (ad, reward) {
         debugPrint('[AdMob] 보상 획득 완료: ${reward.amount} ${reward.type}');
-        onRewarded();
+        earnedReward = true;
       },
     );
   }

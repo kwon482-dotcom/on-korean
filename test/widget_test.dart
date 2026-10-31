@@ -281,7 +281,10 @@ void main() {
       await LocaleService.changeLocale('ko');
       expect(LocaleService.tr('settings_licenses'), '오픈소스 라이선스');
       expect(LocaleService.tr('ai_energy'), 'AI 에너지');
-      expect(LocaleService.tr('ad_reward_btn'), '🎬 광고 보고 +5회 충전');
+      expect(LocaleService.tr('ad_reward_btn'), '광고 보고 +5 충전');
+      expect(LocaleService.tr('settings_tts_voice_gender'), '음성 목소리 선택');
+      expect(LocaleService.tr('settings_tts_female'), '여성 음성');
+      expect(LocaleService.tr('settings_tts_male'), '남성 음성');
       expect(LocaleService.tr('pro_title'), '💎 멤버십 플랜 안내');
     });
   });

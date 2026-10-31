@@ -3,27 +3,33 @@ import 'package:flutter/material.dart';
 import '../../services/locale_service.dart';
 import '../../services/tts_service.dart';
 
-/// 음성 발음(TTS) 속도, 볼륨 안내 및 자동 재생/반복 설정 섹션
+/// 음성 발음(TTS) 속도, 성별 선택, 볼륨 안내 및 자동 재생/반복 설정 섹션
 class SettingsAudioSection extends StatelessWidget {
   final double ttsRate;
   final bool isAutoPlay;
   final bool repeatWordTwice;
+  final String voiceGender;
   final ValueChanged<double> onTtsRateChanged;
   final ValueChanged<bool> onAutoPlayChanged;
   final ValueChanged<bool> onRepeatWordTwiceChanged;
+  final ValueChanged<String> onVoiceGenderChanged;
 
   const SettingsAudioSection({
     super.key,
     required this.ttsRate,
     required this.isAutoPlay,
     required this.repeatWordTwice,
+    this.voiceGender = 'female',
     required this.onTtsRateChanged,
     required this.onAutoPlayChanged,
     required this.onRepeatWordTwiceChanged,
+    required this.onVoiceGenderChanged,
   });
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -32,14 +38,72 @@ class SettingsAudioSection extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // 💡 1. 음성 목소리 성별 선택 (여성 vs 남성) - 풀위드 세그먼트 버튼 레이아웃
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    LocaleService.tr('settings_tts_voice_gender'),
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: isDark ? Colors.white : Colors.black87,
+                    ),
+                  ),
+                  Text(
+                    voiceGender == 'female'
+                        ? LocaleService.tr('settings_tts_female')
+                        : LocaleService.tr('settings_tts_male'),
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: isDark ? const Color(0xFF94A3B8) : Colors.grey.shade600,
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                width: double.infinity,
+                child: SegmentedButton<String>(
+                  style: SegmentedButton.styleFrom(
+                    visualDensity: VisualDensity.compact,
+                    textStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
+                  ),
+                  segments: [
+                    ButtonSegment<String>(
+                      value: 'female',
+                      icon: const Text('👩', style: TextStyle(fontSize: 14)),
+                      label: Text(LocaleService.tr('settings_tts_female')),
+                    ),
+                    ButtonSegment<String>(
+                      value: 'male',
+                      icon: const Text('👨', style: TextStyle(fontSize: 14)),
+                      label: Text(LocaleService.tr('settings_tts_male')),
+                    ),
+                  ],
+                  selected: {voiceGender},
+                  onSelectionChanged: (set) async {
+                    final selected = set.first;
+                    if (selected != voiceGender) {
+                      onVoiceGenderChanged(selected);
+                      await TtsService.setVoiceGender(selected);
+                      TtsService.speak('안녕하세요, 한국어 공부를 시작해 볼까요?');
+                    }
+                  },
+                ),
+              ),
+              const SizedBox(height: 16),
+
+              // 💡 2. 발음 속도 슬라이더
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     LocaleService.tr('settings_tts_speed'),
-                    style: const TextStyle(
+                    style: TextStyle(
+                      fontSize: 14,
                       fontWeight: FontWeight.bold,
-                      fontSize: 16,
+                      color: isDark ? Colors.white : Colors.black87,
                     ),
                   ),
                   Text(

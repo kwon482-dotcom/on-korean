@@ -27,6 +27,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   double _ttsRate = TtsService.currentRate;
   bool _isAutoPlay = TtsService.isAutoPlay;
   bool _repeatWordTwice = TtsService.repeatWordTwice;
+  String _voiceGender = TtsService.voiceGender;
   String _appVersion = '1.0.5';
   String _buildNumber = '6';
 
@@ -177,9 +178,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ttsRate: _ttsRate,
               isAutoPlay: _isAutoPlay,
               repeatWordTwice: _repeatWordTwice,
+              voiceGender: _voiceGender,
               onTtsRateChanged: (val) => setState(() => _ttsRate = val),
               onAutoPlayChanged: (val) => setState(() => _isAutoPlay = val),
               onRepeatWordTwiceChanged: (val) => setState(() => _repeatWordTwice = val),
+              onVoiceGenderChanged: (val) => setState(() => _voiceGender = val),
             ),
             const Divider(),
 

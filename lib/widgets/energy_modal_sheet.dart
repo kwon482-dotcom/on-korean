@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../services/energy_service.dart';
 import '../services/locale_service.dart';
 import '../services/rewarded_ad_service.dart';
+import 'app_toast.dart';
 
 /// AI 에너지 충전 및 Pro 멤버십 안내 모달 바텀시트
 class EnergyModalSheet extends StatefulWidget {
@@ -33,20 +34,11 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
         await EnergyService.addRewardEnergy();
         if (mounted) {
           setState(() => _isLoadingAd = false);
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              backgroundColor: Colors.indigo.shade800,
-              content: Row(
-                children: [
-                  const Icon(Icons.bolt, color: Colors.amber),
-                  const SizedBox(width: 8),
-                  Text(
-                    LocaleService.tr('ad_reward_success'),
-                    style: const TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
-            ),
+          AppToast.show(
+            context,
+            LocaleService.tr('ad_reward_success'),
+            icon: Icons.bolt,
+            iconColor: Colors.amber,
           );
         }
       },
@@ -56,10 +48,11 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
       onFailed: () {
         if (mounted) {
           setState(() => _isLoadingAd = false);
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(LocaleService.tr('ad_load_failed')),
-            ),
+          AppToast.show(
+            context,
+            LocaleService.tr('ad_load_failed'),
+            icon: Icons.error_outline,
+            iconColor: Colors.redAccent,
           );
         }
       },
@@ -539,14 +532,20 @@ class _EnergyModalSheetState extends State<EnergyModalSheet> {
   }
 
   void _showPreparingSnackbar() {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(LocaleService.tr('pro_preparing_iap'))),
+    AppToast.show(
+      context,
+      LocaleService.tr('pro_preparing_iap'),
+      icon: Icons.info_outline,
+      iconColor: Colors.amber,
     );
   }
 
   void _restorePurchases() {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(LocaleService.tr('pro_restore_result'))),
+    AppToast.show(
+      context,
+      LocaleService.tr('pro_restore_result'),
+      icon: Icons.check_circle_outline,
+      iconColor: Colors.teal,
     );
   }
 
