@@ -64,8 +64,8 @@ class TtsService {
       // 💡 안드로이드 및 iOS 고품질 신경망(Neural/Enhanced) 보이스 자동 탐색 및 지정
       await _selectBestKoreanVoice();
 
-      // 💡 성별 맞춤 피치 설정: 여성 1.06 (밝고 또렷함), 남성 0.98 (차분하고 신뢰감 있는 중저음)
-      final double basePitch = voiceGender == 'male' ? 0.98 : 1.06;
+      // 💡 성별 맞춤 피치 설정: 여성 1.06 (밝고 또렷함), 남성 0.86 (신뢰감 있고 굵직한 중저음)
+      final double basePitch = voiceGender == 'male' ? 0.86 : 1.06;
       await _flutterTts.setPitch(basePitch);
       await _flutterTts.setVolume(1.0);
       // 네이티브 TTS 엔진 속도 환산 (1.0x -> 0.45 엔진 속도)
@@ -105,7 +105,7 @@ class TtsService {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_prefVoiceGenderKey, gender);
     await _selectBestKoreanVoice();
-    final double basePitch = voiceGender == 'male' ? 0.98 : 1.06;
+    final double basePitch = voiceGender == 'male' ? 0.86 : 1.06;
     await _flutterTts.setPitch(basePitch);
   }
 
@@ -116,7 +116,7 @@ class TtsService {
     } catch (_) {}
   }
 
-  // 💡 안드로이드 및 iOS 기기 내 최적의 고품질 신경망(Neural/Enhanced) 한국어 보이스 자동 탐색 및 적용
+  // 💡 안드로이드(구글/삼성 SMT) 및 iOS 기기 내 최적의 고품질 신경망 한국어 보이스 자동 탐색 및 적용
   static Future<void> _selectBestKoreanVoice() async {
     if (kIsWeb) return;
     try {
@@ -137,20 +137,46 @@ class TtsService {
 
         int score = 10; // 기본 한국어 보이스 점수
 
-        // 성별 판별
+        // 성별 판별 (구글 음성 서비스 + 삼성 갤럭시 SMT + 애플 iOS 전방위 커버)
         final gender = (v['gender'] ?? '').toString().toLowerCase();
         final isMale = gender == 'male' ||
             name.contains('male') ||
+            name.contains('남성') ||
             name.contains('-kob') ||
             name.contains('-koa') ||
             name.contains('#male') ||
             name.contains('_male') ||
+            name.contains('-male') ||
+            name.contains('kor-kor-male') ||
+            name.contains('ko_kr_male') ||
+            name.contains('ko-kr-male') ||
+            name.contains('voice 2') ||
+            name.contains('voice 4') ||
+            name.contains('voice-2') ||
+            name.contains('voice-4') ||
+            name.contains('voice2') ||
+            name.contains('voice4') ||
+            name.contains('ko_kr_2') ||
+            name.contains('ko_kr_4') ||
             name.contains('minho') ||
             name.contains('민호');
         final isFemale = gender == 'female' ||
             name.contains('female') ||
+            name.contains('여성') ||
             name.contains('#female') ||
             name.contains('_female') ||
+            name.contains('-female') ||
+            name.contains('kor-kor-female') ||
+            name.contains('ko_kr_female') ||
+            name.contains('ko-kr-female') ||
+            name.contains('voice 1') ||
+            name.contains('voice 3') ||
+            name.contains('voice-1') ||
+            name.contains('voice-3') ||
+            name.contains('voice1') ||
+            name.contains('voice3') ||
+            name.contains('ko_kr_1') ||
+            name.contains('ko_kr_3') ||
             name.contains('-koc') ||
             name.contains('-kod') ||
             name.contains('-ism') ||
@@ -160,10 +186,18 @@ class TtsService {
         if (wantFemale) {
           if (isMale) score -= 100;
           if (isFemale) score += 60;
-          // Android: ko-kr-x-koc, ko-kr-x-kod, ko-kr-x-ism (+70)
+          // Google Android: ko-kr-x-koc, ko-kr-x-kod, ko-kr-x-ism (+70)
           if (name.contains('ko-kr-x-koc') ||
               name.contains('ko-kr-x-kod') ||
               name.contains('ko-kr-x-ism')) {
+            score += 70;
+          }
+          // Samsung Galaxy: 음성 1번/3번 (+70)
+          if (name.contains('kor-kor-female') ||
+              name.contains('ko_kr_female') ||
+              name.contains('voice 1') ||
+              name.contains('voice1') ||
+              name.contains('ko_kr_1')) {
             score += 70;
           }
           // iOS: yuna (+60)
@@ -174,8 +208,16 @@ class TtsService {
           // 남성 보이스 선호 시
           if (isFemale) score -= 100;
           if (isMale) score += 60;
-          // Android: ko-kr-x-kob, ko-kr-x-koa (+70)
+          // Google Android: ko-kr-x-kob, ko-kr-x-koa (+70)
           if (name.contains('ko-kr-x-kob') || name.contains('ko-kr-x-koa')) {
+            score += 70;
+          }
+          // Samsung Galaxy: 음성 2번/4번 (+70)
+          if (name.contains('kor-kor-male') ||
+              name.contains('ko_kr_male') ||
+              name.contains('voice 2') ||
+              name.contains('voice2') ||
+              name.contains('ko_kr_2')) {
             score += 70;
           }
           // iOS: minho (+60)
@@ -254,7 +296,7 @@ class TtsService {
       await _flutterTts.stop();
       final effectiveRate = rate ?? currentRate;
       await _flutterTts.setSpeechRate((effectiveRate * 0.45).clamp(0.1, 1.0));
-      final double basePitch = voiceGender == 'male' ? 0.98 : 1.06;
+      final double basePitch = voiceGender == 'male' ? 0.86 : 1.06;
       await _flutterTts.setPitch(basePitch);
       await _flutterTts.speak(clean);
     } catch (e) {
