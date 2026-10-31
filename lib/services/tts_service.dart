@@ -64,8 +64,8 @@ class TtsService {
       // 💡 안드로이드 및 iOS 고품질 신경망(Neural/Enhanced) 보이스 자동 탐색 및 지정
       await _selectBestKoreanVoice();
 
-      // 💡 성별 맞춤 피치 설정: 여성 1.06 (밝고 또렷함), 남성 0.86 (신뢰감 있고 굵직한 중저음)
-      final double basePitch = voiceGender == 'male' ? 0.86 : 1.06;
+      // 💡 성별 맞춤 피치 설정: 여성 1.05 (밝고 또렷함), 남성 0.98 (자연스럽고 신뢰감 있는 남성 톤)
+      final double basePitch = voiceGender == 'male' ? 0.98 : 1.05;
       await _flutterTts.setPitch(basePitch);
       await _flutterTts.setVolume(1.0);
       // 네이티브 TTS 엔진 속도 환산 (1.0x -> 0.45 엔진 속도)
@@ -105,7 +105,7 @@ class TtsService {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_prefVoiceGenderKey, gender);
     await _selectBestKoreanVoice();
-    final double basePitch = voiceGender == 'male' ? 0.86 : 1.06;
+    final double basePitch = voiceGender == 'male' ? 0.98 : 1.05;
     await _flutterTts.setPitch(basePitch);
   }
 
@@ -117,6 +117,11 @@ class TtsService {
   }
 
   // 💡 안드로이드(구글/삼성 SMT) 및 iOS 기기 내 최적의 고품질 신경망 한국어 보이스 자동 탐색 및 적용
+  // - Google 음성 1번 (koc): 여성 메인
+  // - Google 음성 2번 (ism / kod): 여성 서브
+  // - Google 음성 3번 (kob): 남성 메인
+  // - Google 음성 4번 (koa): 남성 서브
+  // - iOS: yuna (여성) / minho (남성)
   static Future<void> _selectBestKoreanVoice() async {
     if (kIsWeb) return;
     try {
@@ -137,93 +142,54 @@ class TtsService {
 
         int score = 10; // 기본 한국어 보이스 점수
 
-        // 성별 판별 (구글 음성 서비스 + 삼성 갤럭시 SMT + 애플 iOS 전방위 커버)
-        final gender = (v['gender'] ?? '').toString().toLowerCase();
-        final isMale = gender == 'male' ||
-            name.contains('male') ||
-            name.contains('남성') ||
-            name.contains('-kob') ||
-            name.contains('-koa') ||
-            name.contains('#male') ||
-            name.contains('_male') ||
-            name.contains('-male') ||
-            name.contains('kor-kor-male') ||
-            name.contains('ko_kr_male') ||
-            name.contains('ko-kr-male') ||
-            name.contains('voice 2') ||
-            name.contains('voice 4') ||
-            name.contains('voice-2') ||
-            name.contains('voice-4') ||
-            name.contains('voice2') ||
-            name.contains('voice4') ||
-            name.contains('ko_kr_2') ||
-            name.contains('ko_kr_4') ||
-            name.contains('minho') ||
-            name.contains('민호');
-        final isFemale = gender == 'female' ||
+        // 명확한 여성/남성 식별자 판별
+        final isFemaleVoice = name.contains('koc') ||
+            name.contains('ism') ||
+            name.contains('kod') ||
+            name.contains('yuna') ||
+            name.contains('유나') ||
             name.contains('female') ||
             name.contains('여성') ||
             name.contains('#female') ||
             name.contains('_female') ||
             name.contains('-female') ||
-            name.contains('kor-kor-female') ||
-            name.contains('ko_kr_female') ||
-            name.contains('ko-kr-female') ||
-            name.contains('voice 1') ||
-            name.contains('voice 3') ||
-            name.contains('voice-1') ||
-            name.contains('voice-3') ||
-            name.contains('voice1') ||
-            name.contains('voice3') ||
-            name.contains('ko_kr_1') ||
-            name.contains('ko_kr_3') ||
-            name.contains('-koc') ||
-            name.contains('-kod') ||
-            name.contains('-ism') ||
-            name.contains('yuna') ||
-            name.contains('유나');
+            name.contains('kor-kor-female');
+
+        final isMaleVoice = name.contains('kob') ||
+            name.contains('koa') ||
+            name.contains('minho') ||
+            name.contains('민호') ||
+            name.contains('male') ||
+            name.contains('남성') ||
+            name.contains('#male') ||
+            name.contains('_male') ||
+            name.contains('-male') ||
+            name.contains('kor-kor-male');
 
         if (wantFemale) {
-          if (isMale) score -= 100;
-          if (isFemale) score += 60;
-          // Google Android: ko-kr-x-koc, ko-kr-x-kod, ko-kr-x-ism (+70)
-          if (name.contains('ko-kr-x-koc') ||
-              name.contains('ko-kr-x-kod') ||
-              name.contains('ko-kr-x-ism')) {
-            score += 70;
-          }
-          // Samsung Galaxy: 음성 1번/3번 (+70)
-          if (name.contains('kor-kor-female') ||
-              name.contains('ko_kr_female') ||
-              name.contains('voice 1') ||
-              name.contains('voice1') ||
-              name.contains('ko_kr_1')) {
-            score += 70;
-          }
-          // iOS: yuna (+60)
-          if (name.contains('yuna') || name.contains('유나')) {
-            score += 60;
-          }
+          // 남성 보이스는 즉시 원천 차단 (-999점)
+          if (isMaleVoice) score -= 999;
+          if (isFemaleVoice) score += 60;
+
+          // 1순위: Google 음성 1번 (ko-kr-x-koc)
+          if (name.contains('ko-kr-x-koc') || name.contains('koc')) score += 150;
+          // 2순위: Apple iOS 유나 (yuna)
+          if (name.contains('yuna') || name.contains('유나')) score += 120;
+          // 3순위: Google 음성 2번 (ism, kod)
+          if (name.contains('ko-kr-x-ism') || name.contains('ko-kr-x-kod')) score += 80;
         } else {
-          // 남성 보이스 선호 시
-          if (isFemale) score -= 100;
-          if (isMale) score += 60;
-          // Google Android: ko-kr-x-kob, ko-kr-x-koa (+70)
-          if (name.contains('ko-kr-x-kob') || name.contains('ko-kr-x-koa')) {
-            score += 70;
-          }
-          // Samsung Galaxy: 음성 2번/4번 (+70)
-          if (name.contains('kor-kor-male') ||
-              name.contains('ko_kr_male') ||
-              name.contains('voice 2') ||
-              name.contains('voice2') ||
-              name.contains('ko_kr_2')) {
-            score += 70;
-          }
-          // iOS: minho (+60)
-          if (name.contains('minho') || name.contains('민호')) {
-            score += 60;
-          }
+          // 여성 보이스(koc, ism, kod, yuna 등)는 남성 선택 시 -999점으로 완전 차단!
+          if (isFemaleVoice) score -= 999;
+          if (isMaleVoice) score += 60;
+
+          // 1순위: Google 음성 3번 (ko-kr-x-kob)
+          if (name.contains('ko-kr-x-kob') || name.contains('kob')) score += 150;
+          // 2순위: Google 음성 4번 (ko-kr-x-koa)
+          if (name.contains('ko-kr-x-koa') || name.contains('koa')) score += 130;
+          // 3순위: Apple iOS 민호 (minho)
+          if (name.contains('minho') || name.contains('민호')) score += 120;
+          // 삼성 SMT 남성
+          if (name.contains('kor-kor-male')) score += 100;
         }
 
         // 공통 고품질 가산점
@@ -296,7 +262,7 @@ class TtsService {
       await _flutterTts.stop();
       final effectiveRate = rate ?? currentRate;
       await _flutterTts.setSpeechRate((effectiveRate * 0.45).clamp(0.1, 1.0));
-      final double basePitch = voiceGender == 'male' ? 0.86 : 1.06;
+      final double basePitch = voiceGender == 'male' ? 0.98 : 1.05;
       await _flutterTts.setPitch(basePitch);
       await _flutterTts.speak(clean);
     } catch (e) {
