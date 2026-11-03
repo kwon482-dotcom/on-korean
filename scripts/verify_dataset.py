@@ -4,9 +4,9 @@ import json
 for filepath in ['assets/data/korean_words.json', 'assets/data/jlpt_words.json']:
     with open(filepath, 'r', encoding='utf-8') as f:
         data = json.load(f)
-    assert len(data) == 6000, f'Expected 6000 words, got {len(data)} in {filepath}'
+    assert len(data) == 6500, f'Expected 6500 words, got {len(data)} in {filepath}'
     words = [d['word'] for d in data]
-    assert len(set(words)) == 6000, f'Duplicates found: {6000 - len(set(words))}'
+    assert len(set(words)) == 6500, f'Duplicates found: {6500 - len(set(words))}'
     for i, d in enumerate(data, 1):
         expected_id = f'k{i:04d}'
         assert d['id'] == expected_id, f"Index {i} has id {d['id']}"
@@ -14,4 +14,4 @@ for filepath in ['assets/data/korean_words.json', 'assets/data/jlpt_words.json']
         for rf in required_fields:
             val = d.get(rf)
             assert val and str(val).strip(), f"Item {i} ({d['word']}) has empty field {rf}"
-    print(f'{filepath}: ALL 6,000 ENTRIES PERFECTLY VALIDATED!')
+    print(f'{filepath}: ALL 6,500 ENTRIES PERFECTLY VALIDATED!')

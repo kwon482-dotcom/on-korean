@@ -139,10 +139,8 @@ class TtsService {
   }
 
   // 💡 안드로이드(구글/삼성 SMT) 및 iOS 기기 내 최적의 고품질 신경망 한국어 보이스 자동 탐색 및 적용
-  // - Google 음성 1번 (koc): 여성 메인
-  // - Google 음성 2번 (ism / kod): 여성 서브
-  // - Google 음성 3번 (kob): 남성 메인
-  // - Google 음성 4번 (koa): 남성 서브
+  // - Google 음성 1번 (ism) & 2번 (kob) & A (koa): 여성
+  // - Google 음성 3번 (koc) & 4번 (kod): 남성
   // - iOS: yuna (여성) / minho (남성)
   static Future<void> _selectBestKoreanVoice() async {
     if (kIsWeb) return;
@@ -164,10 +162,10 @@ class TtsService {
 
         int score = 10; // 기본 한국어 보이스 점수
 
-        // 명확한 여성/남성 식별자 판별
-        final isFemaleVoice = name.contains('koc') ||
-            name.contains('ism') ||
-            name.contains('kod') ||
+        // 명확한 여성/남성 식별자 판별 (구글 TTS: ism, kob, koa = 여성 / koc, kod = 남성)
+        final isFemaleVoice = name.contains('ism') ||
+            name.contains('kob') ||
+            name.contains('koa') ||
             name.contains('yuna') ||
             name.contains('유나') ||
             name.contains('female') ||
@@ -177,8 +175,8 @@ class TtsService {
             name.contains('-female') ||
             name.contains('kor-kor-female');
 
-        final isMaleVoice = name.contains('kob') ||
-            name.contains('koa') ||
+        final isMaleVoice = name.contains('koc') ||
+            name.contains('kod') ||
             name.contains('minho') ||
             name.contains('민호') ||
             name.contains('male') ||
@@ -193,22 +191,23 @@ class TtsService {
           if (isMaleVoice) score -= 999;
           if (isFemaleVoice) score += 60;
 
-          // 1순위: Google 음성 1번 (ko-kr-x-koc)
-          if (name.contains('ko-kr-x-koc') || name.contains('koc')) score += 150;
+          // 1순위: Google 음성 1번 (ism) & 2번 (kob) & A (koa)
+          if (name.contains('ko-kr-x-ism') || name.contains('ism')) score += 150;
+          if (name.contains('ko-kr-x-kob') || name.contains('kob')) score += 140;
+          if (name.contains('ko-kr-x-koa') || name.contains('koa')) score += 130;
           // 2순위: Apple iOS 유나 (yuna)
           if (name.contains('yuna') || name.contains('유나')) score += 120;
-          // 3순위: Google 음성 2번 (ism, kod)
-          if (name.contains('ko-kr-x-ism') || name.contains('ko-kr-x-kod')) score += 80;
+          // 삼성 SMT 여성
+          if (name.contains('kor-kor-female')) score += 100;
         } else {
-          // 여성 보이스(koc, ism, kod, yuna 등)는 남성 선택 시 -999점으로 완전 차단!
+          // 여성 보이스(ism, kob, koa, yuna 등)는 남성 선택 시 -999점으로 완전 차단!
           if (isFemaleVoice) score -= 999;
           if (isMaleVoice) score += 60;
 
-          // 1순위: Google 음성 3번 (ko-kr-x-kob)
-          if (name.contains('ko-kr-x-kob') || name.contains('kob')) score += 150;
-          // 2순위: Google 음성 4번 (ko-kr-x-koa)
-          if (name.contains('ko-kr-x-koa') || name.contains('koa')) score += 130;
-          // 3순위: Apple iOS 민호 (minho)
+          // 1순위: Google 음성 3번 (koc) & 4번 (kod)
+          if (name.contains('ko-kr-x-koc') || name.contains('koc')) score += 150;
+          if (name.contains('ko-kr-x-kod') || name.contains('kod')) score += 140;
+          // 2순위: Apple iOS 민호 (minho)
           if (name.contains('minho') || name.contains('민호')) score += 120;
           // 삼성 SMT 남성
           if (name.contains('kor-kor-male')) score += 100;
