@@ -333,50 +333,82 @@ class _LibraryTabState extends State<LibraryTab> {
                   Expanded(
                     child: SizedBox(
                       height: 42,
-                      child: TextField(
-                        controller: _searchController,
-                        onChanged: (val) => setState(() => _searchQuery = val),
-                        decoration: InputDecoration(
-                          hintText: LocaleService.tr('search_hint'),
-                          hintStyle: const TextStyle(fontSize: 14),
-                          prefixIcon: const Icon(
-                            Icons.search,
-                            size: 20,
-                            color: Colors.indigo,
-                          ),
-                          suffixIcon: _searchQuery.isNotEmpty
-                              ? IconButton(
-                                  icon: const Icon(Icons.clear, size: 18),
-                                  onPressed: () {
-                                    _searchController.clear();
-                                    setState(() => _searchQuery = '');
-                                  },
-                                )
-                              : null,
-                          contentPadding: const EdgeInsets.symmetric(
-                            vertical: 0,
-                            horizontal: 12,
-                          ),
-                          filled: true,
-                          fillColor: Colors.grey.shade100,
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(12),
-                            borderSide: BorderSide.none,
-                          ),
-                        ),
+                      child: Builder(
+                        builder: (ctx) {
+                          final isDark = Theme.of(ctx).brightness == Brightness.dark;
+                          return TextField(
+                            controller: _searchController,
+                            onChanged: (val) => setState(() => _searchQuery = val),
+                            style: TextStyle(
+                              fontSize: 14,
+                              color: isDark ? Colors.white : Colors.black87,
+                            ),
+                            decoration: InputDecoration(
+                              hintText: LocaleService.tr('search_hint'),
+                              hintStyle: TextStyle(
+                                fontSize: 14,
+                                color: isDark ? const Color(0xFF94A3B8) : Colors.grey.shade500,
+                              ),
+                              prefixIcon: Icon(
+                                Icons.search,
+                                size: 20,
+                                color: isDark ? const Color(0xFF818CF8) : Colors.indigo,
+                              ),
+                              suffixIcon: _searchQuery.isNotEmpty
+                                  ? IconButton(
+                                      icon: Icon(
+                                        Icons.clear,
+                                        size: 18,
+                                        color: isDark ? const Color(0xFF94A3B8) : Colors.black54,
+                                      ),
+                                      onPressed: () {
+                                        _searchController.clear();
+                                        setState(() => _searchQuery = '');
+                                      },
+                                    )
+                                  : null,
+                              contentPadding: const EdgeInsets.symmetric(
+                                vertical: 0,
+                                horizontal: 12,
+                              ),
+                              filled: true,
+                              fillColor: isDark ? const Color(0xFF1E293B) : Colors.grey.shade100,
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(12),
+                                borderSide: isDark ? const BorderSide(color: Color(0xFF334155)) : BorderSide.none,
+                              ),
+                              enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(12),
+                                borderSide: isDark ? const BorderSide(color: Color(0xFF334155)) : BorderSide.none,
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(12),
+                                borderSide: BorderSide(
+                                  color: isDark ? const Color(0xFF818CF8) : Colors.indigo,
+                                  width: 1.5,
+                                ),
+                              ),
+                            ),
+                          );
+                        },
                       ),
                     ),
                   ),
                   const SizedBox(width: 4),
                   // 2. ➕ 새 카테고리 추가 버튼
-                  IconButton(
-                    icon: const Icon(
-                      Icons.playlist_add,
-                      color: Colors.indigo,
-                      size: 26,
-                    ),
-                    tooltip: LocaleService.tr('add_category'),
-                    onPressed: _showAddCategoryDialog,
+                  Builder(
+                    builder: (ctx) {
+                      final isDark = Theme.of(ctx).brightness == Brightness.dark;
+                      return IconButton(
+                        icon: Icon(
+                          Icons.playlist_add,
+                          color: isDark ? const Color(0xFF818CF8) : Colors.indigo,
+                          size: 26,
+                        ),
+                        tooltip: LocaleService.tr('add_category'),
+                        onPressed: _showAddCategoryDialog,
+                      );
+                    },
                   ),
                 ],
               ),
@@ -418,21 +450,29 @@ class _LibraryTabState extends State<LibraryTab> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
-          padding: const EdgeInsets.fromLTRB(20, 12, 20, 8),
-          child: Text(
-            LocaleService.tr('search_results_count', [results.length]),
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Colors.indigo.shade800,
-            ),
-          ),
+        Builder(
+          builder: (ctx) {
+            final isDark = Theme.of(ctx).brightness == Brightness.dark;
+            return Padding(
+              padding: const EdgeInsets.fromLTRB(20, 12, 20, 8),
+              child: Text(
+                LocaleService.tr('search_results_count', [results.length]),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: isDark ? const Color(0xFFA5B4FC) : Colors.indigo.shade800,
+                ),
+              ),
+            );
+          },
         ),
         Expanded(
           child: ListView.separated(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
             itemCount: results.length,
-            separatorBuilder: (_, __) => Divider(height: 1, color: Colors.grey.shade200),
+            separatorBuilder: (ctx, __) {
+              final isDark = Theme.of(ctx).brightness == Brightness.dark;
+              return Divider(height: 1, color: isDark ? const Color(0xFF334155) : Colors.grey.shade200);
+            },
             itemBuilder: (context, idx) {
               final isDark = Theme.of(context).brightness == Brightness.dark;
               final word = results[idx];
@@ -442,7 +482,11 @@ class _LibraryTabState extends State<LibraryTab> {
                     Flexible(
                       child: Text(
                         word.word,
-                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          color: isDark ? Colors.white : Colors.black87,
+                        ),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                       ),
@@ -481,20 +525,26 @@ class _LibraryTabState extends State<LibraryTab> {
                     ),
                   ],
                 ),
-                subtitle: Text(word.getLocalizedMeaning(), style: const TextStyle(fontSize: 14)),
+                subtitle: Text(
+                  word.getLocalizedMeaning(),
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: isDark ? const Color(0xFF94A3B8) : Colors.grey.shade700,
+                  ),
+                ),
                 trailing: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     IconButton(
                       icon: const Icon(Icons.volume_up, size: 20),
-                      color: Colors.indigo,
+                      color: isDark ? const Color(0xFF818CF8) : Colors.indigo,
                       onPressed: () => TtsService.speakWord(word),
                     ),
                     IconButton(
                       icon: Icon(
                         word.isBookmarked ? Icons.bookmark : Icons.bookmark_border,
                         size: 20,
-                        color: word.isBookmarked ? Colors.amber : Colors.grey,
+                        color: word.isBookmarked ? Colors.amber : (isDark ? const Color(0xFF64748B) : Colors.grey),
                       ),
                       onPressed: () async {
                         await WordService.toggleBookmark(word);
