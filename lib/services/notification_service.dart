@@ -7,7 +7,7 @@ import 'package:timezone/timezone.dart' as tz;
 
 import 'locale_service.dart';
 
-/// 매일 일본어 학습 리마인더 로컬 푸시 알림 서비스
+/// 매일 한국어 학습 리마인더 로컬 푸시 알림 서비스
 class NotificationService {
   static final FlutterLocalNotificationsPlugin _notificationsPlugin =
       FlutterLocalNotificationsPlugin();

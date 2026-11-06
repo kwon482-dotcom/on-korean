@@ -57,28 +57,32 @@ void main() {
   });
 
   group('WordModel & English JSON Dataset Tests', () {
-    test('JSON asset loads correctly and contains 1800 curated English words across 5 core categories', () async {
+    test('JSON asset loads correctly and contains 7000 curated Korean words across 5 core categories and 20 sub-decks', () async {
       final jsonString = await rootBundle.loadString(
         'assets/data/jlpt_words.json',
       );
       final List<dynamic> list = jsonDecode(jsonString);
 
       expect(list.isNotEmpty, true);
-      expect(list.length, greaterThan(0));
+      expect(list.length, equals(7000));
 
       final words = list.map((e) => WordModel.fromJson(e)).toList();
 
-      final starterWords = words.where((w) => w.level == '한글 기초 & 생존 회화').toList();
-      final topik1Words = words.where((w) => w.level == 'TOPIK I 초급 필수 어휘').toList();
-      final topik2Words = words.where((w) => w.level == 'TOPIK II 중급 핵심 어휘').toList();
-      final kdramaWords = words.where((w) => w.level == 'K-드라마 & 실전 리얼 회화').toList();
-      final bizWords = words.where((w) => w.level == '비즈니스 & 시사 고급 한국어').toList();
+      final starterWords = words.where((w) => w.category == '한글 기초 & 생존 회화').toList();
+      final topik1Words = words.where((w) => w.category == 'TOPIK I 초급 필수 어휘').toList();
+      final topik2Words = words.where((w) => w.category == 'TOPIK II 중급 핵심 어휘').toList();
+      final kdramaWords = words.where((w) => w.category == 'K-드라마 & 실전 리얼 회화').toList();
+      final bizWords = words.where((w) => w.category == '비즈니스 & 시사 고급 한국어').toList();
 
-      expect(starterWords.isNotEmpty, true);
-      expect(topik1Words.isNotEmpty, true);
-      expect(topik2Words.isNotEmpty, true);
-      expect(kdramaWords.isNotEmpty, true);
-      expect(bizWords.isNotEmpty, true);
+      expect(starterWords.length, equals(1420));
+      expect(topik1Words.length, equals(1420));
+      expect(topik2Words.length, equals(1400));
+      expect(kdramaWords.length, equals(1390));
+      expect(bizWords.length, equals(1370));
+
+      // Verify all 20 sub-decks exist
+      final allSubcategories = words.map((w) => w.level).toSet().toList();
+      expect(allSubcategories.length, equals(20));
 
       // Verify each word has clean English fields and translations
       for (final w in words) {

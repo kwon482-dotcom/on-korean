@@ -66,7 +66,7 @@ class SettingsImportDialog {
                     controller: customCategoryController,
                     decoration: InputDecoration(
                       labelText: isJa ? '新規カテゴリ名' : (isEn ? 'New Category Name' : '새 카테고리명'),
-                      hintText: isJa ? '例: N1上級語彙, テーマ会話' : (isEn ? 'e.g. Advanced N1, Themes' : '예: N1고급어휘, 테마회화'),
+                      hintText: isJa ? '例: TOPIK上級語彙, 日常会話' : (isEn ? 'e.g. TOPIK Advanced, Daily Phrases' : '예: TOPIK고급어휘, 일상회화'),
                     ),
                   ),
                 ],

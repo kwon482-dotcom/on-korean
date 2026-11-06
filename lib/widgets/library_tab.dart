@@ -257,47 +257,95 @@ class _LibraryTabState extends State<LibraryTab> {
   Widget build(BuildContext context) {
     final allCategories = WordService.getAllCategories();
 
-    // 💡 체계적인 한국어 5대 코스 정의
+    // 💡 체계적인 한국어 5대 코어 코스 및 20대 테마 덱 정의
     final courses = [
       _CourseDef(
         title: LocaleService.tr('course_hangul'),
         subtitle: LocaleService.tr('course_hangul_sub'),
         icon: Icons.school,
         color: Colors.indigo,
-        categories: ['한글 기초 & 생존 회화'].where((c) => allCategories.contains(c)).toList(),
+        categories: [
+          '자음·모음 & 필수 첫걸음',
+          '숫자·시간·날짜 & 생활 기초',
+          '일상 필수 동사 & 형용사',
+          '생존 생활 표현 & 여행 어휘',
+        ].where((c) => allCategories.contains(c)).toList(),
       ),
       _CourseDef(
         title: LocaleService.tr('course_topik1'),
         subtitle: LocaleService.tr('course_topik1_sub'),
         icon: Icons.auto_stories,
         color: Colors.blue.shade700,
-        categories: ['TOPIK I 초급 필수 어휘'].where((c) => allCategories.contains(c)).toList(),
+        categories: [
+          '학교 생활 & 취미·여가',
+          '쇼핑·시장 & 대중교통',
+          '음식·식당 & 한국 음식',
+          '날씨·계절 & 병원·약국',
+        ].where((c) => allCategories.contains(c)).toList(),
       ),
       _CourseDef(
         title: LocaleService.tr('course_topik2'),
         subtitle: LocaleService.tr('course_topik2_sub'),
         icon: Icons.menu_book,
         color: Colors.teal.shade700,
-        categories: ['TOPIK II 중급 핵심 어휘'].where((c) => allCategories.contains(c)).toList(),
+        categories: [
+          '감정·심리 & 성격·인간관계',
+          '사회·문화 & 미디어·예술',
+          '자연·환경 & 과학·기술',
+          'TOPIK 필수 관용구 & 속담',
+        ].where((c) => allCategories.contains(c)).toList(),
       ),
       _CourseDef(
         title: LocaleService.tr('course_kdrama'),
         subtitle: LocaleService.tr('course_kdrama_sub'),
         icon: Icons.stars,
         color: Colors.pink.shade600,
-        categories: ['K-드라마 & 실전 리얼 회화'].where((c) => allCategories.contains(c)).toList(),
+        categories: [
+          '드라마 명대사 & 리얼 리액션',
+          '신조어·줄임말 & 일상 구어체',
+          'K-푸드 & 포장마차·한강 치맥',
+          'K-POP·팬덤 & 엔터테인먼트',
+        ].where((c) => allCategories.contains(c)).toList(),
       ),
       _CourseDef(
         title: LocaleService.tr('course_business'),
         subtitle: LocaleService.tr('course_business_sub'),
         icon: Icons.business_center,
         color: Colors.brown.shade700,
-        categories: ['비즈니스 & 시사 고급 한국어'].where((c) => allCategories.contains(c)).toList(),
+        categories: [
+          '오피스 실무 & 비즈니스 이메일',
+          '회의·미팅 & 협상·프레젠테이션',
+          '경제·경영 & 금융·투자',
+          '시사·정치 & 학술·고급 토론',
+        ].where((c) => allCategories.contains(c)).toList(),
       ),
     ];
 
     // 표준 코스에 포함되지 않은 사용자 정의/가져오기 카테고리 수집
     final standardSet = {
+      // 20대 세부 테마 덱
+      '자음·모음 & 필수 첫걸음',
+      '숫자·시간·날짜 & 생활 기초',
+      '일상 필수 동사 & 형용사',
+      '생존 생활 표현 & 여행 어휘',
+      '학교 생활 & 취미·여가',
+      '쇼핑·시장 & 대중교통',
+      '음식·식당 & 한국 음식',
+      '날씨·계절 & 병원·약국',
+      '감정·심리 & 성격·인간관계',
+      '사회·문화 & 미디어·예술',
+      '자연·환경 & 과학·기술',
+      'TOPIK 필수 관용구 & 속담',
+      '드라마 명대사 & 리얼 리액션',
+      '신조어·줄임말 & 일상 구어체',
+      'K-푸드 & 포장마차·한강 치맥',
+      'K-POP·팬덤 & 엔터테인먼트',
+      '오피스 실무 & 비즈니스 이메일',
+      '회의·미팅 & 협상·프레젠테이션',
+      '경제·경영 & 금융·투자',
+      '시사·정치 & 학술·고급 토론',
+
+      // 5대 대분류
       '한글 기초 & 생존 회화',
       'TOPIK I 초급 필수 어휘',
       'TOPIK II 중급 핵심 어휘',

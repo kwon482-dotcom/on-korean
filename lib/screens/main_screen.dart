@@ -58,7 +58,7 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
         setState(() {});
       }
     } else if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
-      // 앱이 백그라운드로 전환되거나 화면이 잠길 때 재생 중인 일본어 TTS 음성 즉시 정지
+      // 앱이 백그라운드로 전환되거나 화면이 잠길 때 재생 중인 한국어 TTS 음성 즉시 정지
       TtsService.stop();
     }
   }
@@ -798,13 +798,16 @@ class _TodayStudyTabState extends State<_TodayStudyTab> {
                             setModalState(() {
                               selected.clear();
                               selected.addAll([
-                                '여행 일본어',
-                                '생활 필수 가타카나',
-                                '초밥집 & 생선 한자',
-                                'N5',
-                                'N5 문법',
-                                'N4',
-                                'N4 문법',
+                                '한글 기초 & 생존 회화',
+                                'TOPIK I 초급 필수 어휘',
+                                '자음·모음 & 필수 첫걸음',
+                                '숫자·시간·날짜 & 생활 기초',
+                                '일상 필수 동사 & 형용사',
+                                '생존 생활 표현 & 여행 어휘',
+                                '학교 생활 & 취미·여가',
+                                '쇼핑·시장 & 대중교통',
+                                '음식·식당 & 한국 음식',
+                                '날씨·계절 & 병원·약국',
                               ].where((c) => allCategories.contains(c)));
                             });
                           },

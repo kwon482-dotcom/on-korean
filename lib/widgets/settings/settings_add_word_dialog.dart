@@ -13,7 +13,7 @@ class SettingsAddWordDialog {
     final customCategoryController = TextEditingController();
 
     final categories = WordService.getAllCategories();
-    String selectedLevel = categories.contains('N5') ? 'N5' : categories.first;
+    String selectedLevel = categories.contains('한글 기초 & 생존 회화') ? '한글 기초 & 생존 회화' : categories.first;
     bool isCustomCategory = false;
 
     final isJa = LocaleService.currentLocale.value.languageCode == 'ja';
@@ -48,7 +48,7 @@ class SettingsAddWordDialog {
                         isCustomCategory = true;
                       } else {
                         isCustomCategory = false;
-                        selectedLevel = v ?? 'N5';
+                        selectedLevel = v ?? categories.first;
                       }
                     });
                   },

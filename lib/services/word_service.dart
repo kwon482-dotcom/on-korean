@@ -18,11 +18,6 @@ class WordService {
   static const String _prefMasteredKey = 'mastered_word_ids';
   static const String _prefCustomWordsKey = 'user_custom_words';
   static const String _prefCustomCategoriesKey = 'user_custom_categories';
-  // 📌 [로드맵 TODO - 비즈니스 일본어 세분화 & 확장 계획]
-  // 1. "비즈니스 일본어"를 2개 특화 카테고리로 분리 및 확장 (총 100개+):
-  //    - "비즈니스 기초 실무" (약 50개): 稟議, 納期, 競合, 相見積もり, 根回し 등 명사/실무 용어 중심 (1문장 예문)
-  //    - "비즈니스 경어·심화 실무" (약 50개): 拝見する, 拝借する, お目にかかる, お見えになる 등 존경어/겸양어/쿠션어 (2줄 티키타카 회화)
-  // 2. 추후 assets/data/jlpt_words.json 데이터 보강 및 LibraryTab 코스 연동 예정
   static const String _prefSelectedCategoriesKey = 'selected_study_categories';
   static const String _prefCachedAiExamplesKey = 'cached_ai_examples';
   static const String _prefLastReviewedTimestampsKey = 'last_reviewed_timestamps';
@@ -69,13 +64,6 @@ class WordService {
           (prefs.getStringList(_prefSelectedCategoriesKey) ?? []).toSet();
       _lastSessionWordIds =
           (prefs.getStringList(_prefLastSessionWordIdsKey) ?? []).toSet();
-
-      // 기존 '비즈니스 일본어' 설정 마이그레이션
-      if (_selectedStudyCategories.contains('비즈니스 일본어')) {
-        _selectedStudyCategories.remove('비즈니스 일본어');
-        _selectedStudyCategories.add('비즈니스 실무 어휘');
-        _selectedStudyCategories.add('비즈니스 실전 경어');
-      }
 
       // 💡 마지막 학습 시각(타임스탬프) 복원 (오래된 오답/장기 복습 우선순위)
       final timestampsRaw = prefs.getString(_prefLastReviewedTimestampsKey);
@@ -154,14 +142,38 @@ class WordService {
 
   static List<WordModel> getAllWords() => _allWords;
 
-  // 💡 한국어 5대 코스 체계적 정렬
+  // 💡 한국어 5대 코어 코스 및 20대 테마 덱 체계적 정렬
   static List<String> getAllCategories() {
     final standardOrder = [
-      '한글 기초 & 생존 회화',
-      'TOPIK I 초급 필수 어휘',
-      'TOPIK II 중급 핵심 어휘',
-      'K-드라마 & 실전 리얼 회화',
-      '비즈니스 & 시사 고급 한국어',
+      // 1. 한글 기초 & 생존 회화 코스
+      '자음·모음 & 필수 첫걸음',
+      '숫자·시간·날짜 & 생활 기초',
+      '일상 필수 동사 & 형용사',
+      '생존 생활 표현 & 여행 어휘',
+
+      // 2. TOPIK I 초급 필수 어휘 코스
+      '학교 생활 & 취미·여가',
+      '쇼핑·시장 & 대중교통',
+      '음식·식당 & 한국 음식',
+      '날씨·계절 & 병원·약국',
+
+      // 3. TOPIK II 중급 핵심 어휘 코스
+      '감정·심리 & 성격·인간관계',
+      '사회·문화 & 미디어·예술',
+      '자연·환경 & 과학·기술',
+      'TOPIK 필수 관용구 & 속담',
+
+      // 4. K-드라마 & 실전 리얼 회화 코스
+      '드라마 명대사 & 리얼 리액션',
+      '신조어·줄임말 & 일상 구어체',
+      'K-푸드 & 포장마차·한강 치맥',
+      'K-POP·팬덤 & 엔터테인먼트',
+
+      // 5. 비즈니스 & 시사 고급 한국어 코스
+      '오피스 실무 & 비즈니스 이메일',
+      '회의·미팅 & 협상·프레젠테이션',
+      '경제·경영 & 금융·투자',
+      '시사·정치 & 학술·고급 토론',
     ];
     final dynamicCategories = _allWords.map((w) => w.level).toSet().toList();
 
@@ -179,7 +191,7 @@ class WordService {
     }
 
     if (!result.contains('기타')) result.add('기타');
-    return result.isEmpty ? ['한글 기초 & 생존 회화'] : result;
+    return result.isEmpty ? ['자음·모음 & 필수 첫걸음'] : result;
   }
 
   /// 카테고리/급수명을 현재 언어에 맞춰 번역하여 반환합니다.
@@ -189,6 +201,8 @@ class WordService {
       switch (category) {
         case '전체':
           return 'All Categories';
+
+        // 5대 대분류 코스
         case '한글 기초 & 생존 회화':
           return 'Hangul & Survival Basics';
         case 'TOPIK I 초급 필수 어휘':
@@ -199,6 +213,53 @@ class WordService {
           return 'K-Drama & Real-Life Phrases';
         case '비즈니스 & 시사 고급 한국어':
           return 'Business & Advanced Korean';
+
+        // 20대 서브 테마 덱
+        case '자음·모음 & 필수 첫걸음':
+          return 'Hangul Alphabet & First Steps';
+        case '숫자·시간·날짜 & 생활 기초':
+          return 'Numbers, Time & Daily Basics';
+        case '일상 필수 동사 & 형용사':
+          return 'Core Verbs & Adjectives';
+        case '생존 생활 표현 & 여행 어휘':
+          return 'Survival Phrases & Travel';
+
+        case '학교 생활 & 취미·여가':
+          return 'Campus Life & Hobbies';
+        case '쇼핑·시장 & 대중교통':
+          return 'Shopping & Public Transit';
+        case '음식·식당 & 한국 음식':
+          return 'Dining & Korean Food';
+        case '날씨·계절 & 병원·약국':
+          return 'Weather, Health & Clinic';
+
+        case '감정·심리 & 성격·인간관계':
+          return 'Emotions, Traits & Relations';
+        case '사회·문화 & 미디어·예술':
+          return 'Society, Culture & Media';
+        case '자연·환경 & 과학·기술':
+          return 'Nature, Environment & Tech';
+        case 'TOPIK 필수 관용구 & 속담':
+          return 'Idioms & Proverbs';
+
+        case '드라마 명대사 & 리얼 리액션':
+          return 'K-Drama Lines & Reactions';
+        case '신조어·줄임말 & 일상 구어체':
+          return 'Slang, Abbreviations & Colloquial';
+        case 'K-푸드 & 포장마차·한강 치맥':
+          return 'K-Food & Hangang Life';
+        case 'K-POP·팬덤 & 엔터테인먼트':
+          return 'K-Pop & Entertainment';
+
+        case '오피스 실무 & 비즈니스 이메일':
+          return 'Office Work & Business Emails';
+        case '회의·미팅 & 협상·프레젠테이션':
+          return 'Meetings & Negotiations';
+        case '경제·경영 & 금융·투자':
+          return 'Economy & Finance';
+        case '시사·정치 & 학술·고급 토론':
+          return 'Current Events & Politics';
+
         case '기타':
           return 'Other';
         case '나만의 단어장':
@@ -210,6 +271,8 @@ class WordService {
       switch (category) {
         case '전체':
           return '全カテゴリ';
+
+        // 5대 대분류 코스
         case '한글 기초 & 생존 회화':
           return 'ハングル基礎・必須表現';
         case 'TOPIK I 초급 필수 어휘':
@@ -220,6 +283,53 @@ class WordService {
           return 'K-POP・K-ドラマ 日常会話';
         case '비즈니스 & 시사 고급 한국어':
           return 'ビジネス・時事上級韓国語';
+
+        // 20대 서브 테마 덱
+        case '자음·모음 & 필수 첫걸음':
+          return 'ハングル文字・基本の第一歩';
+        case '숫자·시간·날짜 & 생활 기초':
+          return '数字・時間・日付・生活基礎';
+        case '일상 필수 동사 & 형용사':
+          return '日常必須 動詞・形容詞';
+        case '생존 생활 표현 & 여행 어휘':
+          return 'サバイバル日常表現・旅行単語';
+
+        case '학교 생활 & 취미·여가':
+          return '学校生活・趣味・余暇';
+        case '쇼핑·시장 & 대중교통':
+          return 'ショッピング・市場・交通';
+        case '음식·식당 & 한국 음식':
+          return '食事・レストラン・韓国料理';
+        case '날씨·계절 & 병원·약국':
+          return '天気・季節・病院・薬局';
+
+        case '감정·심리 & 성격·인간관계':
+          return '感情・心理・性格・人間関係';
+        case '사회·문화 & 미디어·예술':
+          return '社会・文化・メディア・芸術';
+        case '자연·환경 & 과학·기술':
+          return '自然・環境・科学・IT技術';
+        case 'TOPIK 필수 관용구 & 속담':
+          return 'TOPIK必須 慣用句・ことわざ';
+
+        case '드라마 명대사 & 리얼 리액션':
+          return 'ドラマ名セリフ・リアルリアクション';
+        case '신조어·줄임말 & 일상 구어체':
+          return '新造語・若者言葉・日常口語';
+        case 'K-푸드 & 포장마차·한강 치맥':
+          return 'K-FOOD・屋台・漢江チメク';
+        case 'K-POP·팬덤 & 엔터테인먼트':
+          return 'K-POP・ファン・エンタメ';
+
+        case '오피스 실무 & 비즈니스 이메일':
+          return 'オフィス実務・ビジネスメール';
+        case '회의·미팅 & 협상·프레젠테이션':
+          return '会議・交渉・プレゼンテーション';
+        case '경제·경영 & 금융·투자':
+          return '経済・経営・金融・投資';
+        case '시사·정치 & 학술·고급 토론':
+          return '時事・政治・学術・討論';
+
         case '기타':
           return 'その他';
         case '나만의 단어장':
@@ -290,10 +400,7 @@ class WordService {
   }
 
   static List<WordModel> getWordsByLevel(String level) {
-    if (level == '비즈니스 일본어') {
-      return _allWords.where((w) => w.level.contains('비즈니스')).toList();
-    }
-    return _allWords.where((w) => w.level == level).toList();
+    return _allWords.where((w) => w.level == level || w.category == level).toList();
   }
 
   static List<WordModel> getTodayStudyWords({
@@ -572,10 +679,7 @@ class WordService {
   }
 
   static List<WordModel> getMasteredWordsByLevel(String level) {
-    if (level == '비즈니스 일본어') {
-      return _allWords.where((w) => w.level.contains('비즈니스') && w.isMastered).toList();
-    }
-    return _allWords.where((w) => w.level == level && w.isMastered).toList();
+    return _allWords.where((w) => (w.level == level || w.category == level) && w.isMastered).toList();
   }
 
   static List<WordModel> getAllMasteredWords() {

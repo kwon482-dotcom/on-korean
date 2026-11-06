@@ -81,11 +81,16 @@ class SettingsCategoryFilterSheet {
                             setModalState(() {
                               selected.clear();
                               selected.addAll([
-                                '여행 일본어',
-                                'N5',
-                                'N5 문법',
-                                'N4',
-                                'N4 문법',
+                                '한글 기초 & 생존 회화',
+                                'TOPIK I 초급 필수 어휘',
+                                '자음·모음 & 필수 첫걸음',
+                                '숫자·시간·날짜 & 생활 기초',
+                                '일상 필수 동사 & 형용사',
+                                '생존 생활 표현 & 여행 어휘',
+                                '학교 생활 & 취미·여가',
+                                '쇼핑·시장 & 대중교통',
+                                '음식·식당 & 한국 음식',
+                                '날씨·계절 & 병원·약국',
                               ].where((c) => allCategories.contains(c)));
                             });
                           },

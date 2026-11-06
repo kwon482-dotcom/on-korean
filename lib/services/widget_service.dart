@@ -110,21 +110,21 @@ class WidgetService {
 
   /// 2x1 소형 위젯 뱃지 크기에 맞춘 간결한 급수/카테고리 라벨
   static String _getWidgetLevelLabel(WordModel word, bool isEn) {
-    switch (word.level) {
-      case '비즈니스 실무 어휘':
-      case '비즈니스 실전 경어':
-      case '비즈니스 일본어':
-        return isEn ? 'Business' : '비즈니스';
-      case '여행 일본어':
-        return isEn ? 'Travel' : '여행';
-      case '생활 필수 가타카나':
-        return isEn ? 'Katakana' : '가타카나';
-      case '초밥집 & 생선 한자':
-        return isEn ? 'Sushi' : '초밥/생선';
-      case 'IT 실무 & 네트워크':
-        return isEn ? 'IT' : 'IT/개발';
-      default:
-        return word.localizedLevel;
+    if (word.level.contains('비즈니스') || word.category.contains('비즈니스')) {
+      return isEn ? 'Business' : '비즈니스';
     }
+    if (word.level.contains('드라마') || word.category.contains('드라마')) {
+      return isEn ? 'K-Drama' : 'K-드라마';
+    }
+    if (word.level.contains('TOPIK II') || word.category.contains('TOPIK II')) {
+      return isEn ? 'TOPIK II' : 'TOPIK II';
+    }
+    if (word.level.contains('TOPIK I') || word.category.contains('TOPIK I')) {
+      return isEn ? 'TOPIK I' : 'TOPIK I';
+    }
+    if (word.level.contains('기초') || word.category.contains('기초')) {
+      return isEn ? 'Basics' : '한글기초';
+    }
+    return word.localizedLevel;
   }
 }

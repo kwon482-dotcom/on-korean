@@ -3,7 +3,8 @@ import '../services/word_service.dart';
 
 class WordModel {
   final String id;
-  final String level; // 한글 기초, TOPIK I 초급, TOPIK II 중급, K-드라마 & 일상회화, 비즈니스 & 시사
+  final String level; // 20대 서브 카테고리 / 세부 테마 덱 (예: 자음·모음 & 필수 첫걸음)
+  final String category; // 5대 대분류 메인 코스 (예: 한글 기초 & 생존 회화)
   final String word; // 한국어 표제어 (예: 안녕하세요, 약속하다)
   final String furigana; // 발음 표기/로마자 (예: [An-nyeong-ha-se-yo], [Yak-sok-ha-da])
   final String meaning; // 기본 영어 뜻 (예: Hello, To make an appointment)
@@ -28,6 +29,7 @@ class WordModel {
   WordModel({
     required this.id,
     required this.level,
+    String? category,
     required this.word,
     required this.furigana,
     required this.meaning,
@@ -44,7 +46,7 @@ class WordModel {
     this.isBookmarked = false,
     this.isWrong = false,
     this.isMastered = false,
-  });
+  }) : category = (category != null && category.isNotEmpty) ? category : level;
 
   /// 현재 언어(또는 지정된 언어 코드)에 맞는 급수/카테고리 이름을 반환합니다.
   String getLocalizedLevel([String? langCode]) {
@@ -144,9 +146,12 @@ class WordModel {
   }
 
   factory WordModel.fromJson(Map<String, dynamic> json) {
+    final lvl = json['level'] as String? ?? '기타';
+    final cat = json['category'] as String? ?? lvl;
     return WordModel(
       id: json['id'] as String,
-      level: json['level'] as String,
+      level: lvl,
+      category: cat,
       word: json['word'] as String,
       furigana: json['furigana'] as String? ?? '',
       meaning: (json['meaning'] ?? json['meaningEn']) as String? ?? '',
@@ -174,6 +179,7 @@ class WordModel {
     return {
       'id': id,
       'level': level,
+      'category': category,
       'word': word,
       'furigana': furigana,
       'meaning': meaning,

@@ -34,7 +34,7 @@ class ReadingScreen extends StatefulWidget {
 class _ReadingScreenState extends State<ReadingScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  String _selectedLevel = 'N3';
+  String _selectedLevel = 'TOPIK I';
   String _selectedMode = 'reading'; // 'reading' | 'listening'
   ReadingModel? _currentReading;
   bool _isGenerating = false;
@@ -45,7 +45,7 @@ class _ReadingScreenState extends State<ReadingScreen>
   double _playbackRate = 1.0; // 0.8x | 1.0x | 1.2x
   String _archiveFilter = 'all'; // 'all' | 'reading' | 'listening'
 
-  final List<String> _levels = ['N5', 'N4', 'N3', 'N2', 'N1'];
+  final List<String> _levels = ['한글 기초', 'TOPIK I', 'TOPIK II', 'K-드라마', '비즈니스'];
 
   @override
   void initState() {
