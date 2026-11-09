@@ -235,7 +235,7 @@ class SettingsSupportDialogs {
     final isJa = LocaleService.currentLocale.value.languageCode == 'ja';
     final isEn = LocaleService.currentLocale.value.languageCode == 'en';
     final uri = Uri.parse(
-      'https://garnet-toad-cfe.notion.site/Privacy-Policy-40353644b69780a58c19fcdf9206dd96?source=copy_link',
+      'https://kwon482-dotcom.github.io/privacy-onkorean.html',
     );
     try {
       if (await canLaunchUrl(uri)) {
