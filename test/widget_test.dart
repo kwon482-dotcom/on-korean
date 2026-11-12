@@ -423,6 +423,47 @@ void main() {
       expect(last7.last['count'] >= 2, true);
       expect(last7.last['masteredCount'] >= 1, true);
     });
+
+    test('Weekly window navigation (weeksAgo 0, 1, 2) resolves past counts and date range accurately', () async {
+      final now = DateTime.now();
+      final lastWeekDay = now.subtract(const Duration(days: 7));
+      final twoWeeksAgoDay = now.subtract(const Duration(days: 14));
+
+      String fmt(DateTime d) =>
+          "${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}";
+
+      SharedPreferences.setMockInitialValues({
+        'daily_study_counts': jsonEncode({
+          fmt(now): 5,
+          fmt(lastWeekDay): 12,
+          fmt(twoWeeksAgoDay): 20,
+        }),
+        'daily_mastered_counts': jsonEncode({
+          fmt(now): 3,
+          fmt(lastWeekDay): 8,
+          fmt(twoWeeksAgoDay): 15,
+        }),
+      });
+
+      final currentWindow = await StatsService.get7DaysWindow(weeksAgo: 0);
+      expect(currentWindow['isCurrentWeek'], true);
+      expect(currentWindow['weeksAgo'], 0);
+      expect((currentWindow['days'] as List).last['count'], 5);
+      expect((currentWindow['days'] as List).last['isToday'], true);
+
+      final prevWindow = await StatsService.get7DaysWindow(weeksAgo: 1);
+      expect(prevWindow['isCurrentWeek'], false);
+      expect(prevWindow['weeksAgo'], 1);
+      expect((prevWindow['days'] as List).last['count'], 12);
+      expect((prevWindow['days'] as List).last['masteredCount'], 8);
+      expect((prevWindow['days'] as List).last['isToday'], false);
+
+      final twoWeeksWindow = await StatsService.get7DaysWindow(weeksAgo: 2);
+      expect(twoWeeksWindow['isCurrentWeek'], false);
+      expect(twoWeeksWindow['weeksAgo'], 2);
+      expect((twoWeeksWindow['days'] as List).last['count'], 20);
+      expect((twoWeeksWindow['days'] as List).last['masteredCount'], 15);
+    });
   });
 
   group('English Localization & Multi-language Tests', () {

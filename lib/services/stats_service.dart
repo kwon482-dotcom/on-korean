@@ -90,8 +90,14 @@ class StatsService {
     return (map[_todayStr()] as num?)?.toInt() ?? 0;
   }
 
-  // 최근 7일 학습 데이터 (요일, 전체 학습수, 암기 완료수)
+  // 최근 7일 학습 데이터 (요일, 전체 학습수, 암기 완료수) - 기존 호환용
   static Future<List<Map<String, dynamic>>> getLast7Days() async {
+    final window = await get7DaysWindow(weeksAgo: 0);
+    return (window['days'] as List<dynamic>).cast<Map<String, dynamic>>();
+  }
+
+  // 특정 주(weeksAgo: 0=이번 주 7일, 1=지난주 7일, 2=2주 전 7일...) 학습 데이터 및 기간 정보 반환
+  static Future<Map<String, dynamic>> get7DaysWindow({int weeksAgo = 0}) async {
     final prefs = await SharedPreferences.getInstance();
     final raw = prefs.getString(_prefDailyCountKey) ?? '{}';
     final Map<String, dynamic> map = jsonDecode(raw);
@@ -100,7 +106,12 @@ class StatsService {
     final Map<String, dynamic> masteredMap = jsonDecode(rawMastered);
 
     final now = DateTime.now();
-    final List<Map<String, dynamic>> result = [];
+    // 기준 종료일 (weeksAgo 주 전의 오늘)
+    final endDay = now.subtract(Duration(days: weeksAgo * 7));
+    final startDate = endDay.subtract(const Duration(days: 6));
+    final endDate = endDay;
+
+    final List<Map<String, dynamic>> days = [];
     final lang = LocaleService.currentLocale.value.languageCode;
     final List<String> weekdayNames;
     if (lang == 'en') {
@@ -111,19 +122,33 @@ class StatsService {
       weekdayNames = ['월', '화', '수', '목', '금', '토', '일'];
     }
 
+    final todayStr = _todayStr();
+
     for (int i = 6; i >= 0; i--) {
-      final d = now.subtract(Duration(days: i));
+      final d = endDay.subtract(Duration(days: i));
       final key =
           "${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}";
       final count = (map[key] as num?)?.toInt() ?? 0;
       final masteredCount = (masteredMap[key] as num?)?.toInt() ?? 0;
-      result.add({
+      days.add({
+        'date': key,
         'dayLabel': weekdayNames[d.weekday - 1],
-        'isToday': i == 0,
+        'isToday': (key == todayStr),
         'count': count,
         'masteredCount': masteredCount,
       });
     }
-    return result;
+
+    final startStr =
+        "${startDate.year}.${startDate.month.toString().padLeft(2, '0')}.${startDate.day.toString().padLeft(2, '0')}";
+    final endStr =
+        "${endDate.year}.${endDate.month.toString().padLeft(2, '0')}.${endDate.day.toString().padLeft(2, '0')}";
+
+    return {
+      'rangeLabel': '$startStr ~ $endStr',
+      'isCurrentWeek': weeksAgo == 0,
+      'weeksAgo': weeksAgo,
+      'days': days,
+    };
   }
 }

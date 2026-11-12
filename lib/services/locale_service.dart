@@ -115,6 +115,10 @@ class LocaleService {
       'stats_unit_words': '단어',
       'stats_unit_times': '회',
       'stats_trend_7days': '7일 학습 추이',
+      'stats_trend_weekly': '주간 학습 추이',
+      'stats_prev_week': '이전 주',
+      'stats_next_week': '다음 주',
+      'stats_return_today': '이번 주',
       'stats_categories': '카테고리별 단어 현황',
       'filter_title': '랜덤 학습 출제 범위 설정',
       'filter_desc': '전체 랜덤 학습 시 출제할 카테고리를 선택하세요',
@@ -243,7 +247,8 @@ class LocaleService {
       'settings_notif_test_btn': '테스트 알림 즉시 전송',
       'settings_notif_permission_denied':
           '알림 권한이 비활성화되어 있습니다. 기기 설정에서 알림을 허용해 주세요.',
-      'settings_notif_exact_alarm_desc': '절전(Doze) 모드에서도 정시에 알림을 받으려면 알람 권한 허용이 필요합니다.',
+      'settings_notif_exact_alarm_desc':
+          '절전(Doze) 모드에서도 정시에 알림을 받으려면 알람 권한 허용이 필요합니다.',
       'settings_notif_exact_alarm_btn': '설정',
       'settings_theme': '화면 테마',
       'theme_system': '시스템',
@@ -280,7 +285,7 @@ class LocaleService {
       'stats_reading_stat': '📖 1분 독해: {0} / {1}편 완료',
       'stats_listening_stat': '🎧 1분 청해: {0} / {1}편 완료',
       'stats_ratio_simple': '{0} / {1} 완료',
-      'stats_chart_hint': '막대 터치 시 일자별 상세 확인',
+      'stats_chart_hint': '막대 터치 시 상세 확인 • 좌우로 밀어 지난 기록 확인',
       'reading_generate_another_listening': '다른 1분 청해 생성하기 (⚡ {0} 소모)',
       'reading_generating_listening': '{0} 맞춤 청해 생성 중...',
       'reading_generating_listening_desc':
@@ -440,6 +445,10 @@ class LocaleService {
       'stats_unit_words': '単語',
       'stats_unit_times': '回',
       'stats_trend_7days': '7日間の学習推移',
+      'stats_trend_weekly': '週間学習推移',
+      'stats_prev_week': '前の週',
+      'stats_next_week': '次の週',
+      'stats_return_today': '今週',
       'stats_categories': 'カテゴリ別単語数',
       'filter_title': 'ランダム学習の出題範囲設定',
       'filter_desc': '全体ランダム学習で出題するカテゴリを選択してください',
@@ -567,7 +576,8 @@ class LocaleService {
       'settings_notif_time': '通知送信時間',
       'settings_notif_test_btn': 'テスト通知を送信',
       'settings_notif_permission_denied': '通知権限が無効になっています。端末の設定で通知を許可してください。',
-      'settings_notif_exact_alarm_desc': '省電力(Doze)モードでも定時に通知を受け取るには、アラーム権限の許可が必要です。',
+      'settings_notif_exact_alarm_desc':
+          '省電力(Doze)モードでも定時に通知を受け取るには、アラーム権限の許可が必要です。',
       'settings_notif_exact_alarm_btn': '設定',
       'settings_theme': '画面テーマ',
       'theme_system': 'システム',
@@ -603,7 +613,7 @@ class LocaleService {
       'stats_reading_stat': '📖 1分読解: {0} / {1}件完了',
       'stats_listening_stat': '🎧 1分聴解: {0} / {1}件完了',
       'stats_ratio_simple': '{0} / {1} 完了',
-      'stats_chart_hint': '棒グラフをタップして詳細確認',
+      'stats_chart_hint': '棒グラフをタップで詳細 • 左右スワイプで過去記録',
       'reading_generate_another_listening': '他の1分聴解を作成 (⚡ {0} 消費)',
       'reading_generating_listening': '{0} カスタム聴解を作成中...',
       'reading_generating_listening_desc':
@@ -665,13 +675,17 @@ class LocaleService {
       'course_hangul': 'Hangul & Survival Basics',
       'course_hangul_sub': 'Alphabet pronunciation & survival travel phrases',
       'course_topik1': 'TOPIK I Elementary Vocabulary',
-      'course_topik1_sub': 'Everyday core nouns, verbs & adjectives for TOPIK 1-2',
+      'course_topik1_sub':
+          'Everyday core nouns, verbs & adjectives for TOPIK 1-2',
       'course_topik2': 'TOPIK II Intermediate Korean',
-      'course_topik2_sub': 'Emotions, society, traits & problem-solving for TOPIK 3-4',
+      'course_topik2_sub':
+          'Emotions, society, traits & problem-solving for TOPIK 3-4',
       'course_kdrama': 'K-Drama & Real-Life Phrases',
-      'course_kdrama_sub': 'Popular drama lines, reactions, slang & casual expressions',
+      'course_kdrama_sub':
+          'Popular drama lines, reactions, slang & casual expressions',
       'course_business': 'Business & Advanced Korean',
-      'course_business_sub': 'Workplace emails, news & formal Korean for TOPIK 5-6',
+      'course_business_sub':
+          'Workplace emails, news & formal Korean for TOPIK 5-6',
       'course_custom': 'My Custom Deck',
       'course_custom_sub': 'Cards added manually or imported from Anki/CSV',
 
@@ -765,6 +779,10 @@ class LocaleService {
       'stats_unit_words': 'Words',
       'stats_unit_times': 'Reviews',
       'stats_trend_7days': '7-Day Activity',
+      'stats_trend_weekly': 'Weekly Study Trend',
+      'stats_prev_week': 'Previous week',
+      'stats_next_week': 'Next week',
+      'stats_return_today': 'This week',
       'stats_categories': 'Category Breakdown',
       'filter_title': 'Study Scope Filter',
       'filter_desc': 'Select categories to include in random study',
@@ -811,7 +829,8 @@ class LocaleService {
       'pro_benefit_3': 'Priority access to new theme decks',
       'pro_coming_soon': 'Coming soon',
       'pro_restore_purchases': 'Restore Purchases',
-      'pro_restore_purchases_desc': 'Restore previously purchased Pro membership',
+      'pro_restore_purchases_desc':
+          'Restore previously purchased Pro membership',
       'pro_restore_result': 'No previous purchase history found to restore.',
       'ai_energy_rules':
           '• Word AI Example: ⚡ 1 cost\n• AI 1-Min Reading: ⚡ 3 cost',
@@ -868,8 +887,7 @@ class LocaleService {
       'settings_notice_guide_sub': 'TTS audio setup, AI tips, terms',
       'settings_bonus_pack_sub':
           'Recommended bonus packs (Business, TOEIC, Daily)',
-      'settings_feedback_sub':
-          'Feedback and bug reports (onkorean@gyugyu.net)',
+      'settings_feedback_sub': 'Feedback and bug reports (onkorean@gyugyu.net)',
       'pro_preparing_iap': 'In-app purchases are currently being prepared.',
       'pro_active_title': 'Pro Unlimited Pass Active',
       'pro_energy_title': 'AI Energy Balance',
@@ -940,7 +958,8 @@ class LocaleService {
       'stats_reading_stat': '📖 1-Min Reading: {0} / {1} completed',
       'stats_listening_stat': '🎧 1-Min Listening: {0} / {1} completed',
       'stats_ratio_simple': '{0} / {1} Done',
-      'stats_chart_hint': 'Tap bars for daily breakdown',
+      'stats_chart_hint':
+          'Tap bars for details • Swipe left/right for past history',
       'reading_generate_another_listening':
           'Generate Another 1-Min Listening (⚡ {0})',
       'reading_generating_listening': 'Generating {0} listening practice...',
@@ -994,9 +1013,11 @@ class LocaleService {
       'course_words_count': '{0} Total',
       'empty_category': 'No cards in {0} yet.',
       'ecosystem_title': 'GyuC Studio Apps',
-      'ecosystem_subtitle': 'OnWallet · OnTimer · OnVocab · OnEnglish · DidYou?',
+      'ecosystem_subtitle':
+          'OnWallet · OnTimer · OnVocab · OnEnglish · DidYou?',
       'exit_dialog_title': 'Exit the app?',
-      'exit_dialog_desc': 'Wrap up today’s study session?\nKeep up the streak tomorrow!',
+      'exit_dialog_desc':
+          'Wrap up today’s study session?\nKeep up the streak tomorrow!',
       'exit_dialog_confirm': 'Exit App',
       'exit_dialog_cancel': 'Cancel',
     },
@@ -1029,7 +1050,10 @@ class LocaleService {
   static String tr(String key, [List<dynamic>? args]) {
     final lang = currentLocale.value.languageCode;
     var text =
-        _localizedValues[lang]?[key] ?? _localizedValues['en']?[key] ?? _localizedValues['ko']?[key] ?? key;
+        _localizedValues[lang]?[key] ??
+        _localizedValues['en']?[key] ??
+        _localizedValues['ko']?[key] ??
+        key;
     if (args != null && args.isNotEmpty) {
       for (var i = 0; i < args.length; i++) {
         text = text.replaceAll('{$i}', args[i].toString());
